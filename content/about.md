@@ -3,4 +3,6 @@ title: "About"
 date: "2016-05-05T21:48:51-07:00"
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme).
+Hi!
+
+My name is Chris Ried and I've put together this site to accumulate me. So yes, a little bit of self promotion but also to have a place to collect those things such as my resume or links of interest. 
