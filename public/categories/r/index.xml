@@ -6,20 +6,38 @@
     <description>Recent content in R on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Formatting Currencies in R</title>
+      <link>/2017/06/03/formatting-currencies-in-r/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/2017/06/03/formatting-currencies-in-r/</guid>
+      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I&amp;rsquo;ve found that there are a few different methods to do this.
+Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
+	library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3))  Formatting currency with separator Following is a simple function one can build and place in their utility function that will give formatted currency.</description>
+    </item>
+    
+    <item>
+      <title>Manipulating Hue Lights with R</title>
+      <link>/2017/06/03/manipulating-hue-lights-with-r/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/03/manipulating-hue-lights-with-r/</guid>
+      <description>getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&amp;#39;{&amp;quot;on&amp;quot;:&amp;#39;,state,&amp;#39;}&amp;#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName) </description>
+    </item>
+    
+    <item>
+      <title>Phillips Hue in R </title>
+      <link>/2017/06/03/phillips-hue-in-r/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/03/phillips-hue-in-r/</guid>
+      <description>getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
     </item>
     
   </channel>
