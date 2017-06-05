@@ -6,10 +6,23 @@
     <description>Recent content in R on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rocket Propolsion Ch 1</title>
+      <link>/2017/06/05/rocket-propolsion-ch-1/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/05/rocket-propolsion-ch-1/</guid>
+      <description>Accelerating force
+\[ F=mv_e \] thrust of the rocket is expressed in terms of the mass flow rate  m and the efficient exhaust velocity \(v_e\)
+\[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
+mass ratio \[ R = \frac{M_0}{M} \]
+RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.</description>
+    </item>
     
     <item>
       <title>Formatting Currencies in R</title>
