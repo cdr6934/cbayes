@@ -10,7 +10,7 @@ tags:
   - R
 ---
 
-
+The following code can be used to display and produce the 
 ```
 getIP <- function()
 {
