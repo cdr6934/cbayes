@@ -47,7 +47,8 @@ The vesicular stomatitis virus matrix protein inhibits NF-κB activation in mous
 
 **Skills & Abilities**
 
-###Analysis / Data / Technology
+Analysis / Data / Technology
+
 * R, Excel, Python, Visualization (Edward Tufte all the way!), Statistical Modeling
 * Environments: SSMS, Tableau, PowerBI, Visual Studio 2015, PyCharm, RStudio, Sublime 
 * Programming Languages: C#,  SQL (MSS), Python, R, Perl, Ruby, PowerShell, Mathematica, JavaScript

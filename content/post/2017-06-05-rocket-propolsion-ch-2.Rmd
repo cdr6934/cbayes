@@ -1,5 +1,5 @@
 ---
-title: Rocket Propolsion Ch 1
+title: Rocket Propulsion Ch 1
 author: Chris
 date: '2017-06-05'
 slug: rocket-propolsion-ch-1
@@ -122,3 +122,8 @@ Now this doesn't give us the velocity to get into space, but it is the velocity 
 
 
 As the velocity given to the spacecraft increases, the eccentricity of the elliptical orbit becomes greater, and the apogee moves farther out. 
+
+### Elliptical transfer orbits 
+$$
+V_0=\sqrt{\frac{GM_\bigoplus}{r_0}} 
+$$
