@@ -127,3 +127,9 @@ As the velocity given to the spacecraft increases, the eccentricity of the ellip
 $$
 V_0=\sqrt{\frac{GM_\bigoplus}{r_0}} 
 $$
+
+
+```{r}
+circularOrbit <-function
+```
+
