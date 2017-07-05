@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.20.7" />
 
 
-<title>Rocket Propolsion Ch 1 - A Hugo website</title>
-<meta property="og:title" content="Rocket Propolsion Ch 1 - A Hugo website">
+<title>Rocket Propulsion Ch 1 - A Hugo website</title>
+<meta property="og:title" content="Rocket Propulsion Ch 1 - A Hugo website">
 
 
 
@@ -64,7 +64,7 @@
     <span class="article-duration">4 min read</span>
     
 
-    <h1 class="article-title">Rocket Propolsion Ch 1</h1>
+    <h1 class="article-title">Rocket Propulsion Ch 1</h1>
 
     
     <span class="article-date">2017/06/05</span>
@@ -150,6 +150,41 @@ V_0 = \sqrt{\frac{GM_{\bigoplus}}{r_0}}
 <p>The mass of the Earth is <span class="math inline">\(5.975\times10^{24}kg\)</span> and the mean radius is 6,371 km. Therefore an initial radius of 500 km above the Earth’s surface, the initial velocity is 7.6<span class="math inline">\(km s^{-1}\)</span>.</p>
 <p>Now this doesn’t give us the velocity to get into space, but it is the velocity to stay there.</p>
 <p>As the velocity given to the spacecraft increases, the eccentricity of the elliptical orbit becomes greater, and the apogee moves farther out.</p>
+<ul>
+<li>6.670 <span class="math inline">\(Nm^{2}kg^{2}\)</span></li>
+<li>5.975 kg</li>
+<li>63</li>
+</ul>
+<pre class="r"><code>G &lt;- 6.670*10^-11
+eMass &lt;- 5.975*10^24
+
+initialVelocity &lt;-function(r)
+{
+  sqrt((398600.4415)/(6371+r))
+}
+
+marsInitialVelocity &lt;- function(r)
+{
+  sqrt((42828.37)/(3389.5+r))
+}
+
+fx &lt;- data.frame(miles = 1:2000)
+fx &lt;- fx %&gt;% mutate(v.earth = initialVelocity(miles), v.mars = marsInitialVelocity(miles))
+
+g &lt;- fx %&gt;% ggplot() +
+  geom_point(aes(miles, v.earth),color = &quot;blue&quot;) + 
+  geom_point(aes(miles,v.mars)) +
+  labs(title = &quot;Velocity Curve Above Planets&quot;, 
+       x = &quot;Velocity (km/sec)&quot;, 
+       y = &quot;above the Surface (km)&quot;)
+g</code></pre>
+<p><img src="../../../../post/2017-06-05-rocket-propolsion-ch-2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="elliptical-transfer-orbits" class="section level3">
+<h3>Elliptical transfer orbits</h3>
+<p><span class="math display">\[
+V_0=\sqrt{\frac{2GM_\bigoplus}{r_0}} 
+\]</span></p>
 </div>
 
     </div>

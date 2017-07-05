@@ -37,7 +37,8 @@ Using the scales package Using the scales packages from Hadley, there is a great
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
+      <description>The following code can be used to display and produce the
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
     </item>
     
   </channel>

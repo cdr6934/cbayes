@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.20.7" />
 
 
-<title>Phillips Hue in R  - A Hugo website</title>
-<meta property="og:title" content="Phillips Hue in R  - A Hugo website">
+<title>Tips to Successful SQL Script Writing - A Hugo website</title>
+<meta property="og:title" content="Tips to Successful SQL Script Writing - A Hugo website">
 
 
 
@@ -16,11 +16,6 @@
 
 
 
-
-
-
-
-<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -64,42 +59,28 @@
     <span class="article-duration">1 min read</span>
     
 
-    <h1 class="article-title">Phillips Hue in R </h1>
+    <h1 class="article-title">Tips to Successful SQL Script Writing</h1>
 
     
-    <span class="article-date">2017/06/03</span>
+    <span class="article-date">2017/06/05</span>
     
 
     <div class="article-content">
-      <p>The following code can be used to display and produce the</p>
+      <p>The longer I&rsquo;ve worked  in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written.</p>
 
-<pre><code>getIP &lt;- function()
-{
-  url &lt;- paste0(&quot;https://www.meethue.com/api/nupnp&quot;)
-  res &lt;- httpGET(url)
-  resJson &lt;- fromJSON(res)
-  res &lt;- resJson[[&quot;internalipaddress&quot;]]
-  res
-}
+<p>Following are a couple tips of advice I&rsquo;ve collected over the last five years. I&rsquo;ve found them to be  crucial to implement and habitualize best practices that are similar to these. It will save you time and also will make you more efficient.</p>
 
+<ul>
+<li><p>When creating a directory, turn it into a GIT repository.</p></li>
 
+<li><p>When naming your SQL scripts, use a declarative at the beginning of the file name (i.e. <strong>SELECT</strong>_xxx_MMDDYYYY.sql)</p></li>
 
-#Finding the bridge 
-# TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/
+<li><p>Always create a text block at the beginning stating purpose, name and date when the script was written</p></li>
 
-#############################################################
-# Get the light 
-#############################################################
-getLights &lt;- function(ip, userName) 
-{ 
-  ip &lt;- getIP()
-  url &lt;- paste0(&quot;http://&quot;,ip,&quot;/api/&quot;,userName,&quot;/lights/&quot;)
-  #content &lt;- paste0('{&quot;on&quot;:',state,'}')
-  res &lt;- httpGET(url)
-  res
-}
-getLights(ip, userName)
-</code></pre>
+<li><p>Never hard code dates in your scripts; this will bite you eventually. If you need to hardcode; store it in the database.</p></li>
+
+<li><p>Simple is better. There is always the urge to make things more complicated than needed.</p></li>
+</ul>
 
     </div>
   </article>
@@ -122,18 +103,6 @@ getLights(ip, userName)
 
     </div>
     
-
-
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
-
-
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
 
     
 

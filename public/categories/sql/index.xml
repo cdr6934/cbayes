@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on A Hugo website</title>
+    <link>/categories/sql/</link>
+    <description>Recent content in Sql on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tips to Successful SQL Script Writing</title>
+      <link>/2017/06/05/tips-to-sql-script-writing-success/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/05/tips-to-sql-script-writing-success/</guid>
+      <description>The longer I&amp;rsquo;ve worked in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written.
+Following are a couple tips of advice I&amp;rsquo;ve collected over the last five years. I&amp;rsquo;ve found them to be crucial to implement and habitualize best practices that are similar to these. It will save you time and also will make you more efficient.</description>
+    </item>
+    
+  </channel>
+</rss>

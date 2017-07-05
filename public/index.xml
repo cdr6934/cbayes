@@ -6,13 +6,22 @@
     <description>Recent content on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Rocket Propolsion Ch 1</title>
+      <title>All about the closures</title>
+      <link>/2017/06/09/all-about-the-closures/</link>
+      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/09/all-about-the-closures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rocket Propulsion Ch 1</title>
       <link>/2017/06/05/rocket-propolsion-ch-1/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
@@ -22,6 +31,16 @@
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
 RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.</description>
+    </item>
+    
+    <item>
+      <title>Tips to Successful SQL Script Writing</title>
+      <link>/2017/06/05/tips-to-sql-script-writing-success/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/05/tips-to-sql-script-writing-success/</guid>
+      <description>The longer I&amp;rsquo;ve worked in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written.
+Following are a couple tips of advice I&amp;rsquo;ve collected over the last five years. I&amp;rsquo;ve found them to be crucial to implement and habitualize best practices that are similar to these. It will save you time and also will make you more efficient.</description>
     </item>
     
     <item>
@@ -50,7 +69,8 @@ Using the scales package Using the scales packages from Hadley, there is a great
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
+      <description>The following code can be used to display and produce the
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
     </item>
     
     <item>
@@ -79,6 +99,15 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
       
       <guid>/1/01/01/</guid>
       <description>Phillips Hue in R       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>Tips to Successful SQL Script Writing       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
     <item>

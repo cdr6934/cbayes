@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Insight</title>
+      <link>/tags/insight/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/insight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Iot</title>
       <link>/tags/iot/</link>
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
@@ -35,6 +44,24 @@
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sql</title>
+      <link>/tags/sql/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>/tags/tips/</link>
+      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tips/</guid>
       <description></description>
     </item>
     

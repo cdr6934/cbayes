@@ -123,13 +123,41 @@ Now this doesn't give us the velocity to get into space, but it is the velocity 
 
 As the velocity given to the spacecraft increases, the eccentricity of the elliptical orbit becomes greater, and the apogee moves farther out. 
 
+* 6.670 $Nm^{2}kg^{2}$
+* 5.975 kg
+* 63
+```{r}
+G <- 6.670*10^-11
+eMass <- 5.975*10^24
+
+initialVelocity <-function(r)
+{
+  sqrt((398600.4415)/(6371+r))
+}
+
+marsInitialVelocity <- function(r)
+{
+  sqrt((42828.37)/(3389.5+r))
+}
+
+fx <- data.frame(miles = 1:2000)
+fx <- fx %>% mutate(v.earth = initialVelocity(miles), v.mars = marsInitialVelocity(miles))
+
+g <- fx %>% ggplot() +
+  geom_point(aes(miles, v.earth),color = "blue") + 
+  geom_point(aes(miles,v.mars)) +
+  labs(title = "Velocity Curve Above Planets", 
+       x = "Velocity (km/sec)", 
+       y = "above the Surface (km)")
+g
+
+```
+
+
 ### Elliptical transfer orbits 
 $$
-V_0=\sqrt{\frac{GM_\bigoplus}{r_0}} 
+V_0=\sqrt{\frac{2GM_\bigoplus}{r_0}} 
 $$
 
 
-```{r}
-circularOrbit <-function
-```
 
