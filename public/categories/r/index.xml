@@ -6,19 +6,10 @@
     <description>Recent content in R on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>All about the closures</title>
-      <link>/2017/06/09/all-about-the-closures/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/09/all-about-the-closures/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Rocket Propulsion Ch 1</title>
@@ -45,22 +36,13 @@ Using the scales package Using the scales packages from Hadley, there is a great
     </item>
     
     <item>
-      <title>Manipulating Hue Lights with R</title>
-      <link>/2017/06/03/manipulating-hue-lights-with-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/manipulating-hue-lights-with-r/</guid>
-      <description>getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&amp;#39;{&amp;quot;on&amp;quot;:&amp;#39;,state,&amp;#39;}&amp;#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName) </description>
-    </item>
-    
-    <item>
       <title>Phillips Hue in R </title>
       <link>/2017/06/03/phillips-hue-in-r/</link>
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>The following code can be used to display and produce the
-getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res } #Finding the bridge # TODO: https://huetips.com/help/how-to-find-my-bridge-ip-address/ ############################################################# # Get the light ############################################################# getLights &amp;lt;- function(ip, userName) { ip &amp;lt;- getIP() url &amp;lt;- paste0(&amp;quot;http://&amp;quot;,ip,&amp;quot;/api/&amp;quot;,userName,&amp;quot;/lights/&amp;quot;) #content &amp;lt;- paste0(&#39;{&amp;quot;on&amp;quot;:&#39;,state,&#39;}&#39;) res &amp;lt;- httpGET(url) res } getLights(ip, userName)  </description>
+      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a &amp;ldquo;userkey&amp;rdquo; as I called it below.
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
     </item>
     
   </channel>
