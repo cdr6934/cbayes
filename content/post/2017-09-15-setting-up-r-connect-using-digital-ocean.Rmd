@@ -1,0 +1,41 @@
+---
+title: Setting Up R-Connect using Digital Ocean
+author: Chris Ried
+date: '2017-09-15'
+slug: setting-up-r-connect-using-digital-ocean
+categories:
+  - R
+  - Connect
+tags: []
+---
+
+Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. 
+I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. 
+This can be whatever you are most comfortable.  
+
+
+## Setup a Droplet image
+
+I created a Ubuntu 16.04 instance with 4 GB RAM, 2 cores  and 30 GB disk 
+
+1. Choose an image, this can be installed either on Debian or Ubuntu 16.04.
+![DigitalOcean](img/SetUpR1.png)
+
+2. According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. 
+
+
+3. Choose the data center that you find is closest to your location and whatever your backup strategy for your servers might be. 
+4. Lastly, again you will want to choose a host name that will be easy to remember 
+
+Once, the instance has been created, an email with your public IP and temporary password,  you will need to login via console. Once you have SSHed into the instance you will be prompted for a new password. This is then taken and stored in a safe location.
+
+Once I’ve SSHed into the droplet server, go through the following in order to install the r-base package, gdebi-core, and then install the rstudio connect as a service (you will not be able to use the below wget site to pull the information. When signing up for the 45 day trial, you will be given the proper url in order to get the install package.  
+
+```
+sudo apt-get install r-base
+sudo apt-get install gdebi-core
+wget https://download-url/rstudio-connect-1.5.6-7.deb
+sudo gdebi rstudio-connect-1.5.6-7.deb
+```
+
+
