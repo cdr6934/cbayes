@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.20.7" />
+
+
+<title>Setting Up R-Connect using Digital Ocean - A Hugo website</title>
+<meta property="og:title" content="Setting Up R-Connect using Digital Ocean - A Hugo website">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/cdr6934">GitHub</a></li>
+    
+    <li><a href="../../../../resume/">Resume</a></li>
+    
+    <li><a href="https://twitter.com/cdr6934">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Setting Up R-Connect using Digital Ocean</h1>
+
+    
+    <span class="article-date">2017/09/15</span>
+    
+
+    <div class="article-content">
+      <p>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.</p>
+<div id="setup-a-droplet-image" class="section level2">
+<h2>Setup a Droplet image</h2>
+<p>I created a Ubuntu 16.04 instance with 4 GB RAM, 2 cores and 30 GB disk</p>
+<ol style="list-style-type: decimal">
+<li><p>Choose an image, this can be installed either on Debian or Ubuntu 16.04. <img src="img/SetUpR1.png" alt="DigitalOcean" /></p></li>
+<li><p>According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. <img src="img/SetUpR2.png" alt="DigitalOcean" /></p></li>
+<li>Choose the data center that you find is closest to your location and whatever your backup strategy for your servers might be. <img src="img/SetUpR3.png" alt="DigitalOcean" /></li>
+<li><p>Lastly, again you will want to choose a host name that will be easy to remember <img src="img/SetUpR4.png" alt="DigitalOcean" /></p></li>
+</ol>
+<p>Once, the instance has been created, an email with your public IP and temporary password, you will need to login via console. Once you have SSHed into the instance you will be prompted for a new password. This is then taken and stored in a safe location.</p>
+<p>Once I’ve SSHed into the droplet server, go through the following in order to install the r-base package, gdebi-core, and then install the rstudio connect as a service (you will not be able to use the below wget site to pull the information. When signing up for the 45 day trial, you will be given the proper url in order to get the install package.</p>
+<pre><code>sudo apt-get install r-base
+sudo apt-get install gdebi-core
+wget https://download-url/rstudio-connect-1.5.6-7.deb
+sudo gdebi rstudio-connect-1.5.6-7.deb</code></pre>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100452126-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
+

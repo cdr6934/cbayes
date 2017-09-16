@@ -22,10 +22,12 @@ I created a Ubuntu 16.04 instance with 4 GB RAM, 2 cores  and 30 GB disk
 ![DigitalOcean](img/SetUpR1.png)
 
 2. According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. 
-
+![DigitalOcean](img/SetUpR2.png)
 
 3. Choose the data center that you find is closest to your location and whatever your backup strategy for your servers might be. 
+![DigitalOcean](img/SetUpR3.png)
 4. Lastly, again you will want to choose a host name that will be easy to remember 
+![DigitalOcean](img/SetUpR4.png)
 
 Once, the instance has been created, an email with your public IP and temporary password,  you will need to login via console. Once you have SSHed into the instance you will be prompted for a new password. This is then taken and stored in a safe location.
 

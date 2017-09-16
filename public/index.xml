@@ -6,10 +6,20 @@
     <description>Recent content on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting Up R-Connect using Digital Ocean</title>
+      <link>/2017/09/15/setting-up-r-connect-using-digital-ocean/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/15/setting-up-r-connect-using-digital-ocean/</guid>
+      <description>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.
+Setup a Droplet image I created a Ubuntu 16.</description>
+    </item>
     
     <item>
       <title>Rocket Propulsion Ch 1</title>
