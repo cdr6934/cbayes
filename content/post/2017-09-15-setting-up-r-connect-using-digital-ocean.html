@@ -16,10 +16,10 @@ tags: []
 <h2>Setup a Droplet image</h2>
 <p>I created a Ubuntu 16.04 instance with 4 GB RAM, 2 cores and 30 GB disk</p>
 <ol style="list-style-type: decimal">
-<li><p>Choose an image, this can be installed either on Debian or Ubuntu 16.04. <img src="img/SetUpR1.png" alt="DigitalOcean" /></p></li>
-<li><p>According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. <img src="img/SetUpR2.png" alt="DigitalOcean" /></p></li>
-<li>Choose the data center that you find is closest to your location and whatever your backup strategy for your servers might be. <img src="img/SetUpR3.png" alt="DigitalOcean" /></li>
-<li><p>Lastly, again you will want to choose a host name that will be easy to remember <img src="img/SetUpR4.png" alt="DigitalOcean" /></p></li>
+<li><p>Choose an image, this can be installed either on Debian or Ubuntu 16.04. <img src="/Users/christopherried/Documents/r-sessions/cbayes/static/img/SetUpR1.png" alt="DigitalOcean" /></p></li>
+<li><p>According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. <img src="/Users/christopherried/Documents/r-sessions/cbayes/static/img/SetUpR2.png" alt="DigitalOcean" /></p></li>
+<li>Choose the data center that you find is closest to your location and whatever your backup strategy for your servers might be. <img src="/Users/christopherried/Documents/r-sessions/cbayes/static/img/SetUpR3.png" alt="DigitalOcean" /></li>
+<li><p>Lastly, again you will want to choose a host name that will be easy to remember <img src="/Users/christopherried/Documents/r-sessions/cbayes/static/img/SetUpR4.png" alt="DigitalOcean" /></p></li>
 </ol>
 <p>Once, the instance has been created, an email with your public IP and temporary password, you will need to login via console. Once you have SSHed into the instance you will be prompted for a new password. This is then taken and stored in a safe location.</p>
 <p>Once I’ve SSHed into the droplet server, go through the following in order to install the r-base package, gdebi-core, and then install the rstudio connect as a service (you will not be able to use the below wget site to pull the information. When signing up for the 45 day trial, you will be given the proper url in order to get the install package.</p>
