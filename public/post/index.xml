@@ -6,10 +6,19 @@
     <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding an Plumber API to Connect</title>
+      <link>/2017/09/17/adding-an-plumber-api-to-connect/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/17/adding-an-plumber-api-to-connect/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Setting Up R-Connect using Digital Ocean</title>

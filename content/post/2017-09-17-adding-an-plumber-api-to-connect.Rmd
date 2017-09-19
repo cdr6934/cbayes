@@ -1,0 +1,15 @@
+---
+title: Adding an Plumber API to Connect
+author: Chris Ried
+date: '2017-09-17'
+slug: adding-an-plumber-api-to-connect
+categories:
+  - R
+  - Connect
+tags: []
+---
+
+```{r}
+
+```
+
