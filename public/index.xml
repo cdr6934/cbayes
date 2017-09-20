@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
+    <title>Chris Ried Blog</title>
     <link>/</link>
-    <description>Recent content on A Hugo website</description>
+    <description>Recent content on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
@@ -109,15 +109,6 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
       
       <guid>/1/01/01/</guid>
       <description>Tips to Successful SQL Script Writing       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/resume/</guid>
-      <description>Resume       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
     <item>

@@ -1,14 +1,12 @@
 ---
-title: 'Tips to Successful SQL Script Writing'
-author: Chris Ried
-date: '2017-06-05'
-slug: tips-to-sql-script-writing-success
+title: 5 Tips to SQL Sript Writing Success
+author: Chris
+date: '2017-09-20'
+slug: 5-tips-to-sql-sript-writing-success
 categories:
-  - SQL
-tags:
+  - R
   - sql
-  - tips
-  - insight 
+tags: []
 ---
 
 The longer I've worked  in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written. 
@@ -24,5 +22,3 @@ Following are a couple tips of advice I've collected over the last five years. I
 * Never hard code dates in your scripts; this will bite you eventually. If you need to hardcode; store it in the database. 
 
 * Simple is better. There is always the urge to make things more complicated than needed. 
-
-

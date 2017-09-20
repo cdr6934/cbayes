@@ -13,7 +13,7 @@ title: "Resume"
 ### Experience
 **Senior Software Engineer** | Bargain Hunt | Feb 2015 - Present
 
-* Developing and slowly implementing in-house classification systems tested in R and implemented using Python Scikit-Learn. 
+* Developing and  implementing in-house classification systems tested in R and built for production using Python Scikit-Learn. 
 * Developed in house inventory intelligence systems using Python and API (Flask) backend with an interface using ASP.net Web Forms 
 * Implemented real time in-house error tracking and alerting system on our POS platform using a mixture of Elasticsearch, nxLog,  Kibana and Python. 
 * Introduced R to analyze and improve visibility in reverse logistics problems through various reports

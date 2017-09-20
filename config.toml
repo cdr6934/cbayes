@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "A Hugo website"
+title = "Chris Ried Blog"
 theme = "hugo-lithium-theme"
 googleAnalytics = "UA-100452126-1"
 disqusShortname = ""
@@ -19,9 +19,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/cdr6934"
-[[main.menu]]
-  name = "Photography"
-  url = "https://500px.com/christopherried"
+[[menu.main]]
+    name = "Photography"
+    url = "https://500px.com/christopherried"
 [[menu.main]]
     name = "Twitter"
     url = "https://twitter.com/cdr6934"

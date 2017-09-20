@@ -49,17 +49,13 @@
   </url>
   
   <url>
-    <loc>/resume/</loc>
+    <loc>/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
     <lastmod>2017-09-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
