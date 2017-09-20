@@ -2,6 +2,14 @@
 
 <main class="content" role="main">
 
+
+<div>
+  <p>
+    <h1>Welcome! </h1>
+  </p>
+</div>
+
+  {{ partial "intro.html" . }}
   {{ if and .IsHome .Content }}
   <article class="article">
     <div class="article-content">
