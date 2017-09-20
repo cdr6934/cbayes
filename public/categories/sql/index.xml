@@ -6,19 +6,19 @@
     <description>Recent content in Sql on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tips to Successful SQL Script Writing</title>
-      <link>/2017/06/05/tips-to-sql-script-writing-success/</link>
-      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      <title>5 Tips to SQL Script Writing Success</title>
+      <link>/2017/09/20/5-tips-to-sql-script-writing-success/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/06/05/tips-to-sql-script-writing-success/</guid>
-      <description>The longer I&amp;rsquo;ve worked in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written.
-Following are a couple tips of advice I&amp;rsquo;ve collected over the last five years. I&amp;rsquo;ve found them to be crucial to implement and habitualize best practices that are similar to these. It will save you time and also will make you more efficient.</description>
+      <guid>/2017/09/20/5-tips-to-sql-script-writing-success/</guid>
+      <description>The longer I’ve worked in software development, the more I have to stress the importance of developing a methodology of naming, version control, and organizing all the various scripts that have been written.
+Following are a couple tips of advice I’ve collected over the last five years. I’ve found them to be crucial to implement and habitualize best practices that are similar to these. It will save you time and also will make you more efficient.</description>
     </item>
     
   </channel>

@@ -1,8 +1,8 @@
 ---
-title: 5 Tips to SQL Sript Writing Success
+title: 5 Tips to SQL Script Writing Success
 author: Chris
 date: '2017-09-20'
-slug: 5-tips-to-sql-sript-writing-success
+slug: 5-tips-to-sql-script-writing-success
 categories:
   - R
   - sql
