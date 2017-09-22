@@ -6,10 +6,28 @@
     <description>Recent content on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to ROxygen2 Package</title>
+      <link>/2017/09/22/introduction-to-roxygen2-package/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/22/introduction-to-roxygen2-package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracking Change Improvements in Retail </title>
+      <link>/2017/09/21/tracking-change-improvements-in-retail/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/21/tracking-change-improvements-in-retail/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>5 Tips to SQL Script Writing Success</title>

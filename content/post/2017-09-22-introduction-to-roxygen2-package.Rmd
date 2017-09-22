@@ -1,0 +1,14 @@
+---
+title: Introduction to ROxygen2 Package
+author: Chris
+date: '2017-09-22'
+slug: introduction-to-roxygen2-package
+categories:
+  - R
+  - documentation
+tags:
+  - R
+  - documentation
+  - packages
+---
+
