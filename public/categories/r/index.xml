@@ -17,7 +17,7 @@
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/22/introduction-to-roxygen2-package/</guid>
-      <description></description>
+      <description>One of the things I continue to see when working with Interns and other analysts is the difficulty to ensure scripts are properly documented.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@ Following are a couple tips of advice I’ve collected over the last five years.
     </item>
     
     <item>
-      <title>Adding an Plumber API to Connect</title>
+      <title>Adding a Plumber API to Connect</title>
       <link>/2017/09/17/adding-an-plumber-api-to-connect/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       

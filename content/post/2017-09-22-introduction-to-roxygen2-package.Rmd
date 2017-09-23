@@ -1,8 +1,8 @@
 ---
-title: Introduction to ROxygen2 Package
-author: Chris
+title: Tips on Creating Effective and Functional Documentation in R 
+author: Chris R. 
 date: '2017-09-22'
-slug: introduction-to-roxygen2-package
+slug: tips-creating-functional-documention
 categories:
   - R
   - documentation
@@ -10,5 +10,44 @@ tags:
   - R
   - documentation
   - packages
+  - roxygen2
 ---
 
+ Just like any skill, there is a learning curve involved in creating effective communication. This involves the code written and the documentation of its usage. Writing functional code is a intricate thing to accomplish as a newbie. It takes time to know what is efficient and how to communicate it as such. Now, writing functional documentation is more complicated as there is a delicate balance between not reguritate what the code says, and giving usable pointers to the users on how a particular function was intended to be used. But as a coder, when keeping a rigid practice of actively thinking about that balance, it helps complete 
+
+
+
+### 1. Describe how the function works
+* Describing a function in one sentence can be difficult, however it gives the user of your code the ability to scan your functions and determine with ease which function they need to use for their project. Also it helps you keep yourself accountable on the scope of your function. 
+
+* If it takes more than a  sentence to explain what the function is; there is a good chance it is a bloated function that needs to be further broken down into smaller parts for improved readability and easier bug tracking. 
+
+* Don't write pseudo code comments; let the code read itself. If it can't be read,  that should indicate there is an easier way to write it.
+
+### 2. Document each parameter 
+* Keep it simple, document the class / type of data that is being passed into the function and name it in such a way that gives the reader a clear understanding of its function. 
+
+### 3. Describe what the function should return 
+* Again, this is simply a way to describe the type / class of data that is going to be returned. 
+
+### 4. Create an example of the function
+* Creating a reproducible example of your function will give the user the ability to see how it works and what they expect the function will return. 
+
+## Now how how about R 
+
+```{r}
+#' Add together two numbers
+#'
+#' @param x A number
+#' @param y A number
+#' @return The sum of \code{x} and \code{y}
+#' @examples
+#' add(1, 1)
+#' add(10, 1)
+```
+
+
+
+#### References 
+[ROxygen2 Vignette](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html)
+[Rd Conversion](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html)

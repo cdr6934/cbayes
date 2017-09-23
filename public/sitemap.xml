@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2017/09/22/introduction-to-roxygen2-package/</loc>
+    <loc>/2017/09/22/best-tips-for-ggplot/</loc>
+    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/09/22/tips-creating-functional-documention/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -131,6 +136,12 @@
   
   <url>
     <loc>/resume/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/roxygen2/</loc>
+    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

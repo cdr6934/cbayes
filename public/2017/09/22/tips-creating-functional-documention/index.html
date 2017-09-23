@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.20.7" />
+
+
+<title>Tips on Creating Effective and Functional Documentation in R - Chris Ried Blog</title>
+<meta property="og:title" content="Tips on Creating Effective and Functional Documentation in R - Chris Ried Blog">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/cdr6934">GitHub</a></li>
+    
+    <li><a href="https://500px.com/christopherried">Photography</a></li>
+    
+    <li><a href="../../../../resume/">Resume</a></li>
+    
+    <li><a href="https://twitter.com/cdr6934">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Tips on Creating Effective and Functional Documentation in R</h1>
+
+    
+    <span class="article-date">2017/09/22</span>
+    
+
+    <div class="article-content">
+      <p>Just like any skill, there is a learning curve involved in creating effective communication. This involves the code written and the documentation of its usage. Writing functional code is a intricate thing to accomplish as a newbie. It takes time to know what is efficient and how to communicate it as such. Now, writing functional documentation is more complicated as there is a delicate balance between not reguritate what the code says, and giving usable pointers to the users on how a particular function was intended to be used. But as a coder, when keeping a rigid practice of actively thinking about that balance, it helps complete</p>
+<div id="describe-how-the-function-works" class="section level3">
+<h3>1. Describe how the function works</h3>
+<ul>
+<li><p>Describing a function in one sentence can be difficult, however it gives the user of your code the ability to scan your functions and determine with ease which function they need to use for their project. Also it helps you keep yourself accountable on the scope of your function.</p></li>
+<li><p>If it takes more than a sentence to explain what the function is; there is a good chance it is a bloated function that needs to be further broken down into smaller parts for improved readability and easier bug tracking.</p></li>
+<li><p>Don’t write pseudo code comments; let the code read itself. If it can’t be read, that should indicate there is an easier way to write it.</p></li>
+</ul>
+</div>
+<div id="document-each-parameter" class="section level3">
+<h3>2. Document each parameter</h3>
+<ul>
+<li>Keep it simple, document the class / type of data that is being passed into the function and name it in such a way that gives the reader a clear understanding of its function.</li>
+</ul>
+</div>
+<div id="describe-what-the-function-should-return" class="section level3">
+<h3>3. Describe what the function should return</h3>
+<ul>
+<li>Again, this is simply a way to describe the type / class of data that is going to be returned.</li>
+</ul>
+</div>
+<div id="create-an-example-of-the-function" class="section level3">
+<h3>4. Create an example of the function</h3>
+<ul>
+<li>Creating a reproducible example of your function will give the user the ability to see how it works and what they expect the function will return.</li>
+</ul>
+</div>
+<div id="now-how-how-about-r" class="section level2">
+<h2>Now how how about R</h2>
+<pre class="r"><code>#&#39; Add together two numbers
+#&#39;
+#&#39; @param x A number
+#&#39; @param y A number
+#&#39; @return The sum of \code{x} and \code{y}
+#&#39; @examples
+#&#39; add(1, 1)
+#&#39; add(10, 1)</code></pre>
+<div id="references" class="section level4">
+<h4>References</h4>
+<p><a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html">ROxygen2 Vignette</a> <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html">Rd Conversion</a></p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100452126-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
+
