@@ -17,16 +17,17 @@
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/22/best-tips-for-ggplot/</guid>
-      <description></description>
+      <description> I am still working at this but wanted to create the post so I remember to continue on this.
+How to re </description>
     </item>
     
     <item>
-      <title>Introduction to ROxygen2 Package</title>
-      <link>/2017/09/22/introduction-to-roxygen2-package/</link>
+      <title>Tips on Creating Effective and Functional Documentation in R</title>
+      <link>/2017/09/22/tips-creating-functional-documention/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/09/22/introduction-to-roxygen2-package/</guid>
-      <description>One of the things I continue to see when working with Interns and other analysts is the difficulty to ensure scripts are properly documented.</description>
+      <guid>/2017/09/22/tips-creating-functional-documention/</guid>
+      <description>Just like any skill, there is a learning curve involved in creating effective communication. This involves the code written and the documentation of its usage. Writing functional code is a intricate thing to accomplish as a newbie. It takes time to know what is efficient and how to communicate it as such. Now, writing functional documentation is more complicated as there is a delicate balance between not reguritate what the code says, and giving usable pointers to the users on how a particular function was intended to be used.</description>
     </item>
     
     <item>
@@ -35,7 +36,8 @@
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/21/tracking-change-improvements-in-retail/</guid>
-      <description></description>
+      <description>In the ever changing world of retail; one always has to keep one step ahead of the competition and to engage with its customers. One of the best ways
+ Formulate a test Implement Test Evaluate results Adjust the test Try again.  </description>
     </item>
     
     <item>
