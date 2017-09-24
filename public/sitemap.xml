@@ -48,11 +48,6 @@
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
   </url>
   
   <url>
@@ -69,6 +64,10 @@
   
   <url>
     <loc>/resume/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
   </url>
   
   <url>
@@ -103,13 +102,13 @@
   </url>
   
   <url>
-    <loc>/tags/documentation/</loc>
+    <loc>/categories/documentation/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/documentation/</loc>
+    <loc>/tags/documentation/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -139,13 +138,13 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2017-09-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -104,16 +104,6 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hi!
-My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me. So yes, a little bit of self promotion but also to have a place to collect those things such as my resume or links of interest.</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -156,6 +146,16 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
       
       <guid>/resume/</guid>
       <description>Resume       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi!
+My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me. So yes, a little bit of self promotion but also to have a place to collect those things such as my resume or links of interest.</description>
     </item>
     
     <item>
