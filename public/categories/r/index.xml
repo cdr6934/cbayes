@@ -27,7 +27,7 @@
       
       <guid>/2017/09/21/tracking-change-improvements-in-retail/</guid>
       <description>In the ever changing world of retail; one always has to keep one step ahead of the competition and to engage with its customers. One of the best ways
- Formulate a test Implement Test Evaluate results Adjust the test Try again.  </description>
+ Formulate a test Implement Test Evaluate results Adjust the test Try again.  library(qcc) ## Package &amp;#39;qcc&amp;#39; version 2.7 ## Type &amp;#39;citation(&amp;quot;qcc&amp;quot;)&amp;#39; for citing this R package in publications. library(xtable) library(SixSigma) library(qicharts) ## qicharts will no longer be maintained. Please consider moving to qicharts2: https://anhoej.</description>
     </item>
     
     <item>
