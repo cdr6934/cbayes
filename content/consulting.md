@@ -1,3 +1,6 @@
+---
+title: "Consulting"
+---
 ## CBayes Analytics Consulting  
 
 We provide assistance in creating and implementing technology / analytics solutions into your environment in order for you to stay ahead of the curve. 

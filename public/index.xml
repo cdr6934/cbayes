@@ -115,11 +115,11 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
     
     <item>
       <title></title>
-      <link>/consulting/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/consulting/</guid>
-      <description>code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
+      <guid>/about/</guid>
+      <description>About       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
     <item>
@@ -128,8 +128,7 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/consulting/</guid>
-      <description> CBayes Analytics Consulting We provide assistance in creating and implementing technology / analytics solutions into your environment in order for you to stay ahead of the curve.
-Services Provided  Data Visualization Projects / Training  R, Shiny Development, Tableau, Microsoft PowerBI and Excel  Cleansing Data Strategies  Hybrid Automated / Crowdsourced Implementations  Infrastructure Implementations Building APIs for stategic data  Contact Information  Email: chris@cbayes.com Ph: 615-939-5124  </description>
+      <description>code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
     <item>
@@ -157,6 +156,25 @@ Services Provided  Data Visualization Projects / Training  R, Shiny Development,
       
       <guid>/resume/</guid>
       <description>Resume       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/consulting/</guid>
+      <description> CBayes Analytics Consulting We provide assistance in creating and implementing technology / analytics solutions into your environment in order for you to stay ahead of the curve.
+Services Provided  Data Visualization Projects / Training  R, Shiny Development, Tableau, Microsoft PowerBI and Excel  Cleansing Data Strategies  Hybrid Automated / Crowdsourced Implementations  Infrastructure Implementations Building APIs for stategic data  Contact Information  Email: chris@cbayes.com Ph: 615-939-5124  </description>
     </item>
     
     <item>
