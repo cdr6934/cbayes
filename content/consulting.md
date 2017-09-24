@@ -8,7 +8,7 @@ We provide assistance in creating and implementing technology / analytics soluti
 
 
 ## Who are we?
-	An Analytics Firm embracing projects to driving results through quick iteration in order to generate results that will bring more clarity to your business. 
+An Analytics Firm embracing projects to driving results through quick iteration in order to generate results that will bring more clarity to your business. 
 
 
 
