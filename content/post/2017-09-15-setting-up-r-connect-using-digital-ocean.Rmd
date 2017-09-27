@@ -19,7 +19,7 @@ This can be whatever you are most comfortable.
 I created a Ubuntu 16.04 instance with 4 GB RAM, 2 cores  and 30 GB disk 
 
 1. Choose an image, this can be installed either on Debian or Ubuntu 16.04.
-![DigitalOcean](../../static/img/SetUpR1.png)
+![DigitalOcean](/static/img/SetUpR1.png)
 
 2. According to the documentation from RStudio, there doesn’t appear to be a recommended size, but I found with some of the testing (specifically when generating an API via Plumber) it would not compile certain files. 
 ![DigitalOcean](../../static/img/SetUpR2.png)
