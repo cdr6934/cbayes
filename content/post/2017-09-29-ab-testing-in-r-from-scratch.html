@@ -1,0 +1,88 @@
+---
+title: AB Testing in R from Scratch
+author: C Ried
+date: '2017-09-29'
+slug: ab-testing-in-r-from-scratch
+categories:
+  - r
+  - statistics
+tags:
+  - R
+---
+
+
+
+<div id="in-progress" class="section level1">
+<h1>In Progress</h1>
+<div id="using-bayesian-systems" class="section level2">
+<h2>Using Bayesian Systems</h2>
+<ul>
+<li>Quantify the probability of all possibilites thus measuring risk</li>
+<li>insert institutional knowledge (add knowledge that changes the probability)</li>
+<li>learn in an online fashion</li>
+</ul>
+</div>
+<div id="ab-testing-with-approximate-bayesian-computation" class="section level2">
+<h2>A/B Testing with Approximate Bayesian Computation</h2>
+<ul>
+<li>No mathematics required</li>
+<li>able to implement from scratch</li>
+</ul>
+</div>
+<div id="ab-testing" class="section level2">
+<h2>A/B Testing</h2>
+<p>Measures and figures out the better design</p>
+<p>Approximate Bayesian Computation</p>
+<ul>
+<li>Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout)</li>
+<li>Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again</li>
+<li>If the simulation looks like the real data, keep the trial value, otherwise discard and try again</li>
+<li>Keep doing this until we’ve got lots of trial values that worked</li>
+</ul>
+<pre class="r"><code>library(progress)
+library(foreach)
+# Variables 
+n_visitors_a &lt;- 100  # number of visitors shown layout A
+n_conv_a &lt;- 4        # number of vistors shown layout A who converted (4%)
+n_visitors_b &lt;- 40  
+n_conv_b &lt;- 2</code></pre>
+<p>Create the estimate conversion function</p>
+<pre class="r"><code>estimate_conversion &lt;- function(n_visitors, n_conv, trial_conversion, n_estimates = 1000)
+{
+  i &lt;- 0 
+  pb &lt;- progress_bar$new(total = n_estimates)
+  estimates &lt;- c()
+  while (i &lt; n_estimates) {
+    p &lt;- trial_conversion()
+    
+    n_sim &lt;- simulate_conversion(p, n_visitors)
+    if (n_conv == n_sim)
+    {
+      estimates &lt;- c(estimates, p)
+      pb$tick()
+      i &lt;- i+1
+    }
+  }
+  estimates
+}</code></pre>
+<p>Helper function to generate random numbers</p>
+<pre class="r"><code>trial_conversion_a &lt;- function()
+{
+  runif(1,0,1)
+}</code></pre>
+<p>SImulate the conversion rate</p>
+<pre class="r"><code>simulate_conversion &lt;- function(p, n_visitors)
+{
+  nsum &lt;- 0 
+  for(i in 1:n_visitors) 
+  {
+    nsum &lt;- nsum + if (runif(1,0,1) &lt; p){1} else {0}
+  }
+  nsum
+}</code></pre>
+<p>Pulls all the functions above together and creates a histogram of the results</p>
+<pre class="r"><code>a_estimates &lt;- estimate_conversion(n_visitors_a, n_conv_a, trial_conversion_a)
+hist(a_estimates)</code></pre>
+<p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+</div>
