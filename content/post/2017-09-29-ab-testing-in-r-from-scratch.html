@@ -40,13 +40,37 @@ tags:
 <li>Keep doing this until we’ve got lots of trial values that worked</li>
 </ul>
 <pre class="r"><code>library(progress)
-library(foreach)
+library(ggplot2)
+library(reshape2)
 # Variables 
 n_visitors_a &lt;- 100  # number of visitors shown layout A
 n_conv_a &lt;- 4        # number of vistors shown layout A who converted (4%)
 n_visitors_b &lt;- 40  
 n_conv_b &lt;- 2</code></pre>
-<p>Create the estimate conversion function</p>
+<p>Using Bayesian Systems</p>
+<ul>
+<li>Quantify the probability of all possibilites thus measuring risk</li>
+<li>insert institutional knowledge (add knowledge that changes the probability)</li>
+<li>learn in an online fashion</li>
+</ul>
+<div id="ab-testing-with-approximate-bayesian-computation-1" class="section level3">
+<h3>A/B Testing with Approximate Bayesian Computation</h3>
+<ul>
+<li>No mathematics required</li>
+<li>able to implement from scratch</li>
+</ul>
+</div>
+</div>
+<div id="ab-testing-1" class="section level2">
+<h2>A/B Testing</h2>
+<p>Measures and figures out the better design</p>
+<p>Approximate Bayesian Computation</p>
+<ul>
+<li>Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout)</li>
+<li>Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again</li>
+<li>If the simulation looks like the real data, keep the trial value, otherwise discard and try again</li>
+<li>Keep doing this until we’ve got lots of trial values that worked</li>
+</ul>
 <pre class="r"><code>estimate_conversion &lt;- function(n_visitors, n_conv, trial_conversion, n_estimates = 1000)
 {
   i &lt;- 0 
@@ -63,14 +87,12 @@ n_conv_b &lt;- 2</code></pre>
       i &lt;- i+1
     }
   }
-  estimates
+  data.frame(cnt = estimates)
 }</code></pre>
-<p>Helper function to generate random numbers</p>
 <pre class="r"><code>trial_conversion_a &lt;- function()
 {
   runif(1,0,1)
 }</code></pre>
-<p>SImulate the conversion rate</p>
 <pre class="r"><code>simulate_conversion &lt;- function(p, n_visitors)
 {
   nsum &lt;- 0 
@@ -80,9 +102,57 @@ n_conv_b &lt;- 2</code></pre>
   }
   nsum
 }</code></pre>
-<p>Pulls all the functions above together and creates a histogram of the results</p>
-<pre class="r"><code>a_estimates &lt;- estimate_conversion(n_visitors_a, n_conv_a, trial_conversion_a)
-hist(a_estimates)</code></pre>
-<p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>a_estimates &lt;- estimate_conversion(n_visitors_a, n_conv_a, trial_conversion_a)</code></pre>
+<pre class="r"><code>hist(x=a_estimates$cnt,  main = &#39;Estimates of conversion fraction for A after the A/B test&#39;)</code></pre>
+<p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>trial_conversion_b &lt;- function() {
+  while(TRUE == TRUE)
+  {
+    x &lt;- rnorm(n = 1, mean = 0.06, sd = 0.02)
+    if(0 &lt;= x &amp;&amp; x &lt;= 1) return(x)
+  }
+}
+trial_as_func &lt;- function() {
+   a &lt;- c()
+for(i in 1:10000) 
+{
+  a &lt;- rbind(a, trial_conversion_a())
+}
+   a
+}
+trial_bs_func &lt;- function() {
+   a &lt;- c()
+for(i in 1:10000) 
+{
+  a &lt;- rbind(a, trial_conversion_b())
+}
+   a
+}</code></pre>
+<pre class="r"><code>trial_as &lt;- data.frame(cnt = trial_as_func())
+trial_bs &lt;- data.frame(cnt = trial_bs_func())
+
+trial_as$trial &lt;- &#39;a&#39;
+trial_bs$trial &lt;- &#39;b&#39; 
+
+trailCnt &lt;- rbind(trial_as, trial_bs)
+
+ggplot(trailCnt, aes(cnt, fill=trial)) + 
+  geom_histogram(alpha = 0.5, bins =50)+
+  labs(title = &quot;Beliefs about conversion fraction prior to A/B test&quot;)</code></pre>
+<p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>b_estimates &lt;-  estimate_conversion(n_visitors_b, n_conv_b, trial_conversion_b)
+
+a_estimates$trial &lt;- &#39;a&#39;
+b_estimates$trial &lt;- &#39;b&#39; 
+
+trailCnt &lt;- rbind(a_estimates, b_estimates)
+
+ggplot(trailCnt, aes(cnt, fill=trial)) + 
+  geom_histogram(alpha = 0.5, bins =50)+
+  labs(title = &quot;Beliefs about conversion fraction prior to A/B test&quot;)</code></pre>
+<p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<pre class="r"><code>a &lt;- a_estimates$cnt &gt; b_estimates$cnt
+sum(a == TRUE)/length(a)</code></pre>
+<pre><code>## [1] 0.34</code></pre>
 </div>
 </div>
