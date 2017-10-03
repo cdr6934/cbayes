@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mapping Functions in R Base</title>
+      <link>/2017/10/03/mapping-functions-in-r-base/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/03/mapping-functions-in-r-base/</guid>
+      <description>The following functions are given:
+ Reduce(f, x, init, right = FALSE, accumulate = FALSE) Filter(f, x) Find(f, x, right = FALSE, nomatch = NULL) Map(f, …) Negate(f) Position(f, x, right = FALSE, nomatch = NA_integer_)  x &amp;lt;- c(1,2,3) add &amp;lt;- function(x) {x+2} Map(add, x) ## [[1]] ## [1] 3 ## ## [[2]] ## [1] 4 ## ## [[3]] ## [1] 5 Reduce(&amp;quot;+&amp;quot;,x,accumulate = TRUE) ## [1] 1 3 6 x &amp;lt;- NULL missing(x) ## [1] FALSE # Now its missing a formal argument t &amp;lt;- function(x, y) { if(xd) { y &amp;lt;- x } x+y } t2 &amp;lt;- function(x, y) { x+y } isTRUE(TRUE) ## [1] TRUE a &amp;lt;- c(2,2,3) b &amp;lt;- c(1,4,2) a %in% b  ## [1] TRUE TRUE FALSE 1 %in% b  ## [1] TRUE </description>
+    </item>
     
     <item>
       <title>AB Testing in R from Scratch</title>
@@ -28,7 +38,7 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description></description>
+      <description>In progress  </description>
     </item>
     
     <item>
