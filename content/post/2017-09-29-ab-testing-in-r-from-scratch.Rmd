@@ -36,10 +36,6 @@ Approximate Bayesian Computation
 * If the simulation looks like the real data, keep the trial value, otherwise discard and try again 
 * Keep doing this until we've got lots of trial values that worked 
 
----
-title: "Probabilistic Programming "
-output: html_notebook
----
 
 ```{r}
 library(progress)

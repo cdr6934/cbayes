@@ -18,6 +18,8 @@ In the ever changing world of retail; one always has to keep one step ahead of t
 * Adjust the test 
 * Try again.  
 
+These are all great ideas, but how do we truly watch tas things get better? 
+
 ```{r}
 library(qcc)
 library(xtable)
