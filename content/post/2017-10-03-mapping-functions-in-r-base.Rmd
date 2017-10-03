@@ -1,0 +1,57 @@
+---
+title: Mapping Functions in R Base
+author: C Ried
+date: '2017-10-03'
+slug: mapping-functions-in-r-base
+categories:
+  - R
+tags: []
+---
+
+The following functions are given:
+
+* Reduce(f, x, init, right = FALSE, accumulate = FALSE)
+* Filter(f, x)
+* Find(f, x, right = FALSE, nomatch = NULL)
+* Map(f, ...)
+* Negate(f)
+* Position(f, x, right = FALSE, nomatch = NA_integer_)
+
+```{r}
+x <- c(1,2,3)
+add <- function(x) {x+2}
+
+
+
+Map(add, x)
+Reduce("+",x,accumulate = TRUE)
+
+
+x <- NULL 
+missing(x)
+
+
+# Now its missing a formal argument
+t <- function(x, y)
+{
+  if(xd) {
+    y <- x
+  }
+    x+y
+}
+
+t2 <- function(x, y)
+{
+  x+y
+}
+
+
+isTRUE(TRUE)
+
+a <- c(2,2,3)
+b <- c(1,4,2)
+
+a %in% b 
+1 %in% b 
+
+```
