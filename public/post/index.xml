@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Variable Importance in R</title>
+      <link>/2017/10/04/variable-importance-in-r/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/04/variable-importance-in-r/</guid>
+      <description>In progress  </description>
+    </item>
     
     <item>
       <title>Mapping Functions in R Base</title>

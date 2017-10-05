@@ -1,0 +1,13 @@
+---
+title: Variable Importance in R
+author: C Ried
+date: '2017-10-04'
+slug: variable-importance-in-r
+categories:
+  - R
+  - machine learning
+tags:
+  - R
+---
+
+# In progress
