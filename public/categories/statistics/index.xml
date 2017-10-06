@@ -6,10 +6,19 @@
     <description>Recent content in Statistics on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning Organization</title>
+      <link>/2017/10/05/machine-learning-organization/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/05/machine-learning-organization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AB Testing in R from Scratch</title>

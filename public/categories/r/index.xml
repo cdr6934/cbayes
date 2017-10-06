@@ -6,10 +6,19 @@
     <description>Recent content in R on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning Organization</title>
+      <link>/2017/10/05/machine-learning-organization/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/05/machine-learning-organization/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Variable Importance in R</title>
@@ -51,7 +60,7 @@ Approximate Bayesian Computation
     </item>
     
     <item>
-      <title>Tracking Change Improvements in Retail </title>
+      <title>Tracking Change Improvements in Retail</title>
       <link>/2017/09/21/tracking-change-improvements-in-retail/</link>
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
