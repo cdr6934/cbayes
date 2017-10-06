@@ -6,10 +6,19 @@
     <description>Recent content in Statistics on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Great Statistics Books to Read</title>
+      <link>/2017/10/06/great-statistics-books-to-read/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/06/great-statistics-books-to-read/</guid>
+      <description> Opinionated Lessons on Statistics Introduction to Statistical Learning The Elements of Statistical Learning Applied Predicitive Modeling Statistical Inference Statistical Rethinking Data Analysis Using Regression and Multilevel/Hierarchical Models Mostly Harmless Econometrics Mastering Metrics: The Path from Cause to Effect All of Statistics Statistics Statistics for Experimenters Think Bayes Computer Age Statistical Inference Think Stats Machine Learning for Hackers Probability and Statistics Statistical Evidence: A likelihood paradigm  </description>
+    </item>
     
     <item>
       <title>Machine Learning Organization</title>
