@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Beginnings of Bayesian Philosophy</title>
+      <link>/2017/10/13/the-beginnings-of-bayesian-philosophy/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/13/the-beginnings-of-bayesian-philosophy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Tips on Feature Engineering</title>
