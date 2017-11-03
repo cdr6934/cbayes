@@ -1,0 +1,10 @@
+---
+title: Text Generation
+author: C Ried
+date: '2017-11-03'
+slug: text-generation
+categories:
+  - generative text
+tags: []
+---
+
