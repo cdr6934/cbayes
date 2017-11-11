@@ -6,10 +6,19 @@
     <description>Recent content in R on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Timeseries Analysis Using R and Advantager</title>
+      <link>/2017/11/11/timeseries-analysis-using-r-and-advantager/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/11/timeseries-analysis-using-r-and-advantager/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gantt Charts in R</title>
