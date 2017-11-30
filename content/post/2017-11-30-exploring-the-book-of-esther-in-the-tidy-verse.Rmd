@@ -1,0 +1,11 @@
+---
+title: Exploring the Book of Esther in the Tidy Verse
+author: C Ried
+date: '2017-11-30'
+slug: exploring-the-book-of-esther-in-the-tidy-verse
+categories:
+  - R
+  - bible
+tags: []
+---
+
