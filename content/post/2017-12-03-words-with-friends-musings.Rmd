@@ -1,0 +1,9 @@
+---
+title: Words With Friends Musings
+author: C Ried
+date: '2017-12-03'
+slug: words-with-friends-musings
+categories: []
+tags: []
+---
+

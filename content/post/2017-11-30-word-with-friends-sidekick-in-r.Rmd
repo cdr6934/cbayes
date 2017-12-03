@@ -1,0 +1,12 @@
+---
+title: 'Word With Friends Sidekick in R '
+author: C Ried
+date: '2017-11-30'
+slug: word-with-friends-sidekick-in-r
+categories:
+  - r
+  - scrabble
+tags: []
+---
+
+The following post is discovering what else I can do with words. One thing that I have recently picked up is playing Scrabble or (5_2_2)
