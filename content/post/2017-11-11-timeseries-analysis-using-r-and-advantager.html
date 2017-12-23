@@ -11,4 +11,34 @@ tags:
 
 
 
-
+<p>In the past, the best way to get stock prices was to use either Google Finance or Yahoo Finance data streams. These have since become difficult to keep up to date and thus another outlet to get this information is AlphaVantager. Following is a simple R implementation to get up to date data. You will be able to thus use this to find the information.</p>
+<p>Above we provide two different libraries that will give us the functionality we need.</p>
+<pre class="r"><code>symbol &lt;- &quot;BTC&quot;
+av_api_key(advantagerKey)
+data &lt;- av_get(symbol = symbol,market = &quot;CNY&quot;, av_fun  = &quot;DIGITAL_CURRENCY_DAILY&quot;) </code></pre>
+<p>In order to make this more useful, we will parameterize these functions in order to make data exploration easier to use when looking at multiple stocks.</p>
+<pre class="r"><code>head(data)</code></pre>
+<pre><code>## # A tibble: 6 x 11
+##    timestamp open..cny. high..cny. low..cny. close..cny. open..usd.
+##       &lt;date&gt;      &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt;
+## 1 2014-04-01   2813.955   2918.639  2813.955    2859.937   453.4276
+## 2 2014-04-02   2864.585   2972.419  2558.878    2562.464   462.0408
+## 3 2014-04-03   2564.542   2678.989  2420.643    2649.927   413.7083
+## 4 2014-04-04   2652.048   2748.744  2584.584    2697.614   427.6194
+## 5 2014-04-05   2699.672   2814.365  2686.029    2814.365   435.2290
+## 6 2014-04-06   2821.522   2872.924  2782.387    2835.039   454.7936
+## # ... with 5 more variables: high..usd. &lt;dbl&gt;, low..usd. &lt;dbl&gt;,
+## #   close..usd. &lt;dbl&gt;, volume &lt;dbl&gt;, market.cap..usd. &lt;dbl&gt;</code></pre>
+<p>Here we look at the daily open price of the stock for the past 5 years.</p>
+<pre class="r"><code>g &lt;- data %&gt;% ggplot() + 
+  geom_line(aes(timestamp, open..cny. ))+  
+  labs(title = paste(&quot;Daily Open Pricing (&quot;,symbol,&quot;)&quot;), 
+       y = &quot;Open Price (BTC)&quot;, x = &quot;Daily&quot;)
+g</code></pre>
+<p><img src="/post/2017-11-11-timeseries-analysis-using-r-and-advantager_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ul>
+<li><a href="https://www.alphavantage.co/support/#">API Key Access</a></li>
+</ul>
+</div>
