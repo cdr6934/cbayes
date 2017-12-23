@@ -28,6 +28,9 @@ The following Node library gives a structure which is used to generate random wo
         "origin" : "<h3>#vipTitle# Watson, let me tell you of a #response#</h3>"
     }
 ```
+
+The following API 
+
 # Wordmuse API 
 The following API can be used to generate related words that are pulled to create lexical randomness with less randomly features. 
 

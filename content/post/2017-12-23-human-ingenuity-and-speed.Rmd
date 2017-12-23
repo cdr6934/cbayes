@@ -9,4 +9,30 @@ categories:
 tags: []
 ---
 
-# IN PROGRESS
+```{r}
+library(tidyverse)
+```
+
+
+# Data Building 
+The first thing we need to understand is where we have come and where we are going. There is alot that has been done in the past couple years but we still have more. The following 
+```{r}
+type <- c("Sound","Light","Human Travel")
+units <- c("mps","mps","mps")
+speed <- c(343,299792458,11082.569)
+source <- c("","","")
+speed_data <- data.frame(type,units, speed,source)
+```
+
+
+```{r}
+speed_data
+```
+
+
+
+--TODO: The following
+```{r}
+
+```
+
