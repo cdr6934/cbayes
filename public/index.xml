@@ -6,10 +6,46 @@
     <description>Recent content on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Human Ingenuity and Speed</title>
+      <link>/2017/12/23/human-ingenuity-and-speed/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
+      <description>IN PROGRESS  </description>
+    </item>
+    
+    <item>
+      <title>Words With Friends Musings</title>
+      <link>/2017/12/03/words-with-friends-musings/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/03/words-with-friends-musings/</guid>
+      <description>#library(tidyverse) # IMport Data #filepath &amp;lt;- &amp;quot;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&amp;quot; #wwfList &amp;lt;- read_csv(filepath, col_names = FALSE) #wwfList %&amp;gt;% stringr::str(&amp;#39;.ae.&amp;#39;) </description>
+    </item>
+    
+    <item>
+      <title>Exploring the Book of Esther in the Tidy Verse</title>
+      <link>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word With Friends Sidekick in R </title>
+      <link>/2017/11/30/word-with-friends-sidekick-in-r/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/30/word-with-friends-sidekick-in-r/</guid>
+      <description>The following post is discovering what else I can do with words. One thing that I have recently picked up is playing Scrabble or (5_2_2)</description>
+    </item>
     
     <item>
       <title>Timeseries Analysis Using R and Advantager</title>
@@ -26,7 +62,9 @@
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/03/text-generation/</guid>
-      <description></description>
+      <description>IN PROGRESS Text Generation (Generative Texr) is a very interesting field of study. There are a number of different packages that help generate the lists of words to give the user a better understanding of the technology.
+ Tracery  The following Node library gives a structure which is used to generate random words that are assigned to lexical structure that is defined by the user.
+ centar : { animal : [&amp;quot;wolf&amp;quot;,&amp;quot;bear&amp;quot;,&amp;quot;tiger&amp;quot;,&amp;quot;lion&amp;quot;,&amp;quot;snake&amp;quot;,&amp;quot;anteater&amp;quot;], fruit : [&amp;quot;banana&amp;quot;,&amp;quot;tomato&amp;quot;,&amp;quot;cherry&amp;quot;,&amp;quot;strawberry&amp;quot;,&amp;quot;starfruit&amp;quot;], said : [&amp;quot;purring&amp;quot;, &amp;quot;whispering&amp;quot;, &amp;quot;saying&amp;quot;, &amp;quot;murmurring&amp;quot;, &amp;quot;growling&amp;quot;], timeofday : [&amp;quot;morning&amp;quot;,&amp;quot;evening&amp;quot;,&amp;quot;dusk&amp;quot;,&amp;quot;dawn&amp;quot;,&amp;quot;afternoon&amp;quot;,&amp;quot;breakfast&amp;quot;,&amp;quot;breakfast&amp;quot;], lastSyl : &amp;quot;a ia ea u y en am is on an o io i el ios ax ox ix ex izz ius ian ean ekang anth&amp;quot;.</description>
     </item>
     
     <item>
@@ -101,7 +139,7 @@
       <guid>/2017/09/29/ab-testing-in-r-from-scratch/</guid>
       <description>In Progress Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
 Approximate Bayesian Computation
- Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) # Variables n_visitors_a &amp;lt;- 100 # number of visitors shown layout A n_conv_a &amp;lt;- 4 # number of vistors shown layout A who converted (4%) n_visitors_b &amp;lt;- 40 n_conv_b &amp;lt;- 2 Using Bayesian Systems</description>
+ Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) ## Warning: package &amp;#39;reshape2&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>

@@ -1,0 +1,12 @@
+---
+title: Human Ingenuity and Speed
+author: Chris
+date: '2017-12-23'
+slug: human-ingenuity-and-speed
+categories:
+  - Astronomy
+  - R
+tags: []
+---
+
+# IN PROGRESS

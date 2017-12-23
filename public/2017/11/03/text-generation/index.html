@@ -19,6 +19,11 @@
 
 
 
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="../../../../css/fonts.css" media="all">
 <link rel="stylesheet" href="../../../../css/main.css" media="all">
 
@@ -60,7 +65,7 @@
 
   <article class="article">
     
-    <span class="article-duration">0 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">Text Generation</h1>
@@ -70,7 +75,46 @@
     
 
     <div class="article-content">
-      
+      <div id="in-progress" class="section level1">
+<h1>IN PROGRESS</h1>
+<p>Text Generation (Generative Texr) is a very interesting field of study. There are a number of different packages that help generate the lists of words to give the user a better understanding of the technology.</p>
+<ul>
+<li><a href="https://github.com/galaxykate/tracery">Tracery</a></li>
+</ul>
+<p>The following Node library gives a structure which is used to generate random words that are assigned to lexical structure that is defined by the user.</p>
+<pre><code>    centar : {
+        animal : [&quot;wolf&quot;,&quot;bear&quot;,&quot;tiger&quot;,&quot;lion&quot;,&quot;snake&quot;,&quot;anteater&quot;],
+        fruit : [&quot;banana&quot;,&quot;tomato&quot;,&quot;cherry&quot;,&quot;strawberry&quot;,&quot;starfruit&quot;],
+        said : [&quot;purring&quot;, &quot;whispering&quot;, &quot;saying&quot;, &quot;murmurring&quot;, &quot;growling&quot;],
+        timeofday : [&quot;morning&quot;,&quot;evening&quot;,&quot;dusk&quot;,&quot;dawn&quot;,&quot;afternoon&quot;,&quot;breakfast&quot;,&quot;breakfast&quot;],
+        lastSyl : &quot;a ia ea u y en am is on an o io i el ios ax ox ix ex izz ius ian ean ekang anth&quot;.split(&quot; &quot;),
+        vipTitle : [&quot;Dr.&quot;, &quot;Professor&quot;, &quot;Lord&quot;, &quot;Sir&quot;, &quot;Captain&quot;, &quot;His Majesty&quot;],
+
+        response : [&quot;#animal# love #fruit##lastSyl#&quot;, &quot;#animal# #said# at #timeofday#&quot;, &quot;#lastSyl##lastSyl#&quot;],
+        &quot;origin&quot; : &quot;&lt;h3&gt;#vipTitle# Watson, let me tell you of a #response#&lt;/h3&gt;&quot;
+    }</code></pre>
+</div>
+<div id="wordmuse-api" class="section level1">
+<h1>Wordmuse API</h1>
+<p>The following API can be used to generate related words that are pulled to create lexical randomness with less randomly features.</p>
+<ul>
+<li>words with a meaning similar to ringing in the ears <a href="https://api.datamuse.com/words?ml=ringing+in+the+ears" class="uri">https://api.datamuse.com/words?ml=ringing+in+the+ears</a></li>
+<li>words related to duck that start with the letter b <a href="https://api.datamuse.com/words?ml=duck&amp;sp=b*" class="uri">https://api.datamuse.com/words?ml=duck&amp;sp=b*</a></li>
+<li>words related to spoon that end with the letter a <a href="https://api.datamuse.com/words?ml=spoon&amp;sp=*a" class="uri">https://api.datamuse.com/words?ml=spoon&amp;sp=*a</a></li>
+<li>words that sound like elefint <a href="https://api.datamuse.com/words?sl=elefint" class="uri">https://api.datamuse.com/words?sl=elefint</a></li>
+<li>words that start with t, end in k, and have two letters in between <a href="https://api.datamuse.com/words?sp=t" class="uri">https://api.datamuse.com/words?sp=t</a>??k</li>
+<li>words that are spelled similarly to coneticut <a href="https://api.datamuse.com/words?sp=coneticut" class="uri">https://api.datamuse.com/words?sp=coneticut</a></li>
+<li>words that rhyme with forgetful <a href="https://api.datamuse.com/words?rel_rhy=forgetful" class="uri">https://api.datamuse.com/words?rel_rhy=forgetful</a></li>
+<li>words that rhyme with grape that are related to breakfast <a href="https://api.datamuse.com/words?ml=breakfast&amp;rel_rhy=grape" class="uri">https://api.datamuse.com/words?ml=breakfast&amp;rel_rhy=grape</a></li>
+<li>adjectives that are often used to describe ocean <a href="https://api.datamuse.com/words?rel_jjb=ocean" class="uri">https://api.datamuse.com/words?rel_jjb=ocean</a></li>
+<li>adjectives describing ocean sorted by how related they are to temperature <a href="https://api.datamuse.com/words?rel_jjb=ocean&amp;topics=temperature" class="uri">https://api.datamuse.com/words?rel_jjb=ocean&amp;topics=temperature</a></li>
+<li>nouns that are often described by the adjective yellow <a href="https://api.datamuse.com/words?rel_jja=yellow" class="uri">https://api.datamuse.com/words?rel_jja=yellow</a></li>
+<li>words that often follow “drink” in a sentence, that start with the letter w <a href="https://api.datamuse.com/words?lc=drink&amp;sp=w*" class="uri">https://api.datamuse.com/words?lc=drink&amp;sp=w*</a></li>
+<li>words that are triggered by (strongly associated with) the word “cow” <a href="https://api.datamuse.com/words?rel_trg=cow" class="uri">https://api.datamuse.com/words?rel_trg=cow</a></li>
+<li>suggestions for the user if they have typed in rawand so far <a href="https://api.datamuse.com/sug?s=rawand" class="uri">https://api.datamuse.com/sug?s=rawand</a></li>
+</ul>
+</div>
+
     </div>
   </article>
 
@@ -114,6 +158,18 @@
 
     </div>
     
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 

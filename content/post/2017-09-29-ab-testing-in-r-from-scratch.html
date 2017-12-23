@@ -41,8 +41,9 @@ tags:
 </ul>
 <pre class="r"><code>library(progress)
 library(ggplot2)
-library(reshape2)
-# Variables 
+library(reshape2)</code></pre>
+<pre><code>## Warning: package &#39;reshape2&#39; was built under R version 3.4.3</code></pre>
+<pre class="r"><code># Variables 
 n_visitors_a &lt;- 100  # number of visitors shown layout A
 n_conv_a &lt;- 4        # number of vistors shown layout A who converted (4%)
 n_visitors_b &lt;- 40  
@@ -153,6 +154,6 @@ ggplot(trailCnt, aes(cnt, fill=trial)) +
 <p><img src="/post/2017-09-29-ab-testing-in-r-from-scratch_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <pre class="r"><code>a &lt;- a_estimates$cnt &gt; b_estimates$cnt
 sum(a == TRUE)/length(a)</code></pre>
-<pre><code>## [1] 0.343</code></pre>
+<pre><code>## [1] 0.318</code></pre>
 </div>
 </div>

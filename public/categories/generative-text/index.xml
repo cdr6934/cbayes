@@ -17,7 +17,9 @@
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/03/text-generation/</guid>
-      <description></description>
+      <description>IN PROGRESS Text Generation (Generative Texr) is a very interesting field of study. There are a number of different packages that help generate the lists of words to give the user a better understanding of the technology.
+ Tracery  The following Node library gives a structure which is used to generate random words that are assigned to lexical structure that is defined by the user.
+ centar : { animal : [&amp;quot;wolf&amp;quot;,&amp;quot;bear&amp;quot;,&amp;quot;tiger&amp;quot;,&amp;quot;lion&amp;quot;,&amp;quot;snake&amp;quot;,&amp;quot;anteater&amp;quot;], fruit : [&amp;quot;banana&amp;quot;,&amp;quot;tomato&amp;quot;,&amp;quot;cherry&amp;quot;,&amp;quot;strawberry&amp;quot;,&amp;quot;starfruit&amp;quot;], said : [&amp;quot;purring&amp;quot;, &amp;quot;whispering&amp;quot;, &amp;quot;saying&amp;quot;, &amp;quot;murmurring&amp;quot;, &amp;quot;growling&amp;quot;], timeofday : [&amp;quot;morning&amp;quot;,&amp;quot;evening&amp;quot;,&amp;quot;dusk&amp;quot;,&amp;quot;dawn&amp;quot;,&amp;quot;afternoon&amp;quot;,&amp;quot;breakfast&amp;quot;,&amp;quot;breakfast&amp;quot;], lastSyl : &amp;quot;a ia ea u y en am is on an o io i el ios ax ox ix ex izz ius ian ean ekang anth&amp;quot;.</description>
     </item>
     
   </channel>
