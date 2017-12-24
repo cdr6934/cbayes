@@ -19,6 +19,11 @@
 
 
 
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="../../../../css/fonts.css" media="all">
 <link rel="stylesheet" href="../../../../css/main.css" media="all">
 
@@ -70,8 +75,36 @@
     
 
     <div class="article-content">
-      <div id="in-progress" class="section level1">
-<h1>IN PROGRESS</h1>
+      <pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ───────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 2.2.1.9000     ✔ purrr   0.2.4     
+## ✔ tibble  1.3.4          ✔ dplyr   0.7.4     
+## ✔ tidyr   0.7.2          ✔ stringr 1.2.0     
+## ✔ readr   1.1.1          ✔ forcats 0.2.0</code></pre>
+<pre><code>## ── Conflicts ──────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<div id="data-building" class="section level1">
+<h1>Data Building</h1>
+<p>The first thing we need to understand is where we have come and where we are going. There is alot that has been done in the past couple years but we still have more.</p>
+<pre class="r"><code>type &lt;- c(&quot;Sound&quot;,&quot;Light&quot;,&quot;Human Travel&quot;)
+units &lt;- c(&quot;mps&quot;,&quot;mps&quot;,&quot;mps&quot;)
+speed &lt;- c(343,299792458,11082.569)
+source &lt;- c(&quot;&quot;,&quot;&quot;,&quot;&quot;)
+speed_data &lt;- data.frame(type,units, speed,source)</code></pre>
+<pre class="r"><code>spd &lt;- speed_data$speed
+spd %*% (t(spd)) </code></pre>
+<pre><code>##              [,1]         [,2]         [,3]
+## [1,]       117649 1.028288e+11 3.801321e+06
+## [2,] 102828813094 8.987552e+16 3.322471e+12
+## [3,]      3801321 3.322471e+12 1.228233e+08</code></pre>
+<p>–TODO: The following</p>
+<pre class="r"><code>299792458/11082.57</code></pre>
+<pre><code>## [1] 27050.81</code></pre>
+</div>
+<div id="human-history-of-speed" class="section level1">
+<h1>Human History of Speed</h1>
+<p>Speed hasn’t been a</p>
 </div>
 
     </div>
@@ -118,7 +151,30 @@
     </div>
     
 
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
     
+<script src="../../../../js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     
 <script>

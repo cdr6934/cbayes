@@ -30,7 +30,9 @@ data &lt;- av_get(symbol = symbol,market = &quot;CNY&quot;, av_fun  = &quot;DIGI
 ## # ... with 5 more variables: high..usd. &lt;dbl&gt;, low..usd. &lt;dbl&gt;,
 ## #   close..usd. &lt;dbl&gt;, volume &lt;dbl&gt;, market.cap..usd. &lt;dbl&gt;</code></pre>
 <p>Here we look at the daily open price of the stock for the past 5 years.</p>
-<pre class="r"><code>g &lt;- data %&gt;% ggplot() + 
+<pre class="r"><code>g &lt;- data %&gt;%
+  filter(timestamp &gt;= &#39;2017-1-1&#39;) %&gt;% 
+  ggplot() + 
   geom_line(aes(timestamp, open..cny. ))+  
   labs(title = paste(&quot;Daily Open Pricing (&quot;,symbol,&quot;)&quot;), 
        y = &quot;Open Price (BTC)&quot;, x = &quot;Daily&quot;)

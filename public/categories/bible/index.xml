@@ -17,7 +17,8 @@
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>In Progress  </description>
+      <description>There is much to be learned in the form of writing and the relationship it has within and outside the text. The question we might want to ask is there a way to identify the story arc of the situation. Using spacy to tag all of the words will increase the likelyhood to better understand the
+Create the Data Frame TODO: Need to make sure to figure out the book regex to include books such as 1 Timothy where there are parts of the book</description>
     </item>
     
   </channel>

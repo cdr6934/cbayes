@@ -35,7 +35,9 @@ head(data)
 Here we look at the daily open price of the stock for the past 5 years. 
 
 ```{r}
-g <- data %>% ggplot() + 
+g <- data %>%
+  filter(timestamp >= '2017-1-1') %>% 
+  ggplot() + 
   geom_line(aes(timestamp, open..cny. ))+  
   labs(title = paste("Daily Open Pricing (",symbol,")"), 
        y = "Open Price (BTC)", x = "Daily")

@@ -9,7 +9,7 @@ categories:
 tags: []
 ---
 
-
+Following you will find a number of the best books to learn more about statistics and its philosophy. 
 
 * [Opinionated Lessons on Statistics](http://wpressutexas.net/coursewiki/index.php/OpinionatedLessons.org/)
 * [Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)

@@ -17,7 +17,7 @@
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>IN PROGRESS  </description>
+      <description>library(tidyverse) ## ── Attaching packages ───────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.3.4 ✔ dplyr 0.7.4 ## ✔ tidyr 0.7.2 ✔ stringr 1.2.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ──────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -35,7 +35,8 @@
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>In Progress  </description>
+      <description>There is much to be learned in the form of writing and the relationship it has within and outside the text. The question we might want to ask is there a way to identify the story arc of the situation. Using spacy to tag all of the words will increase the likelyhood to better understand the
+Create the Data Frame TODO: Need to make sure to figure out the book regex to include books such as 1 Timothy where there are parts of the book</description>
     </item>
     
     <item>
@@ -101,7 +102,8 @@ Above we provide two different libraries that will give us the functionality we 
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/06/great-statistics-books-to-read/</guid>
-      <description> Opinionated Lessons on Statistics Introduction to Statistical Learning The Elements of Statistical Learning Applied Predicitive Modeling Statistical Inference Statistical Rethinking Data Analysis Using Regression and Multilevel/Hierarchical Models Mostly Harmless Econometrics Mastering Metrics: The Path from Cause to Effect All of Statistics Statistics Statistics for Experimenters Think Bayes Computer Age Statistical Inference Think Stats Machine Learning for Hackers Probability and Statistics Statistical Evidence: A likelihood paradigm  </description>
+      <description>Following you will find a number of the best books to learn more about statistics and its philosophy.
+ Opinionated Lessons on Statistics Introduction to Statistical Learning The Elements of Statistical Learning Applied Predicitive Modeling Statistical Inference Statistical Rethinking Data Analysis Using Regression and Multilevel/Hierarchical Models Mostly Harmless Econometrics Mastering Metrics: The Path from Cause to Effect All of Statistics Statistics Statistics for Experimenters Think Bayes Computer Age Statistical Inference Think Stats Machine Learning for Hackers Probability and Statistics Statistical Evidence: A likelihood paradigm  </description>
     </item>
     
     <item>
