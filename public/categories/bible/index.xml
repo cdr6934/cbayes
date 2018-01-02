@@ -17,8 +17,7 @@
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>There is much to be learned in the form of writing and the relationship it has within and outside the text. The question we might want to ask is there a way to identify the story arc of the situation. Using spacy to tag all of the words will increase the likelyhood to better understand the
-Create the Data Frame TODO: Need to make sure to figure out the book regex to include books such as 1 Timothy where there are parts of the book</description>
+      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.1 ✔ dplyr 0.7.4 ## ✔ tidyr 0.7.2 ✔ stringr 1.2.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
     </item>
     
   </channel>
