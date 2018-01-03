@@ -6,10 +6,19 @@
     <description>Recent content in Generative Text on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/generative-text/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Experiments with Datamuse API </title>
+      <link>/2018/01/03/experiments-with-datamuse-api/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/03/experiments-with-datamuse-api/</guid>
+      <description>IN Progress words with a meaning similar to ringing in the ears https://api.datamuse.com/words?ml=ringing+in+the+ears words related to duck that start with the letter b https://api.datamuse.com/words?ml=duck&amp;amp;sp=b* words related to spoon that end with the letter a https://api.datamuse.com/words?ml=spoon&amp;amp;sp=*a words that sound like elefint https://api.datamuse.com/words?sl=elefint words that start with t, end in k, and have two letters in between https://api.datamuse.com/words?sp=t??k words that are spelled similarly to coneticut https://api.datamuse.com/words?sp=coneticut words that rhyme with forgetful https://api.datamuse.com/words?rel_rhy=forgetful words that rhyme with grape that are related to breakfast https://api.</description>
+    </item>
     
     <item>
       <title>Text Generation</title>

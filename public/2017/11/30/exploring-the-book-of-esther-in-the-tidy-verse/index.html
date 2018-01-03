@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.32" />
+<meta name="generator" content="Hugo 0.20.7" />
 
 
 <title>Exploring the Book of Esther in the Tidy Verse - Chris Ried Blog</title>
@@ -81,12 +81,12 @@
 library(tidytext)
 library(jsonlite)
 library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
-## ✔ tibble  1.4.1     ✔ dplyr   0.7.4
-## ✔ tidyr   0.7.2     ✔ stringr 1.2.0
-## ✔ readr   1.1.1     ✔ forcats 0.2.0</code></pre>
-<pre><code>## ── Conflicts ───────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 2.2.1.9000     ✔ purrr   0.2.4     
+## ✔ tibble  1.3.4          ✔ dplyr   0.7.4     
+## ✔ tidyr   0.7.2          ✔ stringr 1.2.0     
+## ✔ readr   1.1.1          ✔ forcats 0.2.0</code></pre>
+<pre><code>## ── Conflicts ─────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter()  masks stats::filter()
 ## ✖ purrr::flatten() masks jsonlite::flatten()
 ## ✖ dplyr::lag()     masks stats::lag()</code></pre>
@@ -112,18 +112,18 @@ resp &lt;- GET(paste0(&quot;https://api.biblia.com/v1/bible/content/LEB.&quot;,o
 
 tibble(Text = passage$Text)</code></pre>
 <pre><code>## # A tibble: 167 x 1
-##    Text                                                                   
-##    &lt;chr&gt;                                                                  
-##  1 &quot;Esther 1:1 And it happened in the days of Ahasuerus, the Ahasuerus wh…
-##  2 &quot;Esther 1:2 In those days as King Ahasuerus was sitting on the throne …
-##  3 &quot;Esther 1:3 he gave a banquet in the third year of his reign for all h…
-##  4 &quot;Esther 1:4 as he displayed the wealth of the glory of his kingdom and…
-##  5 &quot;Esther 1:5 And when those days were completed, the king gave for all …
-##  6 &quot;Esther 1:6 There were curtains of finely woven linen and blue cloth t…
-##  7 &quot;Esther 1:7 Drinks were served in goblets of gold and goblets of diffe…
-##  8 &quot;Esther 1:8 There were no restrictions on the drinking, for the king h…
-##  9 &quot;Esther 1:9 Furthermore, Queen Vashti gave a banquet for the women in …
-## 10 &quot;Esther 1:10 On the seventh day, when the heart of the king was merry …
+##                                                                           Text
+##                                                                          &lt;chr&gt;
+##  1 Esther 1:1 And it happened in the days of Ahasuerus, the Ahasuerus who reig
+##  2 Esther 1:2 In those days as King Ahasuerus was sitting on the throne of his
+##  3 Esther 1:3 he gave a banquet in the third year of his reign for all his off
+##  4 Esther 1:4 as he displayed the wealth of the glory of his kingdom and the g
+##  5 Esther 1:5 And when those days were completed, the king gave for all the pe
+##  6 Esther 1:6 There were curtains of finely woven linen and blue cloth tied wi
+##  7 Esther 1:7 Drinks were served in goblets of gold and goblets of different k
+##  8 Esther 1:8 There were no restrictions on the drinking, for the king had ins
+##  9 Esther 1:9 Furthermore, Queen Vashti gave a banquet for the women in the pa
+## 10 Esther 1:10 On the seventh day, when the heart of the king was merry with w
 ## # ... with 157 more rows</code></pre>
 <pre class="r"><code>data(&quot;stop_words&quot;) # Remove stop words 
 passage_frame &lt;- passage %&gt;% select(Book, Chapter, Verse, Line) %&gt;% unnest_tokens(word, Line) %&gt;%
@@ -131,38 +131,38 @@ passage_frame &lt;- passage %&gt;% select(Book, Chapter, Verse, Line) %&gt;% unn
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
 <pre class="r"><code>head(passage_frame)</code></pre>
 <pre><code>## # A tibble: 6 x 4
-##   Book   Chapter Verse word     
-##   &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    
-## 1 Esther    1.00  1.00 happened 
-## 2 Esther    1.00  1.00 days     
-## 3 Esther    1.00  1.00 ahasuerus
-## 4 Esther    1.00  1.00 ahasuerus
-## 5 Esther    1.00  1.00 reigned  
-## 6 Esther    1.00  1.00 india</code></pre>
+##     Book Chapter Verse      word
+##    &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;chr&gt;
+## 1 Esther       1     1  happened
+## 2 Esther       1     1      days
+## 3 Esther       1     1 ahasuerus
+## 4 Esther       1     1 ahasuerus
+## 5 Esther       1     1   reigned
+## 6 Esther       1     1     india</code></pre>
 <p>Here to simply look at the entire passage as a whole, this is what we are able to retrieve in counts after having removed the words.</p>
 <pre class="r"><code>passage_frame_cnt &lt;- passage_frame %&gt;% count(word, sort = TRUE)
 head(passage_frame_cnt)</code></pre>
 <pre><code>## # A tibble: 6 x 2
-##   word         n
-##   &lt;chr&gt;    &lt;int&gt;
-## 1 king       156
-## 2 esther      53
+##       word     n
+##      &lt;chr&gt; &lt;int&gt;
+## 1     king   156
+## 2   esther    53
 ## 3 mordecai    53
-## 4 haman       48
-## 5 jews        45
-## 6 king’s      38</code></pre>
+## 4    haman    48
+## 5     jews    45
+## 6   king’s    38</code></pre>
 <pre class="r"><code>passage_framea_cnt &lt;- passage_frame %&gt;% group_by(Chapter) %&gt;% count(word, sort = TRUE)
 head(passage_framea_cnt)</code></pre>
 <pre><code>## # A tibble: 6 x 3
-## # Groups: Chapter [6]
-##   Chapter word      n
+## # Groups:   Chapter [6]
+##   Chapter  word     n
 ##     &lt;dbl&gt; &lt;chr&gt; &lt;int&gt;
-## 1    1.00 king     25
-## 2    9.00 jews     22
-## 3    2.00 king     20
-## 4    5.00 king     20
-## 5    6.00 king     19
-## 6    3.00 king     18</code></pre>
+## 1       1  king    25
+## 2       9  jews    22
+## 3       2  king    20
+## 4       5  king    20
+## 5       6  king    19
+## 6       3  king    18</code></pre>
 </div>
 <div id="word-frequencies-by-chapter" class="section level3">
 <h3>Word frequencies by chapter</h3>
