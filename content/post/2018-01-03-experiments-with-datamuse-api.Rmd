@@ -22,5 +22,5 @@ adjectives that are often used to describe ocean	                          https
 adjectives describing ocean sorted by how related they are to temperature	  https://api.datamuse.com/words?rel_jjb=ocean&topics=temperature
 nouns that are often described by the adjective yellow	                    https://api.datamuse.com/words?rel_jja=yellow
 words that often follow "drink" in a sentence, that start with the letter w	https://api.datamuse.com/words?lc=drink&sp=w*
-words that are triggered by (strongly associated with) the word "cow"	      https://api.datamuse.com/words?rel_trg=cow
+words that are triggered by (strongly associated with) the word "cow"	      https://aspi.datamuse.com/words?rel_trg=cow
 suggestions for the user if they have typed in rawand so far	              https://api.datamuse.com/sug?s=rawand

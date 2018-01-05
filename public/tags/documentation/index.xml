@@ -17,8 +17,7 @@
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/11/timeseries-analysis-using-r-and-advantager/</guid>
-      <description>In the past, the best way to get stock prices was to use either Google Finance or Yahoo Finance data streams. These have since become difficult to keep up to date and thus another outlet to get this information is AlphaVantager. Following is a simple R implementation to get up to date data. You will be able to thus use this to find the information.
-Above we provide two different libraries that will give us the functionality we need.</description>
+      <description>Threw error due to the API In the past, the best way to get stock prices was to use either Google Finance or Yahoo Finance data streams. These have since become difficult to keep up to date and thus another outlet to get this information is AlphaVantager. Following is a simple R implementation to get up to date data. You will be able to thus use this to find the information.</description>
     </item>
     
     <item>
