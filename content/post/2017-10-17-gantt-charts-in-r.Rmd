@@ -61,7 +61,7 @@ More of the extras            :               extras_3,   after extras_1, 48h
 
 ## Using Plotly 
 If you wanted to use a more 
-```{r}
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 library(plotly)
 
 df <- read.csv("https://cdn.rawgit.com/plotly/datasets/master/GanttChart-updated.csv", stringsAsFactors = F)
@@ -87,6 +87,9 @@ for(i in 1:(nrow(df) - 1)){
   )
 }
 
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 p
 ```
 
