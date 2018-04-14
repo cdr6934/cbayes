@@ -9,3 +9,12 @@ categories:
 tags: []
 ---
 
+
+### In Progress 
+
+install.packages("keras")
+library(keras)
+
+
+devtools::install_github("omarwagih/ggseqlogo")
+devtools::install_github("leonjessen/PepTools")
