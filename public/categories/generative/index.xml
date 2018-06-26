@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generative on Chris Ried Blog</title>
+    <link>/categories/generative/</link>
+    <description>Recent content in Generative on Chris Ried Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/generative/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minature Generative Art </title>
+      <link>/2018/01/08/minature-generative-art/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/08/minature-generative-art/</guid>
+      <description>To Do and In Progress library(ggplot2)  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .1) + theme_void() library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union seq(from=-10, to=10, by = 0.</description>
+    </item>
+    
+  </channel>
+</rss>
