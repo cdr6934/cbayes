@@ -10,9 +10,6 @@ tags:
   - R
 ---
 
-#In Progress 
-
-
 ## Using Bayesian Systems
 
 * Quantify the probability of all possibilites thus measuring risk

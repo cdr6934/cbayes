@@ -77,9 +77,9 @@
     
 
     <div class="article-content">
-      <div id="to-do-and-in-progress" class="section level2">
-<h2>To Do and In Progress</h2>
-<pre class="r"><code>library(ggplot2)</code></pre>
+      <p>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.</p>
+<div id="oval-curve" class="section level2">
+<h2>Oval Curve</h2>
 <pre class="r"><code>  n &lt;- 300
   t1 &lt;- 1:n
   t0 &lt;- seq(3,2*n+1,2) %% n
@@ -94,15 +94,9 @@
     geom_segment(alpha = .1) +
     theme_void()</code></pre>
 <p><img src="../../../../post/2018-01-08-minature-generative-art_files/figure-html/Simple%20Curve-1.png" width="672" /></p>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
+</div>
+<div id="wavy-weaving-of-wonder" class="section level2">
+<h2>Wavy Weaving of Wonder</h2>
 <pre class="r"><code>seq(from=-10, to=10, by = 0.05) %&gt;%
 expand.grid(x=., y=.) %&gt;%
 ggplot(aes(x=(x+pi*sin(y)), y=(y+pi*sin(x)))) +

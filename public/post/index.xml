@@ -17,7 +17,7 @@
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/24/simmer-fi/</guid>
-      <description>To Do: Determine the w  </description>
+      <description>To Do: Determine the  </description>
     </item>
     
     <item>
@@ -26,7 +26,8 @@
       <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/08/minature-generative-art/</guid>
-      <description>To Do and In Progress library(ggplot2)  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .1) + theme_void() library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union seq(from=-10, to=10, by = 0.</description>
+      <description>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.
+Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .1) + theme_void()  Wavy Weaving of Wonder seq(from=-10, to=10, by = 0.</description>
     </item>
     
     <item>
@@ -46,7 +47,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/03/experiments-with-datamuse-api/</guid>
-      <description>IN Progress words with a meaning similar to ringing in the ears https://api.datamuse.com/words?ml=ringing+in+the+ears words related to duck that start with the letter b https://api.datamuse.com/words?ml=duck&amp;amp;sp=b* words related to spoon that end with the letter a https://api.datamuse.com/words?ml=spoon&amp;amp;sp=*a words that sound like elefint https://api.datamuse.com/words?sl=elefint words that start with t, end in k, and have two letters in between https://api.datamuse.com/words?sp=t??k words that are spelled similarly to coneticut https://api.datamuse.com/words?sp=coneticut words that rhyme with forgetful https://api.datamuse.com/words?rel_rhy=forgetful words that rhyme with grape that are related to breakfast https://api.</description>
+      <description>IN Progress words with a meaning similar to ringing in the ears https://api.datamuse.com/words?ml=ringing+in+the+ears words related to duck that start with the letter b https://api.datamuse.com/words?ml=duck&amp;amp;sp=b words related to spoon that end with the letter a https://api.datamuse.com/words?ml=spoon&amp;amp;sp=*a words that sound like elefint https://api.datamuse.com/words?sl=elefint words that start with t, end in k, and have two letters in between https://api.datamuse.com/words?sp=t??k words that are spelled similarly to coneticut https://api.datamuse.com/words?sp=coneticut words that rhyme with forgetful https://api.datamuse.com/words?rel_rhy=forgetful words that rhyme with grape that are related to breakfast https://api.</description>
     </item>
     
     <item>
@@ -55,7 +56,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -73,7 +74,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
+      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
     </item>
     
     <item>
@@ -176,7 +177,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/ab-testing-in-r-from-scratch/</guid>
-      <description>In Progress Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
+      <description>Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
 Approximate Bayesian Computation
  Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) # Variables n_visitors_a &amp;lt;- 100 # number of visitors shown layout A n_conv_a &amp;lt;- 4 # number of vistors shown layout A who converted (4%) n_visitors_b &amp;lt;- 40 n_conv_b &amp;lt;- 2 Using Bayesian Systems</description>
     </item>
@@ -187,7 +188,8 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description>In progress  Still in progress  </description>
+      <description>#In progress
+Still in progress  </description>
     </item>
     
     <item>

@@ -149,7 +149,8 @@ binwidth = 0.2) +
 labs(title = &quot;Histogram&quot;,
 x = expression(&quot;Density (&quot;*g/cm^3*&quot;)&quot;),
 y = &quot;Frequency&quot;)</code></pre>
-<p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-8-1.png" width="672" /> ## Pareto Chart</p>
+<p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+## Pareto Chart</p>
 <pre class="r"><code>data_checkSheet$A_supplier &lt;- c(2, 0, 0, 2, 1, 7, 1,
 3, 6, 0, 1, 2, 0)
 data_checkSheet$B_supplier &lt;- c(0, 0, 1, 1, 2, 1, 12,
@@ -311,7 +312,8 @@ pch = 20,
 main = &quot;Pellets density vs. temperature&quot;,
 xlab = &quot;Temperature (Celsius)&quot;,
 ylab = expression(&quot;Density (&quot;*g/cm^3*&quot;)&quot;))</code></pre>
-<p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-14-1.png" width="672" /> ##Stratification</p>
+<p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+##Stratification</p>
 <pre class="r"><code>psupplier &lt;- rep(c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;), each = 8)
 
 boxplot(pdensity ~ psupplier,

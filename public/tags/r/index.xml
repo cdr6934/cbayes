@@ -26,7 +26,7 @@
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/ab-testing-in-r-from-scratch/</guid>
-      <description>In Progress Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
+      <description>Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
 Approximate Bayesian Computation
  Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) # Variables n_visitors_a &amp;lt;- 100 # number of visitors shown layout A n_conv_a &amp;lt;- 4 # number of vistors shown layout A who converted (4%) n_visitors_b &amp;lt;- 40 n_conv_b &amp;lt;- 2 Using Bayesian Systems</description>
     </item>
@@ -37,7 +37,8 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description>In progress  Still in progress  </description>
+      <description>#In progress
+Still in progress  </description>
     </item>
     
     <item>

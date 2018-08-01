@@ -13,11 +13,16 @@ tags: []
 <p>Accelerating force</p>
 <p><span class="math display">\[
 F=mv_e
-\]</span> thrust of the rocket is expressed in terms of the <em>mass flow rate </em> m and the efficient exhaust velocity <span class="math inline">\(v_e\)</span></p>
+\]</span>
+thrust of the rocket is expressed in terms of the <em>mass flow rate </em>
+m and the efficient exhaust velocity <span class="math inline">\(v_e\)</span></p>
 <p><span class="math display">\[
 V = V_e\log_e\frac{M_0}{M} 
-\]</span> <span class="math inline">\(M_0\)</span> - mass of the rocket at ignition <span class="math inline">\(M\)</span> - Current mass of the rocket</p>
-<p>mass ratio <span class="math display">\[ 
+\]</span>
+<span class="math inline">\(M_0\)</span> - mass of the rocket at ignition
+<span class="math inline">\(M\)</span> - Current mass of the rocket</p>
+<p>mass ratio
+<span class="math display">\[ 
 R = \frac{M_0}{M}
 \]</span></p>
 <pre class="r"><code>RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20)))
@@ -59,9 +64,8 @@ g</code></pre>
 <p>Much of the effort in rocket design goes into increasing the exhaust velocity.</p>
 <p>Gunpowder, and the range of propellants of the 19th century produced an exhaust velocity of around 2000 <span class="math inline">\(ms^{-1}\)</span> while today we reach around 4500 <span class="math inline">\(ms^{-1}\)</span></p>
 <p>The point at which the rocket’s speed exceeds the exhaust speed is when the mass ratio becomes equal to e, or 2.718, the base of natural logarithms.</p>
-<div id="orbits" class="section level3">
-<h3>1.3.1 Orbits</h3>
-<p><span class="math display">\[
+<p>###1.3.1 Orbits
+<span class="math display">\[
 \frac{1}{r} = \frac{GM_{\bigoplus}M^{2}}{h^{2}}1+\epsilon\cos\theta
 \]</span></p>
 <ul>
@@ -73,15 +77,19 @@ g</code></pre>
 <p>Eccentricity defines the same of the orbit. For an ellipse <span class="math inline">\(\epsilon\)</span> is the ratio of the distance between the foci, to the length of the major axis. However in order to understand how the orbit varies with the initial velocity of the spacecraft, the angular momentum and the eccentricity have to be expressed in terms of useful parameters.</p>
 <p><span class="math display">\[
 h = MrV 
-\]</span> <span class="math display">\[
+\]</span>
+<span class="math display">\[
 \epsilon = \frac{h^{2}}{GM_{\bigoplus}M^{2}r_{0}}-1
 \]</span></p>
 <p>The shape of the orbit depends only on the initial velocity and the distance from the center of the Earth.</p>
-<p>A circular orbit with eccentricity of zero An elliptical orbit of eccentricity 0.65 A parabolic orbit of eccentricity 1.0</p>
+<p>A circular orbit with eccentricity of zero
+An elliptical orbit of eccentricity 0.65
+A parabolic orbit of eccentricity 1.0</p>
 <p>So to see this in practical terms; we express the eccentricity in erms of the initial velocity and height of the spacecraft</p>
 <p><span class="math display">\[
 \epsilon = \frac{r_{0}V_{0}^{2}}{GM_{\bigoplus}}-1
-\]</span> We can see that if the ratio when <span class="math inline">\(r_0V_0^2 = GM_{\bigoplus}\)</span> the <span class="math inline">\(\epsilon\)</span> becomes 0 and the orbit is circular.</p>
+\]</span>
+We can see that if the ratio when <span class="math inline">\(r_0V_0^2 = GM_{\bigoplus}\)</span> the <span class="math inline">\(\epsilon\)</span> becomes 0 and the orbit is circular.</p>
 <p>Or we can substitute zero in the orbit equation: the <span class="math inline">\(\cos\theta\)</span> term goes to zero and the radius is independent of the angle; that is constant. Thus the orbit is circular. Since the condition for a circular orbit is that <span class="math inline">\(r_0V_0^2 = GM_{\bigoplus}\)</span>, it is easy to calculate the initial velocity, given the distance from the center of the earth.</p>
 <p><span class="math display">\[
 V_0 = \sqrt{\frac{GM_{\bigoplus}}{r_0}}
@@ -118,7 +126,6 @@ g &lt;- fx %&gt;% ggplot() +
        y = &quot;above the Surface (km)&quot;)
 g</code></pre>
 <p><img src="/post/2017-06-05-rocket-propolsion-ch-2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-</div>
 <div id="elliptical-transfer-orbits" class="section level3">
 <h3>Elliptical transfer orbits</h3>
 <p><span class="math display">\[
