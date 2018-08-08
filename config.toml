@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     url = "https://analyte.bandcamp.com/"
 [[menu.main]]
     name = "Photography"
-    url = "https://500px.com/christopherried"
+    url = "https://unsplash.com/@cdr6934"
 [[menu.main]]
     name = "Twitter"
     url = "https://twitter.com/cdr6934"

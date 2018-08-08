@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/08/07/crypto-currency-analysis/</loc>
+    <lastmod>2018-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/08/07/phillips-hue-in-r/</loc>
     <lastmod>2018-08-07T00:00:00+00:00</lastmod>
   </url>
@@ -145,10 +150,6 @@
   </url>
   
   <url>
-    <loc>/projects/</loc>
-  </url>
-  
-  <url>
     <loc>/resume/</loc>
   </url>
   
@@ -165,6 +166,12 @@
   <url>
     <loc>/categories/bible/</loc>
     <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bitcoin/</loc>
+    <lastmod>2018-08-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,6 +277,10 @@
     <loc>/post/</loc>
     <lastmod>2018-08-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
   </url>
   
   <url>
