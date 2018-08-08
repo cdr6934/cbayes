@@ -6,18 +6,39 @@
     <description>Recent content on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Simmer Fi </title>
-      <link>/2018/01/24/simmer-fi/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Phillips Hue in R</title>
+      <link>/2018/08/07/phillips-hue-in-r/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/01/24/simmer-fi/</guid>
-      <description>To Do: Determine the  </description>
+      <guid>/2018/08/07/phillips-hue-in-r/</guid>
+      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
+    </item>
+    
+    <item>
+      <title>Simulate Doctor Visit Resource Planning Using Simmer</title>
+      <link>/2018/08/07/simulate-resource-planning-using-simmer/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/07/simulate-resource-planning-using-simmer/</guid>
+      <description>Following code tries to resource plan certain doctor visits based on the vignette that was provided with the simmer package.
+library(simmer) set.seed(42) env &amp;lt;- simmer(&amp;quot;SuperDuperSim&amp;quot;) env ## simmer environment: SuperDuperSim | now: 0 | next: patient &amp;lt;- trajectory(&amp;quot;patients&amp;#39; path&amp;quot;) %&amp;gt;% ## add an intake activity seize(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 15)) %&amp;gt;% release(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% ## add a consultation activity seize(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 20)) %&amp;gt;% release(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% ## add a planning activity seize(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 5)) %&amp;gt;% release(&amp;quot;administration&amp;quot;, 1) env %&amp;gt;% add_resource(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% add_resource(&amp;quot;doctor&amp;quot;, 2) %&amp;gt;% add_resource(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% add_generator(&amp;quot;patient&amp;quot;, patient, function() rnorm(1, 10, 2)) ## simmer environment: SuperDuperSim | now: 0 | next: 0 ## { Resource: nurse | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Resource: doctor | monitored: TRUE | server status: 0(2) | queue status: 0(Inf) } ## { Resource: administration | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Generator: patient | monitored: 1 | n_generated: 0 } env %&amp;gt;% run(80) %&amp;gt;% now() ## [1] 80 env %&amp;gt;% peek(3) ## [1] 81.</description>
+    </item>
+    
+    <item>
+      <title>Time and Difficulty</title>
+      <link>/2018/08/07/time-and-difficulty/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/07/time-and-difficulty/</guid>
+      <description>Sometimes, seeing data in a 3 dimensional space gives us better visibility to the rest of the world. You will see that we have taken a hypothetical experiment and tried to rate different ideas by their complexity and likelihood to succeed.
+#Libraries to import library(tidyverse) library(plotly) # Intellectual matrix idea &amp;lt;- c(&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;, &amp;quot;Clip toenails&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;) time &amp;lt;- c(5,5,2,3,1,5,5,2,3,5,5,2,3,1,5,5,2) difficulty &amp;lt;- c(5,4,2,3,1,5,4,2,3,5,5,2,3,1,5,5,2) favorability &amp;lt;- c(2,5,2,1,3,4,1,2,1,2,5,2,1,3,3,1,2) #Creates the dataframe dataset &amp;lt;- data.</description>
     </item>
     
     <item>
@@ -42,21 +63,12 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
     </item>
     
     <item>
-      <title>Experiments with Datamuse API </title>
-      <link>/2018/01/03/experiments-with-datamuse-api/</link>
-      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/01/03/experiments-with-datamuse-api/</guid>
-      <description>IN Progress words with a meaning similar to ringing in the ears https://api.datamuse.com/words?ml=ringing+in+the+ears words related to duck that start with the letter b https://api.datamuse.com/words?ml=duck&amp;amp;sp=b words related to spoon that end with the letter a https://api.datamuse.com/words?ml=spoon&amp;amp;sp=*a words that sound like elefint https://api.datamuse.com/words?sl=elefint words that start with t, end in k, and have two letters in between https://api.datamuse.com/words?sp=t??k words that are spelled similarly to coneticut https://api.datamuse.com/words?sp=coneticut words that rhyme with forgetful https://api.datamuse.com/words?rel_rhy=forgetful words that rhyme with grape that are related to breakfast https://api.</description>
-    </item>
-    
-    <item>
       <title>Human Ingenuity and Speed</title>
       <link>/2017/12/23/human-ingenuity-and-speed/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -74,7 +86,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
+      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
     </item>
     
     <item>
@@ -193,16 +205,6 @@ Still in progress  </description>
     </item>
     
     <item>
-      <title>Best Tips for ggPlot</title>
-      <link>/2017/09/22/best-tips-for-ggplot/</link>
-      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/22/best-tips-for-ggplot/</guid>
-      <description> I am still working at this but wanted to create the post so I remember to continue on this.
-How to re </description>
-    </item>
-    
-    <item>
       <title>Tips on Creating Effective and Functional Documentation in R</title>
       <link>/2017/09/22/tips-creating-functional-documention/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
@@ -265,27 +267,6 @@ RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquati
     </item>
     
     <item>
-      <title>Formatting Currencies in R</title>
-      <link>/2017/06/03/formatting-currencies-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/formatting-currencies-in-r/</guid>
-      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I&amp;rsquo;ve found that there are a few different methods to do this.
-Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
-	library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3))  Formatting currency with separator Following is a simple function one can build and place in their utility function that will give formatted currency.</description>
-    </item>
-    
-    <item>
-      <title>Phillips Hue in R </title>
-      <link>/2017/06/03/phillips-hue-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a &amp;ldquo;userkey&amp;rdquo; as I called it below.
-getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -305,20 +286,20 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
     
     <item>
       <title></title>
-      <link>/1/01/01/</link>
+      <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/</guid>
-      <description>Formatting Currencies in R       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
+      <guid>/projects/</guid>
+      <description>projects.utf8.md /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/1/01/01/</link>
+      <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/</guid>
-      <description>Phillips Hue in R       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
+      <guid>/projects/</guid>
+      <description>Tableau Following was a simple sales dashboard that was based on some sales information.</description>
     </item>
     
     <item>
@@ -367,7 +348,7 @@ Services Provided  Data Visualization Projects / Training  R, Shiny Development,
       
       <guid>/resume/</guid>
       <description>Christopher Ried 7523 Althorp Way, T8, Nashville TN 37211 | 615.939.5124 | chris@cbayes.com Objective  I’m simple. I work hard to get the job done and enjoy solving complex problems.
- Experience Senior Software Engineer | Bargain Hunt | Feb 2015 - Present
+ Experience Director of Analytics / Senior Software Engineer | Bargain Hunt | Feb 2015 - Present
  Developing and implementing in-house classification systems tested in R and built for production using Python Scikit-Learn. Developed in house inventory intelligence systems using Python and API (Flask) backend with an interface using ASP.</description>
     </item>
     

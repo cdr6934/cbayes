@@ -6,18 +6,19 @@
     <description>Recent content in R on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Simmer Fi </title>
-      <link>/2018/01/24/simmer-fi/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Phillips Hue in R</title>
+      <link>/2018/08/07/phillips-hue-in-r/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/01/24/simmer-fi/</guid>
-      <description>To Do: Determine the  </description>
+      <guid>/2018/08/07/phillips-hue-in-r/</guid>
+      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
     </item>
     
     <item>
@@ -42,21 +43,12 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
     </item>
     
     <item>
-      <title>Experiments with Datamuse API </title>
-      <link>/2018/01/03/experiments-with-datamuse-api/</link>
-      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/01/03/experiments-with-datamuse-api/</guid>
-      <description>IN Progress words with a meaning similar to ringing in the ears https://api.datamuse.com/words?ml=ringing+in+the+ears words related to duck that start with the letter b https://api.datamuse.com/words?ml=duck&amp;amp;sp=b words related to spoon that end with the letter a https://api.datamuse.com/words?ml=spoon&amp;amp;sp=*a words that sound like elefint https://api.datamuse.com/words?sl=elefint words that start with t, end in k, and have two letters in between https://api.datamuse.com/words?sp=t??k words that are spelled similarly to coneticut https://api.datamuse.com/words?sp=coneticut words that rhyme with forgetful https://api.datamuse.com/words?rel_rhy=forgetful words that rhyme with grape that are related to breakfast https://api.</description>
-    </item>
-    
-    <item>
       <title>Human Ingenuity and Speed</title>
       <link>/2017/12/23/human-ingenuity-and-speed/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -65,7 +57,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
+      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ────────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
     </item>
     
     <item>
@@ -212,27 +204,6 @@ Setup a Droplet image I created a Ubuntu 16.</description>
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
 RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.</description>
-    </item>
-    
-    <item>
-      <title>Formatting Currencies in R</title>
-      <link>/2017/06/03/formatting-currencies-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/formatting-currencies-in-r/</guid>
-      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I&amp;rsquo;ve found that there are a few different methods to do this.
-Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
-	library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3))  Formatting currency with separator Following is a simple function one can build and place in their utility function that will give formatted currency.</description>
-    </item>
-    
-    <item>
-      <title>Phillips Hue in R </title>
-      <link>/2017/06/03/phillips-hue-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a &amp;ldquo;userkey&amp;rdquo; as I called it below.
-getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
     </item>
     
   </channel>

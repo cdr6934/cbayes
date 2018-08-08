@@ -11,7 +11,7 @@ title: "Resume"
 
 
 ### Experience
-**Senior Software Engineer** | Bargain Hunt | Feb 2015 - Present
+**Director of Analytics / Senior Software Engineer** | Bargain Hunt | Feb 2015 - Present
 
 * Developing and  implementing in-house classification systems tested in R and built for production using Python Scikit-Learn. 
 * Developed in house inventory intelligence systems using Python and API (Flask) backend with an interface using ASP.net Web Forms 

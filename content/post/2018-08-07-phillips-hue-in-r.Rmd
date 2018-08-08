@@ -1,15 +1,16 @@
 ---
-title: 'Phillips Hue in R '
-author: Chris Ried
-date: '2017-06-03'
+title: Phillips Hue in R
+author: 'Chris Ried'
+date: '2018-08-07'
 slug: phillips-hue-in-r
-categories:
+categories: 
   - R
-tags:
+tags: 
   - iot
   - R
-  - hue 
+  - hue
 ---
+
 
 The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a "userkey" as I called it below. 
 ```

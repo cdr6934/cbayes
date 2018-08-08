@@ -6,18 +6,18 @@
     <description>Recent content in Iot on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Phillips Hue in R </title>
-      <link>/2017/06/03/phillips-hue-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Phillips Hue in R</title>
+      <link>/2018/08/07/phillips-hue-in-r/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a &amp;ldquo;userkey&amp;rdquo; as I called it below.
+      <guid>/2018/08/07/phillips-hue-in-r/</guid>
+      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.
 getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
     </item>
     

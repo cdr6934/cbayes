@@ -1,11 +1,11 @@
 ---
 title: Formatting Currencies in R
-author: Chris
-date: '2017-06-03'
+author: Chris Ried
+date: '2018-08-21'
 slug: formatting-currencies-in-r
-categories:
+categories: 
   - R
-tags:
+tags: 
   - R
   - currencies
 ---

@@ -1,0 +1,57 @@
+---
+title: Phillips Hue in R
+author: 'Chris Ried'
+date: '2018-08-07'
+slug: phillips-hue-in-r
+categories: 
+  - R
+tags: 
+  - iot
+  - R
+  - hue
+---
+
+
+
+<p>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.</p>
+<pre><code>getIP &lt;- function()
+{
+  url &lt;- paste0(&quot;https://www.meethue.com/api/nupnp&quot;)
+  res &lt;- httpGET(url)
+  resJson &lt;- fromJSON(res)
+  res &lt;- resJson[[&quot;internalipaddress&quot;]]
+  res
+}
+</code></pre>
+<p>In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</p>
+<pre><code>getLights &lt;- function(ip, userName)
+{
+  ip &lt;- getIP()
+  url &lt;- paste0(&quot;http://&quot;,ip,&quot;/api/&quot;,userName,&quot;/lights/&quot;)
+  #content &lt;- paste0(&#39;{&quot;on&quot;:&#39;,state,&#39;}&#39;)
+  res &lt;- httpGET(url)
+  res
+}
+
+getLights(getIP(),userName)</code></pre>
+<p>In order to change the state of a particular light; the following function can be called. Make sure to have a light designated for it to be manipulated.</p>
+<pre><code>userName &lt;- &quot;&quot; 
+light &lt;- &quot;1&quot; 
+
+changeBrightness &lt;- function(ip, userName, light,brightness)
+{
+  ip &lt;- getIP()
+  url &lt;- paste0(&quot;http://&quot;,ip,&quot;/api/&quot;,userName,&quot;/lights/&quot;,as.character(light),&quot;/state&quot;)
+  content &lt;- paste0(&#39;{&quot;bri&quot;:&#39;,as.string(brightness),&#39;}&#39;)
+  res &lt;- httpPUT(url,content)
+  res
+}</code></pre>
+<p>Now to further play with that light, you can change the light brightness (1-254) on a sine wave or whatever function you might decide to use.</p>
+<pre><code># change the brightness based on sin wave 
+t = seq(0,60,0.3)
+y &lt;- sin(t)
+plot(y)
+vals &lt;- as.integer(rescale(y,range(1,254)))
+for(i in vals){changeBrightness(ip,userName,light,i)}
+
+</code></pre>

@@ -68,9 +68,18 @@
     <item>
       <title>Generative Text</title>
       <link>/categories/generative-text/</link>
-      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/generative-text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intellectual</title>
+      <link>/categories/intellectual/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/intellectual/</guid>
       <description></description>
     </item>
     
@@ -93,18 +102,9 @@
     </item>
     
     <item>
-      <title>Queueing</title>
-      <link>/categories/queueing/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/queueing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
       <description></description>
@@ -134,6 +134,15 @@
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/categories/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simmer</title>
+      <link>/categories/simmer/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/simmer/</guid>
       <description></description>
     </item>
     

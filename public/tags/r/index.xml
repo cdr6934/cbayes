@@ -6,10 +6,30 @@
     <description>Recent content in R on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Phillips Hue in R</title>
+      <link>/2018/08/07/phillips-hue-in-r/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/07/phillips-hue-in-r/</guid>
+      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.
+getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
+    </item>
+    
+    <item>
+      <title>Time and Difficulty</title>
+      <link>/2018/08/07/time-and-difficulty/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/07/time-and-difficulty/</guid>
+      <description>Sometimes, seeing data in a 3 dimensional space gives us better visibility to the rest of the world. You will see that we have taken a hypothetical experiment and tried to rate different ideas by their complexity and likelihood to succeed.
+#Libraries to import library(tidyverse) library(plotly) # Intellectual matrix idea &amp;lt;- c(&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;, &amp;quot;Clip toenails&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;) time &amp;lt;- c(5,5,2,3,1,5,5,2,3,5,5,2,3,1,5,5,2) difficulty &amp;lt;- c(5,4,2,3,1,5,4,2,3,5,5,2,3,1,5,5,2) favorability &amp;lt;- c(2,5,2,1,3,4,1,2,1,2,5,2,1,3,3,1,2) #Creates the dataframe dataset &amp;lt;- data.</description>
+    </item>
     
     <item>
       <title>Variable Importance in R</title>
@@ -59,27 +79,6 @@ Still in progress  </description>
       <description>In the ever changing world of retail; one always has to keep one step ahead of the competition and to engage with its customers. One of the best ways
  Formulate a test Implement Test Evaluate results Adjust the test Try again.  These are all great ideas, but how do we truly watch tas things get better?
 library(qcc) ## Package &amp;#39;qcc&amp;#39; version 2.7 ## Type &amp;#39;citation(&amp;quot;qcc&amp;quot;)&amp;#39; for citing this R package in publications.</description>
-    </item>
-    
-    <item>
-      <title>Formatting Currencies in R</title>
-      <link>/2017/06/03/formatting-currencies-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/formatting-currencies-in-r/</guid>
-      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I&amp;rsquo;ve found that there are a few different methods to do this.
-Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
-	library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3))  Formatting currency with separator Following is a simple function one can build and place in their utility function that will give formatted currency.</description>
-    </item>
-    
-    <item>
-      <title>Phillips Hue in R </title>
-      <link>/2017/06/03/phillips-hue-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/06/03/phillips-hue-in-r/</guid>
-      <description>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a &amp;ldquo;userkey&amp;rdquo; as I called it below.
-getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.com/api/nupnp&amp;quot;) res &amp;lt;- httpGET(url) resJson &amp;lt;- fromJSON(res) res &amp;lt;- resJson[[&amp;quot;internalipaddress&amp;quot;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network.</description>
     </item>
     
   </channel>
