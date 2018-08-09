@@ -10,9 +10,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-[[menu.main]]
-    name = "About"
-    url = "/about/"
+
 [[menu.main]]
     name = "Resume"
     url = "/resume/"
@@ -20,8 +18,8 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     name = "GitHub"
     url = "https://github.com/cdr6934"
 [[menu.main]]
-    name = "Music"
-    url = "https://analyte.bandcamp.com/"
+    name = "Medium"
+    url = "https://medium.com/@cdr6934"
 [[menu.main]]
     name = "Photography"
     url = "https://unsplash.com/@cdr6934"
