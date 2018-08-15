@@ -8,3 +8,18 @@ tags: []
 ---
 
 One of the fundamental priorities of a data scientist is being able to bend the data into a format that is plyable. Being able to effectively use tidyr, reshape2 and the core functions are key to success in being able to manage a large dataset without swimming or drowning in it. 
+
+But it does take discipline and instinct:
+
+```{r}
+library(tidyverse)
+library(rshape2)
+
+```
+
+
+Create a sales plan / budget
+```{r}
+
+```
+
