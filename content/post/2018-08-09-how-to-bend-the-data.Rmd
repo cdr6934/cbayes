@@ -18,7 +18,6 @@ library(rshape2)
 ```
 
 
-Create a sales plan / budget
 ```{r}
 
 ```
