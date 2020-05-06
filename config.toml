@@ -6,6 +6,9 @@ theme = "hugo-theme-noteworthy"
 googleAnalytics = "UA-100452126-1"
 disqusShortname = "cbayes" 
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+enableKofi = true
+kofi = "chrisried" 
+showReadMore = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -87,6 +90,6 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     #codepen = "#"
     
     # Academic
-    googlescholar = "#"
-    impactstory = "#"
-    orcid = "#"  
+    #googlescholar = "#"
+    #impactstory = "#"
+    #orcid = "#"  
