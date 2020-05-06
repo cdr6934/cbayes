@@ -11,7 +11,6 @@ Provides assistance in creating and implementing technology / analytics solution
 An Analytics Firm embracing projects to driving results through quick iteration in order to generate results that will bring more clarity to your business. 
 
 
-
 ### Services Provided 
 * Data Visualization Projects / Training
   * R, Shiny Development, Tableau, Microsoft PowerBI and Excel

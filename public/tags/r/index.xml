@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Chris Ried Blog</title>
+    <title>R on CBayes</title>
     <link>/tags/r/</link>
-    <description>Recent content in R on Chris Ried Blog</description>
+    <description>Recent content in R on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>

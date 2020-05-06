@@ -3,7 +3,7 @@ title: "Resume"
 ---
 
 # Christopher Ried
-### 7523 Althorp Way, T8, Nashville TN 37211 | 615.939.5124 | 
+### 119 N Maple Ridge Ln, Nashville TN 37072 | 615.939.5124 | 
 ### chris@cbayes.com
 
 ### Objective

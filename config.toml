@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "Chris Ried Blog"
+title = "CBayes"
 theme = "hugo-theme-noteworthy"
 googleAnalytics = "UA-100452126-1"
 disqusShortname = "cbayes" 
@@ -35,7 +35,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "A blog of thoughts"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
