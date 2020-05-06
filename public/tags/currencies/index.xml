@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Currencies on Chris Ried Blog</title>
+    <title>currencies on Chris Ried Blog</title>
     <link>/tags/currencies/</link>
-    <description>Recent content in Currencies on Chris Ried Blog</description>
+    <description>Recent content in currencies on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/currencies/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formatting Currencies in R</title>
-      <link>/2017/06/03/formatting-currencies-in-r/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      <link>/2018/08/21/formatting-currencies-in-r/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2017/06/03/formatting-currencies-in-r/</guid>
-      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I&amp;rsquo;ve found that there are a few different methods to do this.
+      <guid>/2018/08/21/formatting-currencies-in-r/</guid>
+      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
 Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
-	library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3))  Formatting currency with separator Following is a simple function one can build and place in their utility function that will give formatted currency.</description>
+ library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3)) ## [1] &amp;quot;-$100.00&amp;quot; &amp;quot;$0.23&amp;quot; &amp;quot;$1.46&amp;quot; &amp;quot;$2,000.</description>
     </item>
     
   </channel>

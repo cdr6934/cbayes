@@ -162,34 +162,20 @@ data_checkSheet$B_supplier +
 data_checkSheet$C_supplier
 
 data_checkSheet</code></pre>
-<pre><code>##           Group                 Cause A_supplier B_supplier C_supplier
-## 1      Manpower          Recepcionist          2          0          0
-## 2      Manpower      Record. Operator          0          0          1
-## 3      Manpower     Storage operators          0          1          0
-## 4      Machines       Compressor type          2          1          6
-## 5      Machines  Operation conditions          1          2          0
-## 6      Machines    Machine adjustment          7          1          2
-## 7     Materials              Supplier          1         12          2
-## 8     Materials      Transport agency          3          1          4
-## 9     Materials               Packing          6          2          3
-## 10      Methods             Reception          0          1          0
-## 11      Methods      Transport method          1          0          1
-## 12 Measurements      Recording method          2          0          0
-## 13 Measurements Measurement appraisal          0          1          2
-##    Total
-## 1      2
-## 2      1
-## 3      1
-## 4      9
-## 5      3
-## 6     10
-## 7     15
-## 8      8
-## 9     11
-## 10     1
-## 11     2
-## 12     2
-## 13     3</code></pre>
+<pre><code>##           Group                 Cause A_supplier B_supplier C_supplier Total
+## 1      Manpower          Recepcionist          2          0          0     2
+## 2      Manpower      Record. Operator          0          0          1     1
+## 3      Manpower     Storage operators          0          1          0     1
+## 4      Machines       Compressor type          2          1          6     9
+## 5      Machines  Operation conditions          1          2          0     3
+## 6      Machines    Machine adjustment          7          1          2    10
+## 7     Materials              Supplier          1         12          2    15
+## 8     Materials      Transport agency          3          1          4     8
+## 9     Materials               Packing          6          2          3    11
+## 10      Methods             Reception          0          1          0     1
+## 11      Methods      Transport method          1          0          1     2
+## 12 Measurements      Recording method          2          0          0     2
+## 13 Measurements Measurement appraisal          0          1          2     3</code></pre>
 <pre class="r"><code>data_pareto &lt;- data_checkSheet[order(
 data_checkSheet$Total,
 decreasing = TRUE), ]
@@ -223,6 +209,7 @@ main = &quot;Out-of-control causes&quot;)</code></pre>
 <pre class="r"><code>library(qualityTools)</code></pre>
 <pre><code>## Loading required package: Rsolnp</code></pre>
 <pre><code>## Loading required package: MASS</code></pre>
+<pre><code>## Warning: package &#39;MASS&#39; was built under R version 3.6.2</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;qualityTools&#39;</code></pre>
 <pre><code>## The following object is masked from &#39;package:stats&#39;:
@@ -231,31 +218,31 @@ main = &quot;Out-of-control causes&quot;)</code></pre>
 <pre class="r"><code>paretoChart(x = data_pareto2,
 main = &quot;Out-of-control causes&quot;)</code></pre>
 <p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
-<pre><code>##                                                                      
-## Frequency          15    11    10     9     8     3     3     2     2
-## Cum. Frequency     15    26    36    45    53    56    59    61    63
-## Percentage      22.1% 16.2% 14.7% 13.2% 11.8%  4.4%  4.4%  2.9%  2.9%
-## Cum. Percentage 22.1% 38.2% 52.9% 66.2% 77.9% 82.4% 86.8% 89.7% 92.6%
-##                                         
-## Frequency           2     1     1      1
-## Cum. Frequency     65    66    67     68
-## Percentage       2.9%  1.5%  1.5%   1.5%
-## Cum. Percentage 95.6% 97.1% 98.5% 100.0%</code></pre>
+<pre><code>##                                                                            
+## Frequency          15    11    10     9     8     3     3     2     2     2
+## Cum. Frequency     15    26    36    45    53    56    59    61    63    65
+## Percentage      22.1% 16.2% 14.7% 13.2% 11.8%  4.4%  4.4%  2.9%  2.9%  2.9%
+## Cum. Percentage 22.1% 38.2% 52.9% 66.2% 77.9% 82.4% 86.8% 89.7% 92.6% 95.6%
+##                                   
+## Frequency           1     1      1
+## Cum. Frequency     66    67     68
+## Percentage       1.5%  1.5%   1.5%
+## Cum. Percentage 97.1% 98.5% 100.0%</code></pre>
 <pre><code>##                                                                       
 ## Frequency       15.00000 11.00000 10.00000  9.00000  8.00000  3.000000
 ## Cum. Frequency  15.00000 26.00000 36.00000 45.00000 53.00000 56.000000
 ## Percentage      22.05882 16.17647 14.70588 13.23529 11.76471  4.411765
 ## Cum. Percentage 22.05882 38.23529 52.94118 66.17647 77.94118 82.352941
-##                                                                  
-## Frequency        3.000000  2.000000  2.000000  2.000000  1.000000
-## Cum. Frequency  59.000000 61.000000 63.000000 65.000000 66.000000
-## Percentage       4.411765  2.941176  2.941176  2.941176  1.470588
-## Cum. Percentage 86.764706 89.705882 92.647059 95.588235 97.058824
-##                                     
-## Frequency        1.000000   1.000000
-## Cum. Frequency  67.000000  68.000000
-## Percentage       1.470588   1.470588
-## Cum. Percentage 98.529412 100.000000</code></pre>
+##                                                                            
+## Frequency        3.000000  2.000000  2.000000  2.000000  1.000000  1.000000
+## Cum. Frequency  59.000000 61.000000 63.000000 65.000000 66.000000 67.000000
+## Percentage       4.411765  2.941176  2.941176  2.941176  1.470588  1.470588
+## Cum. Percentage 86.764706 89.705882 92.647059 95.588235 97.058824 98.529412
+##                           
+## Frequency         1.000000
+## Cum. Frequency   68.000000
+## Percentage        1.470588
+## Cum. Percentage 100.000000</code></pre>
 <pre class="r"><code>spreadvector &lt;- rep(names(data_pareto2),times = data_pareto2)
 paretochart(spreadvector)</code></pre>
 <p><img src="/post/2017-09-21-tracking-change-improvements-in-retail_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>

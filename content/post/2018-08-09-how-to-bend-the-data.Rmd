@@ -13,12 +13,6 @@ But it does take discipline and instinct to understand the validity of the data 
 
 ```{r}
 library(tidyverse)
-library(rshape2)
+library(reshape2)
 
 ```
-
-
-```{r}
-
-```
-

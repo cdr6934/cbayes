@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chris Ried Blog</title>
@@ -6,10 +6,21 @@
     <description>Recent content on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Formatting Currencies in R</title>
+      <link>/2018/08/21/formatting-currencies-in-r/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/21/formatting-currencies-in-r/</guid>
+      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
+Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
+ library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3)) ## [1] &amp;quot;-$100.00&amp;quot; &amp;quot;$0.23&amp;quot; &amp;quot;$1.46&amp;quot; &amp;quot;$2,000.</description>
+    </item>
     
     <item>
       <title>How to bend the data</title>
@@ -17,17 +28,8 @@
       <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/08/09/how-to-bend-the-data/</guid>
-      <description>One of the fundamental priorities of a data scientist is being able to bend the data into a format that is plyable.</description>
-    </item>
-    
-    <item>
-      <title>Crypto Currency Analysis</title>
-      <link>/2018/08/07/crypto-currency-analysis/</link>
-      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/08/07/crypto-currency-analysis/</guid>
-      <description>I came across the following package coinmarketcapr that would bring back current prices of the bitcoin verity. In the following you can find just a couple simple examples to be able to observe the current prices.
-Code #get the global market cap details and assign it to a dataframe all_coins &amp;lt;- get_marketcap_ticker_all() DT::datatable(all_coins)  {&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;data&#34;:[[&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;,&#34;7&#34;,&#34;8&#34;,&#34;9&#34;,&#34;10&#34;,&#34;11&#34;,&#34;12&#34;,&#34;13&#34;,&#34;14&#34;,&#34;15&#34;,&#34;16&#34;,&#34;17&#34;,&#34;18&#34;,&#34;19&#34;,&#34;20&#34;,&#34;21&#34;,&#34;22&#34;,&#34;23&#34;,&#34;24&#34;,&#34;25&#34;,&#34;26&#34;,&#34;27&#34;,&#34;28&#34;,&#34;29&#34;,&#34;30&#34;,&#34;31&#34;,&#34;32&#34;,&#34;33&#34;,&#34;34&#34;,&#34;35&#34;,&#34;36&#34;,&#34;37&#34;,&#34;38&#34;,&#34;39&#34;,&#34;40&#34;,&#34;41&#34;,&#34;42&#34;,&#34;43&#34;,&#34;44&#34;,&#34;45&#34;,&#34;46&#34;,&#34;47&#34;,&#34;48&#34;,&#34;49&#34;,&#34;50&#34;,&#34;51&#34;,&#34;52&#34;,&#34;53&#34;,&#34;54&#34;,&#34;55&#34;,&#34;56&#34;,&#34;57&#34;,&#34;58&#34;,&#34;59&#34;,&#34;60&#34;,&#34;61&#34;,&#34;62&#34;,&#34;63&#34;,&#34;64&#34;,&#34;65&#34;,&#34;66&#34;,&#34;67&#34;,&#34;68&#34;,&#34;69&#34;,&#34;70&#34;,&#34;71&#34;,&#34;72&#34;,&#34;73&#34;,&#34;74&#34;,&#34;75&#34;,&#34;76&#34;,&#34;77&#34;,&#34;78&#34;,&#34;79&#34;,&#34;80&#34;,&#34;81&#34;,&#34;82&#34;,&#34;83&#34;,&#34;84&#34;,&#34;85&#34;,&#34;86&#34;,&#34;87&#34;,&#34;88&#34;,&#34;89&#34;,&#34;90&#34;,&#34;91&#34;,&#34;92&#34;,&#34;93&#34;,&#34;94&#34;,&#34;95&#34;,&#34;96&#34;,&#34;97&#34;,&#34;98&#34;,&#34;99&#34;,&#34;100&#34;],[&#34;bitcoin&#34;,&#34;ethereum&#34;,&#34;ripple&#34;,&#34;bitcoin-cash&#34;,&#34;eos&#34;,&#34;stellar&#34;,&#34;litecoin&#34;,&#34;cardano&#34;,&#34;tether&#34;,&#34;iota&#34;,&#34;tron&#34;,&#34;monero&#34;,&#34;ethereum-classic&#34;,&#34;dash&#34;,&#34;neo&#34;,&#34;binance-coin&#34;,&#34;nem&#34;,&#34;tezos&#34;,&#34;zcash&#34;,&#34;omisego&#34;,&#34;vechain&#34;,&#34;0x&#34;,&#34;qtum&#34;,&#34;bytecoin-bcn&#34;,&#34;bitcoin-gold&#34;,&#34;lisk&#34;,&#34;decred&#34;,&#34;maker&#34;,&#34;bitshares&#34;,&#34;zilliqa&#34;,&#34;icon&#34;,&#34;aeternity&#34;,&#34;digibyte&#34;,&#34;steem&#34;,&#34;dogecoin&#34;,&#34;ontology&#34;,&#34;augur&#34;,&#34;basic-attention-token&#34;,&#34;moac&#34;,&#34;verge&#34;,&#34;siacoin&#34;,&#34;bitcoin-diamond&#34;,&#34;bytom&#34;,&#34;rchain&#34;,&#34;kucoin-shares&#34;,&#34;golem-network-tokens&#34;,&#34;pundi-x&#34;,&#34;nano&#34;,&#34;waves&#34;,&#34;stratis&#34;,&#34;hshare&#34;,&#34;status&#34;,&#34;populous&#34;,&#34;iostoken&#34;,&#34;aurora&#34;,&#34;mithril&#34;,&#34;maidsafecoin&#34;,&#34;komodo&#34;,&#34;digixdao&#34;,&#34;ardor&#34;,&#34;mixin&#34;,&#34;aelf&#34;,&#34;waltonchain&#34;,&#34;huobi-token&#34;,&#34;wanchain&#34;,&#34;kin&#34;,&#34;metaverse&#34;,&#34;gxchain&#34;,&#34;monacoin&#34;,&#34;dentacoin&#34;,&#34;aion&#34;,&#34;cryptonex&#34;,&#34;chainlink&#34;,&#34;funfair&#34;,&#34;holo&#34;,&#34;bancor&#34;,&#34;zencash&#34;,&#34;bitcoin-private&#34;,&#34;decentraland&#34;,&#34;monaco&#34;,&#34;emercoin&#34;,&#34;wax&#34;,&#34;ark&#34;,&#34;nebulas-token&#34;,&#34;odem&#34;,&#34;dropil&#34;,&#34;paypex&#34;,&#34;power-ledger&#34;,&#34;loopring&#34;,&#34;reddcoin&#34;,&#34;kyber-network&#34;,&#34;nxt&#34;,&#34;pivx&#34;,&#34;zcoin&#34;,&#34;theta-token&#34;,&#34;tenx&#34;,&#34;gas&#34;,&#34;loom-network&#34;,&#34;elastos&#34;,&#34;zclassic&#34;],[&#34;Bitcoin&#34;,&#34;Ethereum&#34;,&#34;XRP&#34;,&#34;Bitcoin Cash&#34;,&#34;EOS&#34;,&#34;Stellar&#34;,&#34;Litecoin&#34;,&#34;Cardano&#34;,&#34;Tether&#34;,&#34;IOTA&#34;,&#34;TRON&#34;,&#34;Monero&#34;,&#34;Ethereum Classic&#34;,&#34;Dash&#34;,&#34;NEO&#34;,&#34;Binance Coin&#34;,&#34;NEM&#34;,&#34;Tezos&#34;,&#34;Zcash&#34;,&#34;OmiseGO&#34;,&#34;VeChain&#34;,&#34;0x&#34;,&#34;Qtum&#34;,&#34;Bytecoin&#34;,&#34;Bitcoin Gold&#34;,&#34;Lisk&#34;,&#34;Decred&#34;,&#34;Maker&#34;,&#34;BitShares&#34;,&#34;Zilliqa&#34;,&#34;ICON&#34;,&#34;Aeternity&#34;,&#34;DigiByte&#34;,&#34;Steem&#34;,&#34;Dogecoin&#34;,&#34;Ontology&#34;,&#34;Augur&#34;,&#34;Basic Attention Token&#34;,&#34;MOAC&#34;,&#34;Verge&#34;,&#34;Siacoin&#34;,&#34;Bitcoin Diamond&#34;,&#34;Bytom&#34;,&#34;RChain&#34;,&#34;KuCoin Shares&#34;,&#34;Golem&#34;,&#34;Pundi X&#34;,&#34;Nano&#34;,&#34;Waves&#34;,&#34;Stratis&#34;,&#34;Hshare&#34;,&#34;Status&#34;,&#34;Populous&#34;,&#34;IOST&#34;,&#34;Aurora&#34;,&#34;Mithril&#34;,&#34;MaidSafeCoin&#34;,&#34;Komodo&#34;,&#34;DigixDAO&#34;,&#34;Ardor&#34;,&#34;Mixin&#34;,&#34;aelf&#34;,&#34;Waltonchain&#34;,&#34;Huobi Token&#34;,&#34;Wanchain&#34;,&#34;Kin&#34;,&#34;Metaverse ETP&#34;</description>
+      <description>One of the fundamental priorities of a data scientist is being able to bend the data into a format that is plyable. Being able to effectively use tidyr, reshape2 and the core functions are key to success in being able to manage a large dataset without swimming or drowning in it.
+But it does take discipline and instinct to understand the validity of the data so lets exercise this a little:</description>
     </item>
     
     <item>
@@ -47,7 +49,7 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
       
       <guid>/2018/08/07/simulate-resource-planning-using-simmer/</guid>
       <description>Following code tries to resource plan certain doctor visits based on the vignette that was provided with the simmer package.
-library(simmer) set.seed(42) env &amp;lt;- simmer(&amp;quot;SuperDuperSim&amp;quot;) env ## simmer environment: SuperDuperSim | now: 0 | next: patient &amp;lt;- trajectory(&amp;quot;patients&amp;#39; path&amp;quot;) %&amp;gt;% ## add an intake activity seize(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 15)) %&amp;gt;% release(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% ## add a consultation activity seize(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 20)) %&amp;gt;% release(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% ## add a planning activity seize(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 5)) %&amp;gt;% release(&amp;quot;administration&amp;quot;, 1) env %&amp;gt;% add_resource(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% add_resource(&amp;quot;doctor&amp;quot;, 2) %&amp;gt;% add_resource(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% add_generator(&amp;quot;patient&amp;quot;, patient, function() rnorm(1, 10, 2)) ## simmer environment: SuperDuperSim | now: 0 | next: 0 ## { Resource: nurse | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Resource: doctor | monitored: TRUE | server status: 0(2) | queue status: 0(Inf) } ## { Resource: administration | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Generator: patient | monitored: 1 | n_generated: 0 } env %&amp;gt;% run(80) %&amp;gt;% now() ## [1] 80 env %&amp;gt;% peek(3) ## [1] 81.</description>
+library(simmer) ## Warning: package &amp;#39;simmer&amp;#39; was built under R version 3.6.2 set.seed(42) env &amp;lt;- simmer(&amp;quot;SuperDuperSim&amp;quot;) env ## simmer environment: SuperDuperSim | now: 0 | next: ## { Monitor: in memory } patient &amp;lt;- trajectory(&amp;quot;patients&amp;#39; path&amp;quot;) %&amp;gt;% ## add an intake activity seize(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 15)) %&amp;gt;% release(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% ## add a consultation activity seize(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 20)) %&amp;gt;% release(&amp;quot;doctor&amp;quot;, 1) %&amp;gt;% ## add a planning activity seize(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% timeout(function() rnorm(1, 5)) %&amp;gt;% release(&amp;quot;administration&amp;quot;, 1) env %&amp;gt;% add_resource(&amp;quot;nurse&amp;quot;, 1) %&amp;gt;% add_resource(&amp;quot;doctor&amp;quot;, 2) %&amp;gt;% add_resource(&amp;quot;administration&amp;quot;, 1) %&amp;gt;% add_generator(&amp;quot;patient&amp;quot;, patient, function() rnorm(1, 10, 2)) ## simmer environment: SuperDuperSim | now: 0 | next: 0 ## { Monitor: in memory } ## { Resource: nurse | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Resource: doctor | monitored: TRUE | server status: 0(2) | queue status: 0(Inf) } ## { Resource: administration | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Source: patient | monitored: 1 | n_generated: 0 } env %&amp;gt;% run(80) %&amp;gt;% now() ## [1] 80 env %&amp;gt;% peek(3) ## [1] 80.</description>
     </item>
     
     <item>
@@ -66,7 +68,7 @@ library(simmer) set.seed(42) env &amp;lt;- simmer(&amp;quot;SuperDuperSim&amp;qu
       
       <guid>/2018/08/07/time-and-difficulty/</guid>
       <description>Sometimes, seeing data in a 3 dimensional space gives us better visibility to the rest of the world. You will see that we have taken a hypothetical experiment and tried to rate different ideas by their complexity and likelihood to succeed.
-#Libraries to import library(tidyverse) library(plotly) # Intellectual matrix idea &amp;lt;- c(&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;, &amp;quot;Clip toenails&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;,&amp;quot;Build a spaceship&amp;quot;,&amp;quot;Create a new social platform&amp;quot;, &amp;quot;Build a birdhouse&amp;quot;,&amp;quot;Collect 10000 friends&amp;quot;) time &amp;lt;- c(5,5,2,3,1,5,5,2,3,5,5,2,3,1,5,5,2) difficulty &amp;lt;- c(5,4,2,3,1,5,4,2,3,5,5,2,3,1,5,5,2) favorability &amp;lt;- c(2,5,2,1,3,4,1,2,1,2,5,2,1,3,3,1,2) #Creates the dataframe dataset &amp;lt;- data.</description>
+#Libraries to import library(tidyverse) ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -76,7 +78,7 @@ library(simmer) set.seed(42) env &amp;lt;- simmer(&amp;quot;SuperDuperSim&amp;qu
       
       <guid>/2018/01/08/minature-generative-art/</guid>
       <description>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.
-Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .1) + theme_void()  Wavy Weaving of Wonder seq(from=-10, to=10, by = 0.</description>
+Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .</description>
     </item>
     
     <item>
@@ -85,7 +87,7 @@ Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/04/extracting-hyperlinks-from-an-xslx-in-r/</guid>
-      <description>In Progress install.packages(“keras”) library(keras)
+      <description> In Progress install.packages(“keras”) library(keras)
 devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
  </description>
     </item>
@@ -96,7 +98,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -105,7 +107,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/03/words-with-friends-musings/</guid>
-      <description>#library(tidyverse) # IMport Data #filepath &amp;lt;- &amp;quot;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&amp;quot; #wwfList &amp;lt;- read_csv(filepath, col_names = FALSE) #wwfList %&amp;gt;% stringr::str(&amp;#39;.ae.&amp;#39;) </description>
+      <description> #library(tidyverse) # IMport Data #filepath &amp;lt;- &amp;quot;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&amp;quot; #wwfList &amp;lt;- read_csv(filepath, col_names = FALSE) #wwfList %&amp;gt;% stringr::str(&amp;#39;.ae.&amp;#39;) </description>
     </item>
     
     <item>
@@ -114,7 +116,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
+      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -170,7 +172,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/08/tips-on-feature-engineering/</guid>
-      <description>Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
+      <description> Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
     </item>
     
     <item>
@@ -179,7 +181,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/06/great-statistics-books-to-read/</guid>
-      <description>Following you will find a number of the best books to learn more about statistics and its philosophy.
+      <description> Following you will find a number of the best books to learn more about statistics and its philosophy.
  Opinionated Lessons on Statistics Introduction to Statistical Learning The Elements of Statistical Learning Applied Predicitive Modeling Statistical Inference Statistical Rethinking Data Analysis Using Regression and Multilevel/Hierarchical Models Mostly Harmless Econometrics Mastering Metrics: The Path from Cause to Effect All of Statistics Statistics Statistics for Experimenters Think Bayes Computer Age Statistical Inference Think Stats Machine Learning for Hackers Probability and Statistics Statistical Evidence: A likelihood paradigm  </description>
     </item>
     
@@ -198,7 +200,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description>In progress  </description>
+      <description> In progress  </description>
     </item>
     
     <item>
@@ -207,7 +209,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/03/mapping-functions-in-r-base/</guid>
-      <description>The following functions are given:
+      <description> The following functions are given:
  Reduce(f, x, init, right = FALSE, accumulate = FALSE) Filter(f, x) Find(f, x, right = FALSE, nomatch = NULL) Map(f, …) Negate(f) Position(f, x, right = FALSE, nomatch = NA_integer_)  x &amp;lt;- c(1,2,3) add &amp;lt;- function(x) {x+2} Map(add, x) ## [[1]] ## [1] 3 ## ## [[2]] ## [1] 4 ## ## [[3]] ## [1] 5 Reduce(&amp;quot;+&amp;quot;,x,accumulate = TRUE) ## [1] 1 3 6 x &amp;lt;- NULL missing(x) ## [1] FALSE # Now its missing a formal argument t &amp;lt;- function(x, y) { if(xd) { y &amp;lt;- x } x+y } t2 &amp;lt;- function(x, y) { x+y } isTRUE(TRUE) ## [1] TRUE a &amp;lt;- c(2,2,3) b &amp;lt;- c(1,4,2) a %in% b  ## [1] TRUE TRUE FALSE 1 %in% b  ## [1] TRUE </description>
     </item>
     
@@ -219,7 +221,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <guid>/2017/09/29/ab-testing-in-r-from-scratch/</guid>
       <description>Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
 Approximate Bayesian Computation
- Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) # Variables n_visitors_a &amp;lt;- 100 # number of visitors shown layout A n_conv_a &amp;lt;- 4 # number of vistors shown layout A who converted (4%) n_visitors_b &amp;lt;- 40 n_conv_b &amp;lt;- 2 Using Bayesian Systems</description>
+ Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) ## Warning: package &amp;#39;reshape2&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -228,7 +230,7 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description>#In progress
+      <description> #In progress
 Still in progress  </description>
     </item>
     
@@ -268,7 +270,7 @@ Following are a couple tips of advice I’ve collected over the last five years.
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/17/adding-an-plumber-api-to-connect/</guid>
-      <description>Creating a Plumber.R file  </description>
+      <description> Creating a Plumber.R file  </description>
     </item>
     
     <item>
@@ -292,42 +294,6 @@ Setup a Droplet image I created a Ubuntu 16.</description>
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
 RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>About       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/consulting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/consulting/</guid>
-      <description>code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>projects.utf8.md /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/resume/</guid>
-      <description>Resume       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .table th:not([align]) { text-align: left; }    .</description>
     </item>
     
     <item>
@@ -357,7 +323,7 @@ My name is Chris Ried and I&amp;rsquo;ve put together this site to accumulate me
       <guid>/consulting/</guid>
       <description>CBayes Analytics Consulting Provides assistance in creating and implementing technology / analytics solutions into your environment in order for you to stay ahead of the curve.
 Who are we? An Analytics Firm embracing projects to driving results through quick iteration in order to generate results that will bring more clarity to your business.
-Services Provided  Data Visualization Projects / Training  R, Shiny Development, Tableau, Microsoft PowerBI and Excel  Cleansing Data Strategies  Hybrid Automated / Crowdsourced Implementations  Infrastructure Implementations Building APIs for stategic data  Contact Information  Email: chris@cbayes.</description>
+Services Provided  Data Visualization Projects / Training  R, Shiny Development, Tableau, Microsoft PowerBI and Excel   Cleansing Data Strategies  Hybrid Automated / Crowdsourced Implementations   Infrastructure Implementations Building APIs for stategic data  Contact Information  Email: chris@cbayes.</description>
     </item>
     
     <item>

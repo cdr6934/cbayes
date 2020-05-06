@@ -2,7 +2,7 @@ baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
 title = "Chris Ried Blog"
-theme = "hugo-lithium-theme"
+theme = "hugo-theme-noteworthy"
 googleAnalytics = "UA-100452126-1"
 disqusShortname = "cbayes" 
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
@@ -51,4 +51,42 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     width = 50
     height = 50
     alt = "Logo"
-
+    
+    # Main
+    email = "chris@cbayes.com"
+    facebook = "https://www.facebook.com/christopher.ried/"
+    twitter = "https://twitter.com/cdr6934"
+    instagram = "https://www.instagram.com/generate.collective/"
+    #tumblr = "#"
+    reddit = "https://www.reddit.com/user/digitalbro"
+    #pinterest = "#"
+    #youtube = "#"
+    #vimeo = "#"
+    #weibo = "#"
+    #vk = "#"
+    linkedin = "https://www.linkedin.com/in/chrisried/"
+    
+    # Writing
+    medium = "https://medium.com/@cdr6934"
+    #blogger = "#"
+    #wordpress = "#"
+    
+    # Creative & Visual
+    #dribbble = "#"
+    #behance = "#"
+    #deviantart = "#"
+    #flickr = "#"
+    
+    # Audio & Music
+    soundcloud = "https://soundcloud.com/chris_ried"
+    
+    # Programming
+    github = "https://github.com/cdr6934"
+    stackoverflow = "https://stackoverflow.com/users/862808/c-ried"
+    #gitlab = ""
+    #codepen = "#"
+    
+    # Academic
+    googlescholar = "#"
+    impactstory = "#"
+    orcid = "#"  

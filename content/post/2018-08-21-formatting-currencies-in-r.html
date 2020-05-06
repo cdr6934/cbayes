@@ -16,13 +16,14 @@ tags:
 <div id="using-the-scales-package" class="section level3">
 <h3>Using the scales package</h3>
 <p>Using the <em>scales</em> packages from Hadley, there is a great function with various options including passing a vector.</p>
-<pre><code>    library(scales)
+<pre class="r"><code>    library(scales)
     dollar_format()(c(-100, 0.23, 1.456565, 2e3))</code></pre>
+<pre><code>## [1] &quot;-$100.00&quot;  &quot;$0.23&quot;     &quot;$1.46&quot;     &quot;$2,000.00&quot;</code></pre>
 </div>
 <div id="formatting-currency-with-separator" class="section level3">
 <h3>Formatting currency with separator</h3>
 <p>Following is a simple function one can build and place in their utility function that will give formatted currency.</p>
-<pre><code>myNum = 1234.12 
+<pre class="r"><code>myNum = 1234.12 
 
 toCurrency &lt;- function(money)
 {
@@ -30,4 +31,5 @@ toCurrency &lt;- function(money)
 }
 
 toCurrency(myNum)</code></pre>
+<pre><code>## [1] &quot;$1,234.12&quot;</code></pre>
 </div>

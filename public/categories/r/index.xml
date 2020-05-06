@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Chris Ried Blog</title>
@@ -6,10 +6,21 @@
     <description>Recent content in R on Chris Ried Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Formatting Currencies in R</title>
+      <link>/2018/08/21/formatting-currencies-in-r/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/21/formatting-currencies-in-r/</guid>
+      <description>here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
+Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
+ library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3)) ## [1] &amp;quot;-$100.00&amp;quot; &amp;quot;$0.23&amp;quot; &amp;quot;$1.46&amp;quot; &amp;quot;$2,000.</description>
+    </item>
     
     <item>
       <title>Phillips Hue in R</title>
@@ -28,7 +39,7 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
       
       <guid>/2018/01/08/minature-generative-art/</guid>
       <description>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.
-Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .1) + theme_void()  Wavy Weaving of Wonder seq(from=-10, to=10, by = 0.</description>
+Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2 &amp;lt;- t0 + (t0 == 0)*n df &amp;lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) + geom_segment(alpha = .</description>
     </item>
     
     <item>
@@ -37,7 +48,7 @@ Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/04/extracting-hyperlinks-from-an-xslx-in-r/</guid>
-      <description>In Progress install.packages(“keras”) library(keras)
+      <description> In Progress install.packages(“keras”) library(keras)
 devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
  </description>
     </item>
@@ -48,7 +59,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -57,7 +68,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.2.1 ── ## ✔ ggplot2 2.2.1.9000 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.2.0 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## ✖ dplyr::filter() masks stats::filter() ## ✖ purrr::flatten() masks jsonlite::flatten() ## ✖ dplyr::lag() masks stats::lag() library(wordcloud) ## Loading required package: RColorBrewer library(XML) source(&amp;quot;~/keys.R&amp;quot;) key &amp;lt;- biblia There is much to be learned in the form of writing and the relationship it has within and outside the text.</description>
+      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -102,7 +113,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/08/tips-on-feature-engineering/</guid>
-      <description>Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
+      <description> Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
     </item>
     
     <item>
@@ -120,7 +131,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description>In progress  </description>
+      <description> In progress  </description>
     </item>
     
     <item>
@@ -129,7 +140,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/03/mapping-functions-in-r-base/</guid>
-      <description>The following functions are given:
+      <description> The following functions are given:
  Reduce(f, x, init, right = FALSE, accumulate = FALSE) Filter(f, x) Find(f, x, right = FALSE, nomatch = NULL) Map(f, …) Negate(f) Position(f, x, right = FALSE, nomatch = NA_integer_)  x &amp;lt;- c(1,2,3) add &amp;lt;- function(x) {x+2} Map(add, x) ## [[1]] ## [1] 3 ## ## [[2]] ## [1] 4 ## ## [[3]] ## [1] 5 Reduce(&amp;quot;+&amp;quot;,x,accumulate = TRUE) ## [1] 1 3 6 x &amp;lt;- NULL missing(x) ## [1] FALSE # Now its missing a formal argument t &amp;lt;- function(x, y) { if(xd) { y &amp;lt;- x } x+y } t2 &amp;lt;- function(x, y) { x+y } isTRUE(TRUE) ## [1] TRUE a &amp;lt;- c(2,2,3) b &amp;lt;- c(1,4,2) a %in% b  ## [1] TRUE TRUE FALSE 1 %in% b  ## [1] TRUE </description>
     </item>
     
@@ -141,7 +152,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <guid>/2017/09/29/ab-testing-in-r-from-scratch/</guid>
       <description>Using Bayesian Systems  Quantify the probability of all possibilites thus measuring risk insert institutional knowledge (add knowledge that changes the probability) learn in an online fashion   A/B Testing with Approximate Bayesian Computation  No mathematics required able to implement from scratch   A/B Testing Measures and figures out the better design
 Approximate Bayesian Computation
- Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) # Variables n_visitors_a &amp;lt;- 100 # number of visitors shown layout A n_conv_a &amp;lt;- 4 # number of vistors shown layout A who converted (4%) n_visitors_b &amp;lt;- 40 n_conv_b &amp;lt;- 2 Using Bayesian Systems</description>
+ Generate a trial value for the thing we want to know (in this case its the conversion fraction of a layout) Simulate or data assuming the trail value, keep the trial value, otherwise discard it and try again If the simulation looks like the real data, keep the trial value, otherwise discard and try again Keep doing this until we’ve got lots of trial values that worked  library(progress) library(ggplot2) library(reshape2) ## Warning: package &amp;#39;reshape2&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -180,7 +191,7 @@ Following are a couple tips of advice I’ve collected over the last five years.
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/17/adding-an-plumber-api-to-connect/</guid>
-      <description>Creating a Plumber.R file  </description>
+      <description> Creating a Plumber.R file  </description>
     </item>
     
     <item>

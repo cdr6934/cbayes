@@ -1,83 +1,154 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
-  <head>
+    <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.32" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
 
+    <title>Gantt Charts in R | Chris Ried Blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../manifest.json">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
 
-<title>Gantt Charts in R - Chris Ried Blog</title>
-<meta property="og:title" content="Gantt Charts in R - Chris Ried Blog">
+    
+    
+    
+    <link rel="stylesheet" href="../../../../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
 
+    
+    
+    
 
+    
+    
+ 
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-100452126-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</head>
 
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../../../../">Chris Ried Blog</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
   
+    <a class="color-link nav-link" href="../../../../consulting/">Consulting</a>
+  
+    <a class="color-link nav-link" href="https://github.com/cdr6934">GitHub</a>
+  
+    <a class="color-link nav-link" href="https://medium.com/@cdr6934">Medium</a>
+  
+    <a class="color-link nav-link" href="https://unsplash.com/@cdr6934">Photography</a>
+  
+    <a class="color-link nav-link" href="../../../../projects/">Projects</a>
+  
+    <a class="color-link nav-link" href="../../../../resume/">Resume</a>
+  
+    <a class="color-link nav-link" href="https://twitter.com/cdr6934">Twitter</a>
+  
+  <a class="color-link nav-link" href="../../../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
 
-
-
-
-
-
-
-
-<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
-
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
     
-    <li><a href="../../../../consulting/">Consulting</a></li>
+
     
-    <li><a href="https://github.com/cdr6934">GitHub</a></li>
+
     
-    <li><a href="https://medium.com/@cdr6934">Medium</a></li>
+
     
-    <li><a href="https://unsplash.com/@cdr6934">Photography</a></li>
+
     
-    <li><a href="../../../../projects/">Projects</a></li>
+
     
-    <li><a href="../../../../resume/">Resume</a></li>
+
     
-    <li><a href="https://twitter.com/cdr6934">Twitter</a></li>
+
     
-  </ul>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+	<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+
+	<script src="../../../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
 </nav>
 
-      </header>
+        <div id="content" class="content-container">
+        
 
-
-<main class="content" role="main">
-
-  <article class="article">
+<h1 class="post-title">Gantt Charts in R</h1>
     
-    <span class="article-duration">4 min read</span>
+    <time>October 17, 2017</time>
     
-
-    <h1 class="article-title">Gantt Charts in R</h1>
-
-    
-    <span class="article-date">2017/10/17</span>
-    
-
-    <div class="article-content">
-      <script src="../../../../rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+    <div>
+        <p>
+        
+<script src="../../../../rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
 <link href="../../../../rmarkdown-libs/vis/vis.min.css" rel="stylesheet" />
 <script src="../../../../rmarkdown-libs/vis/vis.min.js"></script>
 <link href="../../../../rmarkdown-libs/timeline/timevis.css" rel="stylesheet" />
@@ -91,7 +162,7 @@
 <script src="../../../../rmarkdown-libs/d3/d3.min.js"></script>
 <script src="../../../../rmarkdown-libs/dagre/dagre-d3.min.js"></script>
 <link href="../../../../rmarkdown-libs/mermaid/dist/mermaid.css" rel="stylesheet" />
-<script src="../../../../rmarkdown-libs/mermaid/dist/mermaid.slim.min.js"></script>
+<script src="../../../../rmarkdown-libs/mermaid/dist/mermaid.js"></script>
 <link href="../../../../rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
 <script src="../../../../rmarkdown-libs/chromatography/chromatography.js"></script>
 <script src="../../../../rmarkdown-libs/DiagrammeR-binding/DiagrammeR.js"></script>
@@ -99,8 +170,8 @@
 <script src="../../../../rmarkdown-libs/typedarray/typedarray.min.js"></script>
 <link href="../../../../rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
 <script src="../../../../rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
-<link href="../../../../rmarkdown-libs/plotlyjs/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="../../../../rmarkdown-libs/plotlyjs/plotly-latest.min.js"></script>
+<link href="../../../../rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="../../../../rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
 
 
 <div id="in-progress" class="section level1">
@@ -167,91 +238,111 @@ More of the extras            :               extras_3,   after extras_1, 48h
 <div id="using-plotly" class="section level2">
 <h2>Using Plotly</h2>
 <p>If you wanted to use a more</p>
-<div id="16374b1ba48e" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="16374b1ba48e">{"x":{"visdat":{"1637266b3f96":["function () ","plotlyVisDat"]},"cur_data":"1637266b3f96","attrs":{"1637266b3f96":{"alpha":1,"sizes":[10,100],"x":["2016-01-01","2016-02-20"],"y":[1,1],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 1 <br> Duration:  50 days<br> Resource:  A","evaluate":true},"1637266b3f96.1":{"alpha":1,"sizes":[10,100],"x":["2016-02-20","2016-03-16"],"y":[2,2],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 2 <br> Duration:  25 days<br> Resource:  B","evaluate":true},"1637266b3f96.2":{"alpha":1,"sizes":[10,100],"x":["2016-01-01","2016-04-10"],"y":[3,3],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 3 <br> Duration:  100 days<br> Resource:  C","evaluate":true},"1637266b3f96.3":{"alpha":1,"sizes":[10,100],"x":["2016-04-10","2016-06-09"],"y":[4,4],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 4 <br> Duration:  60 days<br> Resource:  C","evaluate":true},"1637266b3f96.4":{"alpha":1,"sizes":[10,100],"x":["2016-06-09","2016-07-09"],"y":[5,5],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 5 <br> Duration:  30 days<br> Resource:  C","evaluate":true},"1637266b3f96.5":{"alpha":1,"sizes":[10,100],"x":["2016-04-10","2016-09-07"],"y":[6,6],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 6 <br> Duration:  150 days<br> Resource:  A","evaluate":true},"1637266b3f96.6":{"alpha":1,"sizes":[10,100],"x":["2016-09-07","2016-11-26"],"y":[7,7],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 7 <br> Duration:  80 days<br> Resource:  B","evaluate":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1]},"yaxis":{"domain":[0,1]},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":["2016-01-01","2016-02-20"],"y":[1,1],"mode":"lines","line":{"fillcolor":"rgba(31,119,180,1)","color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 1 <br> Duration:  50 days<br> Resource:  A","Task:  Task 1 <br> Duration:  50 days<br> Resource:  A"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-02-20","2016-03-16"],"y":[2,2],"mode":"lines","line":{"fillcolor":"rgba(255,127,14,1)","color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 2 <br> Duration:  25 days<br> Resource:  B","Task:  Task 2 <br> Duration:  25 days<br> Resource:  B"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-01-01","2016-04-10"],"y":[3,3],"mode":"lines","line":{"fillcolor":"rgba(44,160,44,1)","color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 3 <br> Duration:  100 days<br> Resource:  C","Task:  Task 3 <br> Duration:  100 days<br> Resource:  C"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-04-10","2016-06-09"],"y":[4,4],"mode":"lines","line":{"fillcolor":"rgba(214,39,40,1)","color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 4 <br> Duration:  60 days<br> Resource:  C","Task:  Task 4 <br> Duration:  60 days<br> Resource:  C"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-06-09","2016-07-09"],"y":[5,5],"mode":"lines","line":{"fillcolor":"rgba(148,103,189,1)","color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 5 <br> Duration:  30 days<br> Resource:  C","Task:  Task 5 <br> Duration:  30 days<br> Resource:  C"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-04-10","2016-09-07"],"y":[6,6],"mode":"lines","line":{"fillcolor":"rgba(140,86,75,1)","color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 6 <br> Duration:  150 days<br> Resource:  A","Task:  Task 6 <br> Duration:  150 days<br> Resource:  A"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null},{"x":["2016-09-07","2016-11-26"],"y":[7,7],"mode":"lines","line":{"fillcolor":"rgba(227,119,194,1)","color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 7 <br> Duration:  80 days<br> Resource:  B","Task:  Task 7 <br> Duration:  80 days<br> Resource:  B"],"evaluate":true,"type":"scatter","xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":{"render":[{"code":"function(el, x) { var ctConfig = crosstalk.var('plotlyCrosstalkOpts').set({\"on\":\"plotly_click\",\"persistent\":false,\"dynamic\":false,\"selectize\":false,\"opacityDim\":0.2,\"selected\":{\"opacity\":1}}); }","data":null}]}}</script>
+<div id="htmlwidget-3" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3">{"x":{"visdat":{"11075701534de":["function () ","plotlyVisDat"]},"cur_data":"11075701534de","attrs":{"11075701534de":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-01-01","2016-02-20"],"y":[1,1],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 1 <br> Duration:  50 days<br> Resource:  A","evaluate":true,"inherit":true},"11075701534de.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-02-20","2016-03-16"],"y":[2,2],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 2 <br> Duration:  25 days<br> Resource:  B","evaluate":true,"inherit":true},"11075701534de.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-01-01","2016-04-10"],"y":[3,3],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 3 <br> Duration:  100 days<br> Resource:  C","evaluate":true,"inherit":true},"11075701534de.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-04-10","2016-06-09"],"y":[4,4],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 4 <br> Duration:  60 days<br> Resource:  C","evaluate":true,"inherit":true},"11075701534de.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-06-09","2016-07-09"],"y":[5,5],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 5 <br> Duration:  30 days<br> Resource:  C","evaluate":true,"inherit":true},"11075701534de.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-04-10","2016-09-07"],"y":[6,6],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 6 <br> Duration:  150 days<br> Resource:  A","evaluate":true,"inherit":true},"11075701534de.6":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2016-09-07","2016-11-26"],"y":[7,7],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":"text","text":"Task:  Task 7 <br> Duration:  80 days<br> Resource:  B","evaluate":true,"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":[]},"yaxis":{"domain":[0,1],"automargin":true,"title":[]},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["2016-01-01","2016-02-20"],"y":[1,1],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 1 <br> Duration:  50 days<br> Resource:  A","Task:  Task 1 <br> Duration:  50 days<br> Resource:  A"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-02-20","2016-03-16"],"y":[2,2],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 2 <br> Duration:  25 days<br> Resource:  B","Task:  Task 2 <br> Duration:  25 days<br> Resource:  B"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-01-01","2016-04-10"],"y":[3,3],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 3 <br> Duration:  100 days<br> Resource:  C","Task:  Task 3 <br> Duration:  100 days<br> Resource:  C"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-04-10","2016-06-09"],"y":[4,4],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 4 <br> Duration:  60 days<br> Resource:  C","Task:  Task 4 <br> Duration:  60 days<br> Resource:  C"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-06-09","2016-07-09"],"y":[5,5],"mode":"lines","line":{"color":"#BEBADA","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 5 <br> Duration:  30 days<br> Resource:  C","Task:  Task 5 <br> Duration:  30 days<br> Resource:  C"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-04-10","2016-09-07"],"y":[6,6],"mode":"lines","line":{"color":"#8DD3C7","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 6 <br> Duration:  150 days<br> Resource:  A","Task:  Task 6 <br> Duration:  150 days<br> Resource:  A"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2016-09-07","2016-11-26"],"y":[7,7],"mode":"lines","line":{"color":"#FFFFB3","width":20},"showlegend":false,"hoverinfo":["text","text"],"text":["Task:  Task 7 <br> Duration:  80 days<br> Resource:  B","Task:  Task 7 <br> Duration:  80 days<br> Resource:  B"],"evaluate":true,"type":"scatter","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
+        </p>
     </div>
-  </article>
-
-  
-<section id="comments">
-  <div id="disqus_thread"></div>
-  <script>
-  var disqus_config = function () {
-  
-  };
-  (function() {
-    var inIFrame = function() {
-      var iframe = true;
-      try { iframe = window.self !== window.top; } catch (e) {}
-      return iframe;
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
     };
-    if (inIFrame()) return;
-    var d = document, s = d.createElement('script');
-    s.src = '//cbayes.disqus.com/embed.js'; s.async = true;
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cbayes" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+    
 
-
-</main>
-
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
-
+    <div class="page-footer">
+        
     </div>
-    
 
 
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
-
-
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
 
     
-<script src="../../../../js/math-code.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 
     
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-100452126-1', 'auto');
-ga('send', 'pageview');
-</script>
+    
 
-  </body>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<div class="footer-mobile-links">
+		<p><a href="https://github.com/kimcc/hugo-theme-noteworthy" target="_blank" rel="noopener">Noteworthy theme</a></p>
+		<span class="divider-bar">|</span>
+		<p><a href="https://gohugo.io" target="_blank" rel="noopener">Built with Hugo</a></p>
+	</div>
+
+	<script src="../../../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
+    </body>
 </html>
-
