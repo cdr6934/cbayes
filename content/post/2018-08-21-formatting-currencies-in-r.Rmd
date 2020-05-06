@@ -18,7 +18,7 @@ Here are a few different ways to format numbers in R. A few of theme can be acco
 Using the _scales_ packages from Hadley, there is a great function with various options including passing a vector. 
 
 
-```{r include=FALSE}
+```{r echo=TRUE}
 	library(scales)
 	dollar_format()(c(-100, 0.23, 1.456565, 2e3))
 ```
