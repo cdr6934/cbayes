@@ -150,13 +150,10 @@ if (!doNotTrack) {
         
 
 
-<p>here are a few different ways to format numbers in R. A few of theme can be accomplished using the <em>paste</em> function in R. I’ve found that there are a few different methods to do this.</p>
+<p>Here are a few different ways to format numbers in R. A few of theme can be accomplished using the <em>paste</em> function in R. I’ve found that there are a few different methods to do this.</p>
 <div id="using-the-scales-package" class="section level3">
 <h3>Using the scales package</h3>
 <p>Using the <em>scales</em> packages from Hadley, there is a great function with various options including passing a vector.</p>
-<pre class="r"><code>    library(scales)
-    dollar_format()(c(-100, 0.23, 1.456565, 2e3))</code></pre>
-<pre><code>## [1] &quot;-$100.00&quot;  &quot;$0.23&quot;     &quot;$1.46&quot;     &quot;$2,000.00&quot;</code></pre>
 </div>
 <div id="formatting-currency-with-separator" class="section level3">
 <h3>Formatting currency with separator</h3>

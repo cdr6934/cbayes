@@ -10,14 +10,15 @@ tags:
   - currencies
 ---
 
-here are a few different ways to format numbers in R. A few of theme can be accomplished using the _paste_ function in R. I've found that there are a few different methods to do this. 
+Here are a few different ways to format numbers in R. A few of theme can be accomplished using the _paste_ function in R. I've found that there are a few different methods to do this.
 
 
 ### Using the scales package 
 
 Using the _scales_ packages from Hadley, there is a great function with various options including passing a vector. 
 
-```{r}
+
+```{r include=FALSE}
 	library(scales)
 	dollar_format()(c(-100, 0.23, 1.456565, 2e3))
 ```
