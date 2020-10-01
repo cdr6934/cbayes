@@ -17,7 +17,7 @@
       <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/08/21/formatting-currencies-in-r/</guid>
-      <description>Here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
+      <description>Here are a few ways to format numbers in R for presentations. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
 Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
  library(scales) ## Warning: package &amp;#39;scales&amp;#39; was built under R version 3.</description>
     </item>

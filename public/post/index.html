@@ -1,1 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Posts - CBayes</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="../post/" />
+
+<link href="../css/stylesheet.min.53bb11a01b8b502a8c59ae9ad96adec99afab526cf9c58fbbb4344efab5916e0.css" integrity="sha256-U7sRoBuLUCqMWa6a2WreyZr6tSbPnFj7u0NE76tZFuA=" rel="preload stylesheet"
+    as="style">
+
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" href="../favicon.ico">
+<meta name="generator" content="Hugo 0.69.2" />
+<link rel="alternate" type="application/rss+xml" href="../post/index.xml" title="CBayes" />
+</head>
+
+<body class="list" id="top">
+<header class="header">
+    <nav class="nav">
+        <p class="logo"><a href="../">CBayes</a></p>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="../consulting/">
+                    <span>
+                        Consulting
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/cdr6934">
+                    <span>
+                        GitHub
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@cdr6934">
+                    <span>
+                        Medium
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/@cdr6934">
+                    <span>
+                        Photography
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../projects/">
+                    <span>
+                        Projects
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../resume/">
+                    <span>
+                        Resume
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/cdr6934">
+                    <span>
+                        Twitter
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main class="main"> 
+<header class="page-header">
+  <h1>Posts</h1>
+</header>
+
+
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Formatting Currencies in R
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Here are a few ways to format numbers in R for presentations. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
+Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
+ library(scales) ## Warning: package &#39;scales&#39; was built under R version 3....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 21, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Formatting Currencies in R" href="../2018/08/21/formatting-currencies-in-r/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      How to bend the data
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>One of the fundamental priorities of a data scientist is being able to bend the data into a format that is plyable. Being able to effectively use tidyr, reshape2 and the core functions are key to success in being able to manage a large dataset without swimming or drowning in it.
+But it does take discipline and instinct to understand the validity of the data so lets exercise this a little:...</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 9, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to How to bend the data" href="../2018/08/09/how-to-bend-the-data/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Phillips Hue in R
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>The following function can be used to find and display the internal IP address needed to retrieve the IP address from Hue Bridge. You will need to generate an API key i.e. a “userkey” as I called it below.
+getIP &lt;- function() { url &lt;- paste0(&#34;https://www.meethue.com/api/nupnp&#34;) res &lt;- httpGET(url) resJson &lt;- fromJSON(res) res &lt;- resJson[[&#34;internalipaddress&#34;]] res }  In order to know what light you should change the state on, one can run the following to retrieve the available lights connected on the network....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 7, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Phillips Hue in R" href="../2018/08/07/phillips-hue-in-r/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Simulate Doctor Visit Resource Planning Using Simmer
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Here I’ve tried to come up with a simple layout on how we might simulate doctor’s visits.
+Following code tries to resource plan certain doctor visits based on the vignette that was provided with the simmer package.
+library(simmer) ## Warning: package &#39;simmer&#39; was built under R version 3.6.2 set.seed(42) env &lt;- simmer(&#34;SuperDuperSim&#34;) env ## simmer environment: SuperDuperSim | now: 0 | next: ## { Monitor: in memory } patient &lt;- trajectory(&#34;patients&#39; path&#34;) %&gt;% ## add an intake activity seize(&#34;nurse&#34;, 1) %&gt;% timeout(function() rnorm(1, 15)) %&gt;% release(&#34;nurse&#34;, 1) %&gt;% ## add a consultation activity seize(&#34;doctor&#34;, 1) %&gt;% timeout(function() rnorm(1, 20)) %&gt;% release(&#34;doctor&#34;, 1) %&gt;% ## add a planning activity seize(&#34;administration&#34;, 1) %&gt;% timeout(function() rnorm(1, 5)) %&gt;% release(&#34;administration&#34;, 1) env %&gt;% add_resource(&#34;nurse&#34;, 1) %&gt;% add_resource(&#34;doctor&#34;, 2) %&gt;% add_resource(&#34;administration&#34;, 1) %&gt;% add_generator(&#34;patient&#34;, patient, function() rnorm(1, 10, 2)) ## simmer environment: SuperDuperSim | now: 0 | next: 0 ## { Monitor: in memory } ## { Resource: nurse | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Resource: doctor | monitored: TRUE | server status: 0(2) | queue status: 0(Inf) } ## { Resource: administration | monitored: TRUE | server status: 0(1) | queue status: 0(Inf) } ## { Source: patient | monitored: 1 | n_generated: 0 } env %&gt;% run(80) %&gt;% now() ## [1] 80 env %&gt;% peek(3) ## [1] 80....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 7, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Simulate Doctor Visit Resource Planning Using Simmer" href="../2018/08/07/simulate-resource-planning-using-simmer/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Take Back Your Time (Evernote)
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>You will find the following text originally posted on Medium...</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 7, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Take Back Your Time (Evernote)" href="../2018/08/07/take-back-your-time-evernote/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Time and Difficulty
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Sometimes, seeing data in a 3 dimensional space gives us better visibility to the rest of the world. You will see that we have taken a hypothetical experiment and tried to rate different ideas by their complexity and likelihood to succeed.
+#Libraries to import library(tidyverse) ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>August 7, 2018</time>&nbsp;·&nbsp;Chris Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Time and Difficulty" href="../2018/08/07/time-and-difficulty/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Minature Generative Art 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.
+Oval Curve  n &lt;- 300 t1 &lt;- 1:n t0 &lt;- seq(3,2*n&#43;1,2) %% n t2 &lt;- t0 &#43; (t0 == 0)*n df &lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) &#43; geom_segment(alpha = ....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>January 8, 2018</time>&nbsp;·&nbsp;CRied
+  </footer>
+  <a class="entry-link" aria-label="post link to Minature Generative Art " href="../2018/01/08/minature-generative-art/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Extracting Hyperlinks from an XSLX in R
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p> In Progress install.packages(“keras”) library(keras)
+devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
+ ...</p>
+  </section>
+  <footer class="entry-footer">
+    <time>January 4, 2018</time>&nbsp;·&nbsp;CRied
+  </footer>
+  <a class="entry-link" aria-label="post link to Extracting Hyperlinks from an XSLX in R" href="../2018/01/04/extracting-hyperlinks-from-an-xslx-in-r/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Human Ingenuity and Speed
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3.6.2 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>December 23, 2017</time>&nbsp;·&nbsp;Chris
+  </footer>
+  <a class="entry-link" aria-label="post link to Human Ingenuity and Speed" href="../2017/12/23/human-ingenuity-and-speed/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      Words With Friends Musings
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p> #library(tidyverse) # IMport Data #filepath &lt;- &#34;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&#34; #wwfList &lt;- read_csv(filepath, col_names = FALSE) #wwfList %&gt;% stringr::str(&#39;.ae.&#39;) ...</p>
+  </section>
+  <footer class="entry-footer">
+    <time>December 3, 2017</time>&nbsp;·&nbsp;C Ried
+  </footer>
+  <a class="entry-link" aria-label="post link to Words With Friends Musings" href="../2017/12/03/words-with-friends-musings/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="../post/page/2/">Next Page »</a>
+  </nav>
+</footer>
+
+    </main><footer class="footer">
+    <span>&copy; 2020 <a href="../">CBayes</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo️️</a>️</span>
+    <span>&middot;</span>
+    <span>Theme️ <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top">
+    <button class="top-link" id="top-link" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" /></svg>
+    </button>
+</a>
+<script src="../js/highlight.min.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js" integrity="sha256-56/CkowJJdZcRzLf6&#43;FHAU2RKZqY6BnktC8lxPpo6Rw="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+</script>
+</body>
+
+</html>

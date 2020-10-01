@@ -10,7 +10,7 @@ tags:
   - currencies
 ---
 
-Here are a few different ways to format numbers in R. A few of theme can be accomplished using the _paste_ function in R. I've found that there are a few different methods to do this.
+Here are a few  ways to format numbers in R for presentations. A few of theme can be accomplished using the _paste_ function in R. I've found that there are a few different methods to do this.
 
 
 ### Using the scales package 
