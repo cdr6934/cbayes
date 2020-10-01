@@ -1,5 +1,10 @@
 ---
 title: "About"
+output:
+  blogdown::html_page:
+    toc: true
+    fig_width: 6
+    dev: "svg"
 ---
 
 Hi!

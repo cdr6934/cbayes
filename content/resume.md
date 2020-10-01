@@ -1,5 +1,10 @@
 ---
 title: "Resume"
+output:
+  blogdown::
+    toc: true
+    fig_width: 6
+    dev: "svg"
 ---
 
 # Christopher Ried
