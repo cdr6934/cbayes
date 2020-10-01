@@ -1,5 +1,6 @@
 ---
 title: "Consulting"
+site: blogdown:::blogdown_site
 ---
 
 ## CBayes Analytics Consulting
