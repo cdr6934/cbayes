@@ -1,3 +1,6 @@
 ---
 site: blogdown:::blogdown_site
 ---
+# Welcome! 
+
+Following you will find a little blog of various topics that I am interested in and want to further discover and explore. 

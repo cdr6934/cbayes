@@ -19,7 +19,7 @@
       <guid>/2018/08/21/formatting-currencies-in-r/</guid>
       <description>Here are a few different ways to format numbers in R. A few of theme can be accomplished using the paste function in R. I’ve found that there are a few different methods to do this.
 Using the scales package Using the scales packages from Hadley, there is a great function with various options including passing a vector.
- library(scales) dollar_format()(c(-100, 0.23, 1.456565, 2e3)) ## [1] &amp;quot;-$100.00&amp;quot; &amp;quot;$0.23&amp;quot; &amp;quot;$1.46&amp;quot; &amp;quot;$2,000.</description>
+ library(scales) ## Warning: package &amp;#39;scales&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
