@@ -95,7 +95,7 @@
 \[ F=mv_e \] thrust of the rocket is expressed in terms of the mass flow rate  m and the efficient exhaust velocity \(v_e\)
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
-RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &lt;- RocketEquationGraph %&gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass....</p>
+RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &lt;- RocketEquationGraph %&gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass....</p>
   </section>
   <footer class="entry-footer">
     <time>June 5, 2017</time>&nbsp;·&nbsp;Chris

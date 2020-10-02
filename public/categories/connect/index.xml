@@ -17,7 +17,7 @@
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/17/adding-an-plumber-api-to-connect/</guid>
-      <description> Creating a Plumber.R file  </description>
+      <description>  Creating a Plumber.R file  </description>
     </item>
     
     <item>
@@ -26,8 +26,7 @@
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/15/setting-up-r-connect-using-digital-ocean/</guid>
-      <description>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.
-Setup a Droplet image I created a Ubuntu 16.</description>
+      <description>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.</description>
     </item>
     
   </channel>

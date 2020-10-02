@@ -11,7 +11,7 @@
 \[ F=mv_e \] thrust of the rocket is expressed in terms of the mass flow rate  m and the efficient exhaust velocity \(v_e\)
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
-RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &lt;- RocketEquationGraph %&gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.">
+RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &lt;- RocketEquationGraph %&gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.">
 <meta name="author" content="Chris">
 <link rel="canonical" href="../../../../2017/06/05/rocket-propolsion-ch-1/" />
 
@@ -93,6 +93,7 @@ RocketEquationGraph &lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGr
     </div>
   </header>
   <div class="post-content">
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>Accelerating force</p>

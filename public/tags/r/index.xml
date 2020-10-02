@@ -48,7 +48,7 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description> In progress  </description>
+      <description>  In progress  </description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description> #In progress
+      <description>  #In progress
 Still in progress  </description>
     </item>
     

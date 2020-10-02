@@ -17,7 +17,7 @@
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/04/extracting-hyperlinks-from-an-xslx-in-r/</guid>
-      <description> In Progress install.packages(“keras”) library(keras)
+      <description>  In Progress install.packages(“keras”) library(keras)
 devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
  </description>
     </item>

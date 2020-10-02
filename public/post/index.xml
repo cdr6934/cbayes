@@ -6,10 +6,21 @@
     <description>Recent content in Posts on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bayesian Statistics in R</title>
+      <link>/2020/10/01/bayesian-statistics-in-r/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/10/01/bayesian-statistics-in-r/</guid>
+      <description>Bayesian Statistics The following documents the standard Bayesian Statistics occurs.
+Some of the key differences you will find behind the more traditional frequentist statistics and Bayesian methodologies are as follows:
+ Prior statistical distributions are updated as new information becomes available.  </description>
+    </item>
     
     <item>
       <title>Formatting Currencies in R</title>
@@ -88,7 +99,7 @@ Oval Curve  n &amp;lt;- 300 t1 &amp;lt;- 1:n t0 &amp;lt;- seq(3,2*n+1,2) %% n t2
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/01/04/extracting-hyperlinks-from-an-xslx-in-r/</guid>
-      <description> In Progress install.packages(“keras”) library(keras)
+      <description>  In Progress install.packages(“keras”) library(keras)
 devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
  </description>
     </item>
@@ -99,7 +110,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ───────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ──────────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -108,7 +119,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/03/words-with-friends-musings/</guid>
-      <description> #library(tidyverse) # IMport Data #filepath &amp;lt;- &amp;quot;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&amp;quot; #wwfList &amp;lt;- read_csv(filepath, col_names = FALSE) #wwfList %&amp;gt;% stringr::str(&amp;#39;.ae.&amp;#39;) </description>
+      <description>  #library(tidyverse) # IMport Data #filepath &amp;lt;- &amp;quot;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&amp;quot; #wwfList &amp;lt;- read_csv(filepath, col_names = FALSE) #wwfList %&amp;gt;% stringr::str(&amp;#39;.ae.&amp;#39;) </description>
     </item>
     
     <item>
@@ -117,7 +128,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ─────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
+      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ───────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -173,7 +184,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/08/tips-on-feature-engineering/</guid>
-      <description> Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
+      <description>  Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   </description>
     </item>
     
     <item>
@@ -182,7 +193,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/06/great-statistics-books-to-read/</guid>
-      <description> Following you will find a number of the best books to learn more about statistics and its philosophy.
+      <description>  Following you will find a number of the best books to learn more about statistics and its philosophy.
  Opinionated Lessons on Statistics Introduction to Statistical Learning The Elements of Statistical Learning Applied Predicitive Modeling Statistical Inference Statistical Rethinking Data Analysis Using Regression and Multilevel/Hierarchical Models Mostly Harmless Econometrics Mastering Metrics: The Path from Cause to Effect All of Statistics Statistics Statistics for Experimenters Think Bayes Computer Age Statistical Inference Think Stats Machine Learning for Hackers Probability and Statistics Statistical Evidence: A likelihood paradigm  </description>
     </item>
     
@@ -192,7 +203,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/05/machine-learning-organization/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -201,7 +212,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description> In progress  </description>
+      <description>  In progress  </description>
     </item>
     
     <item>
@@ -210,7 +221,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/03/mapping-functions-in-r-base/</guid>
-      <description> The following functions are given:
+      <description>  The following functions are given:
  Reduce(f, x, init, right = FALSE, accumulate = FALSE) Filter(f, x) Find(f, x, right = FALSE, nomatch = NULL) Map(f, …) Negate(f) Position(f, x, right = FALSE, nomatch = NA_integer_)  x &amp;lt;- c(1,2,3) add &amp;lt;- function(x) {x+2} Map(add, x) ## [[1]] ## [1] 3 ## ## [[2]] ## [1] 4 ## ## [[3]] ## [1] 5 Reduce(&amp;quot;+&amp;quot;,x,accumulate = TRUE) ## [1] 1 3 6 x &amp;lt;- NULL missing(x) ## [1] FALSE # Now its missing a formal argument t &amp;lt;- function(x, y) { if(xd) { y &amp;lt;- x } x+y } t2 &amp;lt;- function(x, y) { x+y } isTRUE(TRUE) ## [1] TRUE a &amp;lt;- c(2,2,3) b &amp;lt;- c(1,4,2) a %in% b  ## [1] TRUE TRUE FALSE 1 %in% b  ## [1] TRUE </description>
     </item>
     
@@ -231,7 +242,7 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description> #In progress
+      <description>  #In progress
 Still in progress  </description>
     </item>
     
@@ -271,7 +282,7 @@ Following are a couple tips of advice I’ve collected over the last five years.
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/17/adding-an-plumber-api-to-connect/</guid>
-      <description> Creating a Plumber.R file  </description>
+      <description>  Creating a Plumber.R file  </description>
     </item>
     
     <item>
@@ -280,8 +291,7 @@ Following are a couple tips of advice I’ve collected over the last five years.
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/15/setting-up-r-connect-using-digital-ocean/</guid>
-      <description>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.
-Setup a Droplet image I created a Ubuntu 16.</description>
+      <description>Sign up to R-Studio’s free 45 day trial so that you have the install. This will give you the ability to install right straight from their site. I went to Digital Ocean for this use case. Generally you will want to add this either to a local server on your network, or you can add it to a cloud provider. This can be whatever you are most comfortable.</description>
     </item>
     
     <item>
@@ -294,7 +304,7 @@ Setup a Droplet image I created a Ubuntu 16.</description>
 \[ F=mv_e \] thrust of the rocket is expressed in terms of the mass flow rate  m and the efficient exhaust velocity \(v_e\)
 \[ V = V_e\log_e\frac{M_0}{M} \] \(M_0\) - mass of the rocket at ignition \(M\) - Current mass of the rocket
 mass ratio \[ R = \frac{M_0}{M} \]
-RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.Ratio, 3000),M2000 = RocketEquation(Mass.</description>
+RocketEquationGraph &amp;lt;- data.frame(Mass.Ratio = c(seq(1:20))) RocketEquationGraph &amp;lt;- RocketEquationGraph %&amp;gt;% mutate( M4000 = RocketEquation(Mass.Ratio, 4000),M3000 = RocketEquation(Mass.</description>
     </item>
     
   </channel>
