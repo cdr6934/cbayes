@@ -51,9 +51,9 @@ Major: Math and Science
 Related coursework: Statistics, Macro / Micro-economics,  Linear Algebra
  
 ### Publications
-The vesicular stomatitis virus matrix protein inhibits NF-κB activation in mouse L929 cells. Virology. 2016 Dec; 499:99-104. doi: 10.1016/j.virol.2016.09.009. Epub 2016 Sep 17.
+(The vesicular stomatitis virus matrix protein inhibits NF-κB activation in mouse L929 cells. Virology. 2016 Dec; 499:99-104. doi: 10.1016/j.virol.2016.09.009. Epub 2016 Sep 17.)[https://pubmed.ncbi.nlm.nih.gov/27643886/]
 
-**Skills & Abilities**
+### Skills & Abilities
 
 Analysis / Data / Technology
 
@@ -61,7 +61,7 @@ Analysis / Data / Technology
 * Environments: SSMS, Tableau, PowerBI, Visual Studio 2015, PyCharm, RStudio, Sublime 
 * Programming Languages: C#,  SQL (MSS), Python, R, Perl, Ruby, PowerShell, Mathematica, JavaScript
 
-**Other interests** 
+### Other interests
 
 * **Reading:**  Reading social science and psychology books 
 * **Languages:** German (Fluent in Reading/Speaking), Arabic (currently learning), Latin (beginner), Spanish  
