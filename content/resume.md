@@ -51,7 +51,7 @@ Major: Math and Science
 Related coursework: Statistics, Macro / Micro-economics,  Linear Algebra
  
 ### Publications
-(The vesicular stomatitis virus matrix protein inhibits NF-κB activation in mouse L929 cells. Virology. 2016 Dec; 499:99-104. doi: 10.1016/j.virol.2016.09.009. Epub 2016 Sep 17.)[https://pubmed.ncbi.nlm.nih.gov/27643886/]
+[The vesicular stomatitis virus matrix protein inhibits NF-κB activation in mouse L929 cells. Virology. 2016 Dec; 499:99-104. doi: 10.1016/j.virol.2016.09.009. Epub 2016 Sep 17.](https://pubmed.ncbi.nlm.nih.gov/27643886/)
 
 ### Skills & Abilities
 
