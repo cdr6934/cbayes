@@ -368,16 +368,5 @@ Services Provided  Data Visualization Projects / Training  R, Shiny Development,
 Tableau Following was a simple sales dashboard that was based on some sales information.</description>
     </item>
     
-    <item>
-      <title>Resume</title>
-      <link>/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/resume/</guid>
-      <description>Christopher Ried 119 N Maple Ridge Ln, Nashville TN 37072 | 615.939.5124 | chris@cbayes.com Objective  I’m simple. I work hard to get the job done and enjoy solving complex problems.
- Experience Data Scientist | Kirklands Home Decor | Sep 2018 - Present
- Responsible for all Supply Chain metrics reporting Generating Demand Forecasting to inform slotting and labor allocation Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  Director of Analytics / Senior Software Engineer | Bargain Hunt | Feb 2015 - Sep 2018</description>
-    </item>
-    
   </channel>
 </rss>
