@@ -12,4 +12,4 @@ The following documents the standard Bayesian Statistics occurs.
 
 Some of the key differences you will find behind the more traditional frequentist statistics and Bayesian methodologies are as follows: 
 
-* Prior statistical distributions are updated as new information becomes available. 
+* Prior statistical distributions are updated as new information becomes available.

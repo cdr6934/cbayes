@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Introduction to NLP using Python - CBayes</title>
+
+<meta name="description" content="The following post is using SpaCy to do all of the NLP work. Throughout the following post we will cover a number of different NLP tasks that are foundational to the work that can be built upon to generate complex syntatical modelling.
+Tokenization This process takes any body of text (more specifically a Document) and breaks it down either to the sentence level or the word level.
+import spacy nlp = spacy.">
+<meta name="author" content="Chris Ried">
+<link rel="canonical" href="../../../../2020/10/03/introduction-to-nlp-using-python/" />
+
+<link href="../../../../css/stylesheet.min.53bb11a01b8b502a8c59ae9ad96adec99afab526cf9c58fbbb4344efab5916e0.css" integrity="sha256-U7sRoBuLUCqMWa6a2WreyZr6tSbPnFj7u0NE76tZFuA=" rel="preload stylesheet"
+    as="style">
+
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="icon" href="../../../../favicon.ico">
+<meta name="generator" content="Hugo 0.69.2" />
+
+</head>
+
+<body class="single" id="top">
+<header class="header">
+    <nav class="nav">
+        <p class="logo"><a href="../../../../">CBayes</a></p>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="../../../../consulting/">
+                    <span>
+                        Consulting
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/cdr6934">
+                    <span>
+                        GitHub
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@cdr6934">
+                    <span>
+                        Medium
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/@cdr6934">
+                    <span>
+                        Photography
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../projects/">
+                    <span>
+                        Projects
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../resume/">
+                    <span>
+                        Resume
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/cdr6934">
+                    <span>
+                        Twitter
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      Introduction to NLP using Python
+    </h1>
+    <div class="post-meta">
+      <time>October 3, 2020</time>&nbsp;·&nbsp;Chris Ried
+    </div>
+  </header>
+  <div class="post-content"><p>The following post is using SpaCy to do all of the NLP work. Throughout the following post we will cover a number of different NLP tasks that are foundational to the work that can be built upon to generate complex syntatical modelling.</p>
+<h2 id="tokenization">Tokenization</h2>
+<p>This process takes any body of text (more specifically a Document) and breaks it down either to the sentence level or the word level.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> spacy 
+nlp <span style="color:#f92672">=</span> spacy<span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#39;en&#39;</span>)
+doc <span style="color:#f92672">=</span> nlp(<span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;I am flying to Frisco&#39;</span>)
+<span style="color:#66d9ef">print</span>([w<span style="color:#f92672">.</span>text <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> doc])
+</code></pre></div><h2 id="lemmatization">Lemmatization</h2>
+<p>Lemmatization is taking the root form of a word. Below we have a better idea of what that might look like.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">doc <span style="color:#f92672">=</span> nlp(<span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;this product integrates both libraries for downloading and applying patches&#39;</span>)
+<span style="color:#66d9ef">for</span> token <span style="color:#f92672">in</span> doc: 
+  <span style="color:#66d9ef">print</span>(token<span style="color:#f92672">.</span>text, token<span style="color:#f92672">.</span>lemma_)
+</code></pre></div><blockquote>
+<p>this this
+product product
+integrates integrate
+both both
+libraries library
+for for
+downloading download
+and and
+applying apply
+patches patch</p>
+</blockquote>
+<p>The line <em>integrates integrate</em> is a perfect example.</p>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="../../../../tags/nlp">nlp</a></li>
+    </ul>
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2020 <a href="../../../../">CBayes</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo️️</a>️</span>
+    <span>&middot;</span>
+    <span>Theme️ <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top">
+    <button class="top-link" id="top-link" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" /></svg>
+    </button>
+</a>
+<script src="../../../../js/highlight.min.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js" integrity="sha256-56/CkowJJdZcRzLf6&#43;FHAU2RKZqY6BnktC8lxPpo6Rw="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+</script>
+</body>
+
+</html>

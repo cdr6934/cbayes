@@ -6,10 +6,21 @@
     <description>Recent content in Posts on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to NLP using Python</title>
+      <link>/2020/10/03/introduction-to-nlp-using-python/</link>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/10/03/introduction-to-nlp-using-python/</guid>
+      <description>The following post is using SpaCy to do all of the NLP work. Throughout the following post we will cover a number of different NLP tasks that are foundational to the work that can be built upon to generate complex syntatical modelling.
+Tokenization This process takes any body of text (more specifically a Document) and breaks it down either to the sentence level or the word level.
+import spacy nlp = spacy.</description>
+    </item>
     
     <item>
       <title>Bayesian Statistics in R</title>

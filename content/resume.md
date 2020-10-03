@@ -16,7 +16,14 @@ output:
 
 
 ### Experience
-**Director of Analytics / Senior Software Engineer** | Bargain Hunt | Feb 2015 - Present
+
+**Data Scientist** | Kirklands Home Decor | Sep 2018 - Present
+* Responsible for all Supply Chain metrics reporting 
+* Generating Demand Forecasting to inform slotting and labor allocation 
+* Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting 
+* Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  
+
+**Director of Analytics / Senior Software Engineer** | Bargain Hunt | Feb 2015 - Sep 2018
 
 * Developing and  implementing in-house classification systems tested in R and built for production using Python Scikit-Learn. 
 * Developed in house inventory intelligence systems using Python and API (Flask) backend with an interface using ASP.net Web Forms 
