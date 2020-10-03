@@ -15,6 +15,9 @@ showReadMore = true
 
 
 [[menu.main]]
+    name = "About"
+    url="/menu/"
+[[menu.main]]
     name = "Resume"
     url = "/resume/"
 [[menu.main]]
@@ -35,6 +38,9 @@ showReadMore = true
 [[menu.main]]
     name = "Projects"
     url = "/projects/"
+[[menu.main]]
+    name = "Art"
+    url="/art/"
 
 
 [params]
