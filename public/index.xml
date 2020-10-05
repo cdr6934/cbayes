@@ -121,7 +121,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/23/human-ingenuity-and-speed/</guid>
-      <description>library(tidyverse) ## ── Attaching packages ──────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ─────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
+      <description>library(tidyverse) ## ── Attaching packages ───────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.6.2 ## ── Conflicts ──────────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going.</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/11/30/exploring-the-book-of-esther-in-the-tidy-verse/</guid>
-      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ──────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
+      <description>library(httr) library(tidytext) ## Warning: package &amp;#39;tidytext&amp;#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ───────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &amp;#39;tibble&amp;#39; was built under R version 3.6.2 ## Warning: package &amp;#39;purrr&amp;#39; was built under R version 3.</description>
     </item>
     
     <item>
@@ -366,6 +366,17 @@ Services Provided  Data Visualization Projects / Training  R, Shiny Development,
       <guid>/projects/</guid>
       <description>Data Visualization Tools PowerBI The following pictures that you have seen
 Tableau Following was a simple sales dashboard that was based on some sales information.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Christopher Ried 119 N Maple Ridge Ln, Nashville TN 37072 | 615.939.5124 | chris@cbayes.com Objective  I’m simple. I work hard to get the job done and enjoy solving complex problems.
+ Experience Data Scientist | Kirklands Home Decor | Sep 2018 - Present
+ Responsible for all Supply Chain metrics reporting Generating Demand Forecasting to inform slotting and labor allocation Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  Director of Analytics / Senior Software Engineer | Bargain Hunt | Feb 2015 - Sep 2018</description>
     </item>
     
   </channel>

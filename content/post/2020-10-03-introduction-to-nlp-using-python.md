@@ -7,6 +7,7 @@ categories:
   - python
 tags:
   - nlp
+
 ---
 
 The following post is using SpaCy to do all of the NLP work. Throughout the following post we will cover a number of different NLP tasks that are foundational to the work that can be built upon to generate complex syntatical modelling. 
