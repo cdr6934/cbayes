@@ -5,4 +5,4 @@ site: blogdown:::blogdown_site
 
 Hi!
 
-My name is **Chris Ried** and I've put together this site to accumulate me. So yes, a little bit of self promotion but also to have a place to collect those things such as my resume or links of interest. You will find that I have alot of interests as you will find in the breadth of my posting subjects. 
+My name is **Chris Ried** and I've put together this site to accumulate my interests into a single place so that I can share a bit with the world. My interests are far reaching, and sometimes overambitious. But that is the beauty of it all in my opinion. Check out the following [link](www.generativecollective.com) for some content round my art. 
