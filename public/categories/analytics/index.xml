@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics on CBayes</title>
+    <link>/categories/analytics/</link>
+    <description>Recent content in analytics on CBayes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Analytics to Determine Ideal Hashtags for Instagram</title>
+      <link>/2020/10/18/using-analytics-to-determine-ideal-hashtags/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/10/18/using-analytics-to-determine-ideal-hashtags/</guid>
+      <description>The following provides the workflow I took to better understand hashtags for generative art posts. As you will find, I’m interested in the generative arts and being part of them. It has been</description>
+    </item>
+    
+  </channel>
+</rss>
