@@ -98,7 +98,8 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>The following provides the workflow I took to better understand hashtags for generative art posts. As you will find, I’m interested in the generative arts and being part of them. It has been...</p>
+    <p>I have been curious on what makes an interesting post on instagram based on a larger dataset of images that have been tagged with #generativeart. Some of this is just data discovery, this could seem that there may be a correlation between the tags that have been used and the amount of likes there are.
+# Extract hashtags patt &lt;- regex(&#34;#\\S&#43;&#34;) genart &lt;- read_csv(&#34;~/InstaCrawlR/table-generativeart-2020-10-11 13:35:33.csv&#34;) ## Warning: Missing column names filled in: &#39;X1&#39; [1] ## Parsed with column specification: ## cols( ## X1 = col_double(), ## ID = col_character(), ## Post_URL = col_character(), ## Img_URL = col_character(), ## Likes = col_double(), ## Owner = col_double(), ## Text = col_character(), ## Date = col_datetime(format = &#34;&#34;) ## ) genart_db &lt;- genart %&gt;% select(ID, Likes, Owner, Date, Text) %&gt;% mutate(hashtags = str_extract_all(Text,patt) ) genart_db_table &lt;- genart_db %&gt;% unnest(cols = &#34;hashtags&#34;) %&gt;% mutate(Year = year(Date), Month = month(Date), DayOfWeek = wday(Date), Day = day(Date), Hour = hour(Date)) genart_db_table %&gt;% head() ## # A tibble: 6 x 11 ## ID Likes Owner Date Text hashtags Year Month DayOfWeek ## &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dttm&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; ## 1 CGNk… 1 1....</p>
   </section>
   <footer class="entry-footer">
     <time>October 18, 2020</time>&nbsp;·&nbsp;Chris Ried

@@ -7,7 +7,8 @@
 
 <title>Using Analytics to Determine Ideal Hashtags for Instagram - CBayes</title>
 
-<meta name="description" content="The following provides the workflow I took to better understand hashtags for generative art posts. As you will find, I’m interested in the generative arts and being part of them. It has been">
+<meta name="description" content="I have been curious on what makes an interesting post on instagram based on a larger dataset of images that have been tagged with #generativeart. Some of this is just data discovery, this could seem that there may be a correlation between the tags that have been used and the amount of likes there are.
+# Extract hashtags patt &lt;- regex(&quot;#\\S&#43;&quot;) genart &lt;- read_csv(&quot;~/InstaCrawlR/table-generativeart-2020-10-11 13:35:33.csv&quot;) ## Warning: Missing column names filled in: &#39;X1&#39; [1] ## Parsed with column specification: ## cols( ## X1 = col_double(), ## ID = col_character(), ## Post_URL = col_character(), ## Img_URL = col_character(), ## Likes = col_double(), ## Owner = col_double(), ## Text = col_character(), ## Date = col_datetime(format = &quot;&quot;) ## ) genart_db &lt;- genart %&gt;% select(ID, Likes, Owner, Date, Text) %&gt;% mutate(hashtags = str_extract_all(Text,patt) ) genart_db_table &lt;- genart_db %&gt;% unnest(cols = &quot;hashtags&quot;) %&gt;% mutate(Year = year(Date), Month = month(Date), DayOfWeek = wday(Date), Day = day(Date), Hour = hour(Date)) genart_db_table %&gt;% head() ## # A tibble: 6 x 11 ## ID Likes Owner Date Text hashtags Year Month DayOfWeek ## &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dttm&gt; &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; ## 1 CGNk… 1 1.">
 <meta name="author" content="Chris Ried">
 <link rel="canonical" href="../../../../2020/10/18/using-analytics-to-determine-ideal-hashtags/" />
 
@@ -99,7 +100,91 @@
 <script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>The following provides the workflow I took to better understand hashtags for generative art posts. As you will find, I’m interested in the generative arts and being part of them. It has been</p>
+<p>I have been curious on what makes an interesting post on instagram based on a larger dataset of images that have been tagged with #generativeart. Some of this is just data discovery, this could seem that there may be a correlation between the tags that have been used and the amount of likes there are.</p>
+<pre class="r"><code># Extract hashtags
+
+patt &lt;- regex(&quot;#\\S+&quot;)
+genart &lt;- read_csv(&quot;~/InstaCrawlR/table-generativeart-2020-10-11 13:35:33.csv&quot;)</code></pre>
+<pre><code>## Warning: Missing column names filled in: &#39;X1&#39; [1]</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   X1 = col_double(),
+##   ID = col_character(),
+##   Post_URL = col_character(),
+##   Img_URL = col_character(),
+##   Likes = col_double(),
+##   Owner = col_double(),
+##   Text = col_character(),
+##   Date = col_datetime(format = &quot;&quot;)
+## )</code></pre>
+<pre class="r"><code>genart_db &lt;- genart %&gt;% select(ID, Likes, Owner, Date, Text) %&gt;% mutate(hashtags = str_extract_all(Text,patt) )
+genart_db_table &lt;- genart_db %&gt;% unnest(cols = &quot;hashtags&quot;) %&gt;% mutate(Year = year(Date), Month = month(Date), DayOfWeek = wday(Date),  Day = day(Date), Hour = hour(Date))</code></pre>
+<pre class="r"><code>genart_db_table %&gt;% head()</code></pre>
+<pre><code>## # A tibble: 6 x 11
+##   ID    Likes  Owner Date                Text  hashtags  Year Month DayOfWeek
+##   &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
+## 1 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #axidraw  2020    10         1
+## 2 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #penplo…  2020    10         1
+## 3 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #plotter  2020    10         1
+## 4 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #genera…  2020    10         1
+## 5 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #proced…  2020    10         1
+## 6 CGNk…     1 1.90e8 2020-10-11 12:42:04 In t… #codeart  2020    10         1
+## # … with 2 more variables: Day &lt;int&gt;, Hour &lt;int&gt;</code></pre>
+<p>That will generate a rather large dataset</p>
+<pre class="r"><code>genart_db_table %&gt;% count()</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##         n
+##     &lt;int&gt;
+## 1 1044625</code></pre>
+<p>Instead of having too muc</p>
+<pre class="r"><code>  exclude_tags &lt;- c(&quot;#fishart&quot;,&quot;#artphotohraphy&quot;, &quot;#marinephotography&quot;,&quot;#underwaterscenes&quot;,&quot;#sharkattack&quot;,&quot;#акула&quot;,&quot;#вебпанк&quot;,&quot;#сос&quot;,&quot;#seaphotography&quot;,&quot;fishart&quot;,&quot;#sharks&quot;,&quot;#enhancedvitimins&quot;)
+
+genart_db_hashtag_mean &lt;- genart_db_table %&gt;% 
+  group_by(hashtags) %&gt;% 
+  summarize(AverageLikes = mean(Likes), Count = n()) %&gt;% 
+  filter(!hashtags %in% exclude_tags, Count &gt; 50) %&gt;% 
+  arrange(-AverageLikes)
+
+ genart_db_hashtag_mean %&gt;% head(30) %&gt;% ggplot(aes(reorder(hashtags,AverageLikes), AverageLikes)) + geom_col() + coord_flip() + labs(title = &quot;Most Common Hashtags in Generative Art Posts&quot;, 
+                                                                                 x
+                                                                                 = &quot;Hashtag&quot;)</code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>  genart_db_hashtag_mean %&gt;% filter(AverageLikes &lt; 200, Count &gt; 200, Count &lt; 40000) %&gt;%  ggplot(aes(AverageLikes, Count, label = hashtags)) + geom_point() + geom_text(check_overlap = TRUE, angle = 45, hjust =0)</code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-5-2.png" width="672" />
+This leads to some very interesting issues of certain tags that may need to be removed from the set due to their</p>
+<pre class="r"><code>genart_db_table %&gt;% 
+  group_by(hashtags) %&gt;% 
+  summarize(Count = n()) %&gt;% 
+  arrange(-Count) %&gt;% head(30)  %&gt;% 
+  ggplot(aes(reorder(hashtags,Count), Count)) + geom_col() + coord_flip() + labs(title = &quot;Most Common Hashtags in Generative Art Posts&quot;, 
+                                                                                 x
+                                                                                 = &quot;Hashtag&quot;)</code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+So it appears that the #generativeart tag is the greatest here which would make sense…</p>
+<pre class="r"><code>genart_db_table %&gt;% filter(hashtags %in% c(&quot;#generativeart&quot;)) %&gt;% 
+  group_by(hashtags, Hour) %&gt;% summarize(Count = n()) %&gt;% 
+    ggplot(aes(Hour, Count)) + geom_col() +labs(title = &quot;Most Common Occurence in Generative Art Posts&quot;,  x = &quot;Hour&quot;)</code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>But we might want to see if there is a difference</p>
+<pre class="r"><code>genart_db_table %&gt;% filter(hashtags %in% c(&quot;#generativeart&quot;)) %&gt;% 
+  group_by(hashtags, Hour, DayOfWeek) %&gt;% summarize(Count = n()) %&gt;% 
+    ggplot(aes(Hour, Count)) + geom_col() + facet_grid(DayOfWeek ~ .) +labs(title = &quot;Most Common Hashtags in #generativeart Posts by Day&quot;, 
+                                                                                 x = &quot;Hashtag&quot;)</code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+None really when looking at the detail here.</p>
+<pre class="r"><code>genart_db_table %&gt;% filter(hashtags %in% c(&quot;#generativeart&quot;, &quot;#digitalart&quot;,&quot;#creativecoding&quot;, &quot;#generative&quot;, &quot;#codeart&quot;,&quot;#abstractart&quot;)) %&gt;% 
+  group_by(hashtags, Hour) %&gt;% summarize(Count = n()) %&gt;% 
+  mutate(PercentTotal = Count / sum(Count)) %&gt;% 
+    ggplot(aes(Hour, PercentTotal/5, fill = hashtags)) + geom_col()  +labs(title = &quot;Most Common Hashtags in #generativeart Posts by Day (%)&quot;, 
+                                                                                 x = &quot;Hashtag&quot;) </code></pre>
+<p><img src="../../../../post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+Now we want to make sure we don’t just take that to mean that generativeart need to</p>
+<div id="todo" class="section level2">
+<h2>TODO</h2>
+<ul>
+<li>Add a graph of the</li>
+</ul>
+</div>
 </div>
   <footer class="post-footer">
   </footer>
