@@ -75,7 +75,7 @@ genart_db_table %>% filter(hashtags %in% c("#generativeart")) %>%
     ggplot(aes(Hour, Count)) + geom_col() +labs(title = "Most Common Occurence in Generative Art Posts",  x = "Hour")
 ```
 
-But we might want to see if there is a difference 
+But we might want to see if there is a difference at a more granular level. 
 ```{r}
 
 genart_db_table %>% filter(hashtags %in% c("#generativeart")) %>% 
