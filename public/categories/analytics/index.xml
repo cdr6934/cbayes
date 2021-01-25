@@ -6,11 +6,7 @@
     <description>Recent content in analytics on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/analytics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Analytics to Determine Ideal Hashtags for Instagram</title>
       <link>/2020/10/18/using-analytics-to-determine-ideal-hashtags/</link>
@@ -19,6 +15,16 @@
       <guid>/2020/10/18/using-analytics-to-determine-ideal-hashtags/</guid>
       <description>I have been curious on what makes an interesting post on instagram based on a larger dataset of images that have been tagged with #generativeart. Some of this is just data discovery, this could seem that there may be a correlation between the tags that have been used and the amount of likes there are.
 # Extract hashtags patt &amp;lt;- regex(&amp;quot;#\\S+&amp;quot;) genart &amp;lt;- read_csv(&amp;quot;~/InstaCrawlR/table-generativeart-2020-10-11 13:35:33.csv&amp;quot;) ## Warning: Missing column names filled in: &amp;#39;X1&amp;#39; [1] ## Parsed with column specification: ## cols( ## X1 = col_double(), ## ID = col_character(), ## Post_URL = col_character(), ## Img_URL = col_character(), ## Likes = col_double(), ## Owner = col_double(), ## Text = col_character(), ## Date = col_datetime(format = &amp;quot;&amp;quot;) ## ) genart_db &amp;lt;- genart %&amp;gt;% select(ID, Likes, Owner, Date, Text) %&amp;gt;% mutate(hashtags = str_extract_all(Text,patt) ) genart_db_table &amp;lt;- genart_db %&amp;gt;% unnest(cols = &amp;quot;hashtags&amp;quot;) %&amp;gt;% mutate(Year = year(Date), Month = month(Date), DayOfWeek = wday(Date), Day = day(Date), Hour = hour(Date)) genart_db_table %&amp;gt;% head() ## # A tibble: 6 x 11 ## ID Likes Owner Date Text hashtags Year Month DayOfWeek ## &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dttm&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; ## 1 CGNk… 1 1.</description>
+    </item>
+    
+    <item>
+      <title>How to Catch Fraud with Deep Learning</title>
+      <link>/2020/03/15/how-to-catch-fraud-with-deep-learning/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/15/how-to-catch-fraud-with-deep-learning/</guid>
+      <description>Fraud continues to be an important topic in the financial world helping detect when funds are mismanaged.
+Nilson reports that U.S. card fraud (credit, debt, etc) was reportedly $9 billion in 2016 and expected to increase to $12 billion by 2020. Due to these nefarious acts; it is in the best interest of any organization to ensure the work of most customers. Thus it is appropriate to respond to this fraud.</description>
     </item>
     
   </channel>

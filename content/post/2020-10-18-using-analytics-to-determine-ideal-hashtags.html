@@ -7,7 +7,6 @@ categories: [analytics]
 tags: []
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>I have been curious on what makes an interesting post on instagram based on a larger dataset of images that have been tagged with #generativeart. Some of this is just data discovery, this could seem that there may be a correlation between the tags that have been used and the amount of likes there are.</p>
@@ -75,7 +74,7 @@ So it appears that the #generativeart tag is the greatest here which would make 
   group_by(hashtags, Hour) %&gt;% summarize(Count = n()) %&gt;% 
     ggplot(aes(Hour, Count)) + geom_col() +labs(title = &quot;Most Common Occurence in Generative Art Posts&quot;,  x = &quot;Hour&quot;)</code></pre>
 <p><img src="/post/2020-10-18-using-analytics-to-determine-ideal-hashtags_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>But we might want to see if there is a difference</p>
+<p>But we might want to see if there is a difference at a more granular level.</p>
 <pre class="r"><code>genart_db_table %&gt;% filter(hashtags %in% c(&quot;#generativeart&quot;)) %&gt;% 
   group_by(hashtags, Hour, DayOfWeek) %&gt;% summarize(Count = n()) %&gt;% 
     ggplot(aes(Hour, Count)) + geom_col() + facet_grid(DayOfWeek ~ .) +labs(title = &quot;Most Common Hashtags in #generativeart Posts by Day&quot;, 

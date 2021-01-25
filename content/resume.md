@@ -14,7 +14,7 @@ site: blogdown:::blogdown_site
 ### Experience
 
 **Data Scientist** | Kirklands Home Decor | Sep 2018 - Present
-* Responsible for all Supply Chain metrics reporting 
+* Responsible for all Supply Chain metrics reporting and adhoc analysis 
 * Generating Demand Forecasting to inform slotting and labor allocation 
 * Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting 
 * Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  

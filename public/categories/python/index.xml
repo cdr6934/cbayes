@@ -6,11 +6,7 @@
     <description>Recent content in python on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to NLP using Python</title>
       <link>/2020/10/03/introduction-to-nlp-using-python/</link>

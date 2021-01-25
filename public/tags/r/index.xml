@@ -6,11 +6,7 @@
     <description>Recent content in R on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Formatting Currencies in R</title>
       <link>/2018/08/21/formatting-currencies-in-r/</link>
@@ -48,7 +44,7 @@ getIP &amp;lt;- function() { url &amp;lt;- paste0(&amp;quot;https://www.meethue.
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description>  In progress  </description>
+      <description> In progress  </description>
     </item>
     
     <item>
@@ -68,7 +64,7 @@ Approximate Bayesian Computation
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description>  #In progress
+      <description> #In progress
 Still in progress  </description>
     </item>
     

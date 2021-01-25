@@ -16,7 +16,7 @@
 
 <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
 <link rel="icon" href="../../../favicon.ico">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.79.0" />
 <link rel="alternate" type="application/rss+xml" href="../../../post/index.xml" title="CBayes" />
 </head>
 
@@ -93,11 +93,26 @@
 <article class="post-entry">
   <header class="entry-header">
     <h2>
+      Minature Generative Art 
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Sometimes something simple can turn out to generate the most beautiful things. Following you will find a few lines of code that present a beautiful pattern.
+Oval Curve  n &lt;- 300 t1 &lt;- 1:n t0 &lt;- seq(3,2*n&#43;1,2) %% n t2 &lt;- t0 &#43; (t0 == 0)*n df &lt;- data.frame(x = cos((t1-1)*2*pi/n), y = sin((t1-1)*2*pi/n), x2 = cos((t2-1)*2*pi/n), y2 = sin((t2-1)*2*pi/n)) ggplot(df,aes(x,y,xend = x2,yend = y2)) &#43; geom_segment(alpha = ....</p>
+  </section>
+  <footer class="entry-footer">
+    <time>January 8, 2018</time>&nbsp;·&nbsp;CRied
+  </footer>
+  <a class="entry-link" aria-label="post link to Minature Generative Art " href="../../../2018/01/08/minature-generative-art/"></a>
+</article>
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
       Extracting Hyperlinks from an XSLX in R
     </h2>
   </header>
   <section class="entry-content">
-    <p>  In Progress install.packages(“keras”) library(keras)
+    <p> In Progress install.packages(“keras”) library(keras)
 devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“leonjessen/PepTools”)
  ...</p>
   </section>
@@ -113,7 +128,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
     </h2>
   </header>
   <section class="entry-content">
-    <p>library(tidyverse) ## ── Attaching packages ────────────────────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3.6.2 ## ── Conflicts ───────────────────────────────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going....</p>
+    <p>library(tidyverse) ## ── Attaching packages ───────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3.6.2 ## ── Conflicts ──────────────────────────── tidyverse_conflicts() ── ## x dplyr::filter() masks stats::filter() ## x dplyr::lag() masks stats::lag() Data Building The first thing we need to understand is where we have come and where we are going....</p>
   </section>
   <footer class="entry-footer">
     <time>December 23, 2017</time>&nbsp;·&nbsp;Chris
@@ -127,7 +142,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
     </h2>
   </header>
   <section class="entry-content">
-    <p>  #library(tidyverse) # IMport Data #filepath &lt;- &#34;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&#34; #wwfList &lt;- read_csv(filepath, col_names = FALSE) #wwfList %&gt;% stringr::str(&#39;.ae.&#39;) ...</p>
+    <p> #library(tidyverse) # IMport Data #filepath &lt;- &#34;~/Dropbox/Word Lists/WordsWithFriends/enable1-wwf-v4.0-wordlist.txt&#34; #wwfList &lt;- read_csv(filepath, col_names = FALSE) #wwfList %&gt;% stringr::str(&#39;.ae.&#39;) ...</p>
   </section>
   <footer class="entry-footer">
     <time>December 3, 2017</time>&nbsp;·&nbsp;C Ried
@@ -141,7 +156,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
     </h2>
   </header>
   <section class="entry-content">
-    <p>library(httr) library(tidytext) ## Warning: package &#39;tidytext&#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ────────────────────────────────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3....</p>
+    <p>library(httr) library(tidytext) ## Warning: package &#39;tidytext&#39; was built under R version 3.6.2 library(jsonlite) library(tidyverse) ## ── Attaching packages ───────────────────────── tidyverse 1.3.0 ── ## ✓ ggplot2 3.3.0 ✓ purrr 0.3.4 ## ✓ tibble 3.0.1 ✓ dplyr 0.8.5 ## ✓ tidyr 1.0.2 ✓ stringr 1.4.0 ## ✓ readr 1.3.1 ✓ forcats 0.5.0 ## Warning: package &#39;tibble&#39; was built under R version 3.6.2 ## Warning: package &#39;purrr&#39; was built under R version 3....</p>
   </section>
   <footer class="entry-footer">
     <time>November 30, 2017</time>&nbsp;·&nbsp;C Ried
@@ -220,20 +235,6 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
   </footer>
   <a class="entry-link" aria-label="post link to The Beginnings of Bayesian Philosophy" href="../../../2017/10/13/the-beginnings-of-bayesian-philosophy/"></a>
 </article>
-<article class="post-entry">
-  <header class="entry-header">
-    <h2>
-      Tips on Feature Engineering
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>  Tips on Feature Engineering  to fit how classifiers work; giving a geometry problem to a tree, oversized dimension to a kNN and interval data to an SVM are not a good ideas remove as much nonlinearities as possible; expecting that some classifier will do Fourier analysis inside is rather naive (even if, it will waste a lot of complexity there) make features generic to all objects so that some sampling in the chain won’t knock them out check previous works – often transformation used for visualisation or testing similar types of data is already tuned to uncover interesting aspects avoid unstable, optimizing transformations like PCA which may lead to overfitting experiment a lot   ...</p>
-  </section>
-  <footer class="entry-footer">
-    <time>October 8, 2017</time>&nbsp;·&nbsp;C Ried
-  </footer>
-  <a class="entry-link" aria-label="post link to Tips on Feature Engineering" href="../../../2017/10/08/tips-on-feature-engineering/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="../../../post/">« Prev Page</a>
@@ -242,7 +243,7 @@ devtools::install_github(“omarwagih/ggseqlogo”) devtools::install_github(“
 </footer>
 
     </main><footer class="footer">
-    <span>&copy; 2020 <a href="../../../">CBayes</a></span>
+    <span>&copy; 2021 <a href="../../../">CBayes</a></span>
     <span>&middot;</span>
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo️️</a>️</span>
     <span>&middot;</span>

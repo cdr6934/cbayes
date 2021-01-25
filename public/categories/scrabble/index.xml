@@ -6,11 +6,7 @@
     <description>Recent content in scrabble on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/scrabble/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="/categories/scrabble/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Word With Friends Sidekick in R </title>
       <link>/2017/11/30/word-with-friends-sidekick-in-r/</link>

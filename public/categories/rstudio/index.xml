@@ -6,18 +6,14 @@
     <description>Recent content in rstudio on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/rstudio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="/categories/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing RStudio Server on Google Cloud </title>
       <link>/2017/09/29/installing-rstudio-server-on-google-cloud/</link>
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/29/installing-rstudio-server-on-google-cloud/</guid>
-      <description>  #In progress
+      <description> #In progress
 Still in progress  </description>
     </item>
     

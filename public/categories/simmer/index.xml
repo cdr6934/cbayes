@@ -6,11 +6,7 @@
     <description>Recent content in simmer on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/simmer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="/categories/simmer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simulate Doctor Visit Resource Planning Using Simmer</title>
       <link>/2018/08/07/simulate-resource-planning-using-simmer/</link>

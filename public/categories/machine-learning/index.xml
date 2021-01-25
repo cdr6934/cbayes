@@ -6,18 +6,14 @@
     <description>Recent content in machine learning on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning Organization</title>
       <link>/2017/10/05/machine-learning-organization/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/05/machine-learning-organization/</guid>
-      <description>  </description>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +22,7 @@
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/04/variable-importance-in-r/</guid>
-      <description>  In progress  </description>
+      <description> In progress  </description>
     </item>
     
   </channel>
