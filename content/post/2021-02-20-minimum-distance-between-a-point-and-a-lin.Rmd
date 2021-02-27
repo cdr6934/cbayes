@@ -10,7 +10,7 @@ tags:
   - generative art
   - Geometry
 ---
-This has been transcribed from an earier
+This has been transcribed from an earlier post of the internet. I felt as though it might be good to rewrite and also include some of the information that is part of the 
 
 This note describes the technique and gives the solution to finding the shortest distance from a point to a line or line segment. The equation of a line defined through two points $P_1$ $(x1,y1)$ and $P_2$ $(x2,y2)$ is
 
