@@ -6,7 +6,17 @@
     <description>Recent content on CBayes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimum Distance between a Point and a Lin</title>
+      <link>/2021/02/20/minimum-distance-between-a-point-and-a-lin/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/02/20/minimum-distance-between-a-point-and-a-lin/</guid>
+      <description>This has been transcribed from an earlier post of the internet. I felt as though it might be good to rewrite and also include some of the information that is part of the
+This note describes the technique and gives the solution to finding the shortest distance from a point to a line or line segment. The equation of a line defined through two points \(P_1\) \((x1,y1)\) and \(P_2\) \((x2,y2)\) is</description>
+    </item>
+    
     <item>
       <title>Using Analytics to Determine Ideal Hashtags for Instagram</title>
       <link>/2020/10/18/using-analytics-to-determine-ideal-hashtags/</link>
@@ -393,7 +403,7 @@ Tableau Following was a simple sales dashboard that was based on some sales info
       <guid>/resume/</guid>
       <description>Christopher Ried 119 N Maple Ridge Ln, Nashville TN 37072 | 615.939.5124 | chris@cbayes.com Objective  I’m simple. I work hard to get the job done and enjoy solving complex problems.
  Experience Data Scientist | Kirklands Home Decor | Sep 2018 - Present
- Responsible for all Supply Chain metrics reporting Generating Demand Forecasting to inform slotting and labor allocation Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  Director of Analytics / Senior Software Engineer | Bargain Hunt | Feb 2015 - Sep 2018</description>
+ Responsible for all Supply Chain metrics reporting and adhoc analysis Generating Demand Forecasting to inform slotting and labor allocation Identify and optimize distribution center operations such as pick paths, cartonization optimization and slotting Implemented Microsoft PowerBI dashboards within the organization for Supply Chain  Director of Analytics / Senior Software Engineer | Bargain Hunt | Feb 2015 - Sep 2018</description>
     </item>
     
   </channel>

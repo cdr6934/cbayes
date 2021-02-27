@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Minimum Distance between a Point and a Lin - CBayes</title>
+
+<meta name="description" content="This has been transcribed from an earlier post of the internet. I felt as though it might be good to rewrite and also include some of the information that is part of the
+This note describes the technique and gives the solution to finding the shortest distance from a point to a line or line segment. The equation of a line defined through two points \(P_1\) \((x1,y1)\) and \(P_2\) \((x2,y2)\) is">
+<meta name="author" content="Chris Ried">
+<link rel="canonical" href="../../../../2021/02/20/minimum-distance-between-a-point-and-a-lin/" />
+
+<link href="../../../../css/stylesheet.min.53bb11a01b8b502a8c59ae9ad96adec99afab526cf9c58fbbb4344efab5916e0.css" integrity="sha256-U7sRoBuLUCqMWa6a2WreyZr6tSbPnFj7u0NE76tZFuA=" rel="preload stylesheet"
+    as="style">
+
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="icon" href="../../../../favicon.ico">
+<meta name="generator" content="Hugo 0.79.0" />
+
+</head>
+
+<body class="single" id="top">
+<header class="header">
+    <nav class="nav">
+        <p class="logo"><a href="../../../../">CBayes</a></p>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="../../../../art/">
+                    <span>
+                        Art
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../consulting/">
+                    <span>
+                        Consulting
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/cdr6934">
+                    <span>
+                        GitHub
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@cdr6934">
+                    <span>
+                        Medium
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/@cdr6934">
+                    <span>
+                        Photography
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../projects/">
+                    <span>
+                        Projects
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../resume/">
+                    <span>
+                        Resume
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/cdr6934">
+                    <span>
+                        Twitter
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      Minimum Distance between a Point and a Lin
+    </h1>
+    <div class="post-meta">
+      <time>February 20, 2021</time>&nbsp;·&nbsp;Chris Ried
+    </div>
+  </header>
+  <div class="post-content">
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This has been transcribed from an earlier post of the internet. I felt as though it might be good to rewrite and also include some of the information that is part of the</p>
+<p>This note describes the technique and gives the solution to finding the shortest distance from a point to a line or line segment. The equation of a line defined through two points <span class="math inline">\(P_1\)</span> <span class="math inline">\((x1,y1)\)</span> and <span class="math inline">\(P_2\)</span> <span class="math inline">\((x2,y2)\)</span> is</p>
+<p><span class="math display">\[
+P = P_1 + u(P_2-P_1)
+\]</span></p>
+<p>TODO: ADD IMAGE TO SHOW LINE</p>
+<p>The point <span class="math inline">\(P_3\)</span> <span class="math inline">\((x3,y3)\)</span> is closest to the line at the tangent to the line which passes through <span class="math inline">\(P_3\)</span>, that is, the dot product of the tangent and line is 0, thus</p>
+<p><span class="math display">\[
+(P_3-P)\cdot(P_2-P_1)=0
+\]</span>
+Substituting the equation of the line gives
+<span class="math display">\[
+[P_3-P_1-u(P_2-P_1)]\cdot(P_2-P_1)=0
+\]</span></p>
+<p>Solving this gives the value of <span class="math inline">\(u\)</span>
+<span class="math display">\[
+u=\frac{(x_3-x_1)(x_2-x1)+(y_3-y_1)(y_2-y_1)}{||p_2-p_1||}
+\]</span></p>
+<p>Substituting this into the equation of the line gives the point of intersection <span class="math inline">\((x,y)\)</span> of the tangent as
+<span class="math display">\[
+x = x_1 + u(x_2-x_1)
+\]</span></p>
+<p><span class="math display">\[
+y = y_1+u(y_2-y_1)
+\]</span></p>
+<p>The distance therefore between the point <span class="math inline">\(P_3\)</span> and the line is the distance between <span class="math inline">\((x,y)\)</span> above and <span class="math inline">\(P_3\)</span>.</p>
+<div id="notes" class="section level3">
+<h3>Notes</h3>
+<ul>
+<li>The only special testing for a software implementation is to ensure that <span class="math inline">\(P_1\)</span> and <span class="math inline">\(P-2\)</span> are not coincident (denominator in the equation for u is 0)</li>
+<li>If the distance of the point to a line segment is required then it is only necessary to test that u lies between 0 and 1.</li>
+<li>The solution is similar in higher dimensions.</li>
+</ul>
+<pre class="r"><code>distancePointLine &lt;- function(x, y, slope, intercept) {
+ ## x, y is the point to test.
+ ## slope, intercept is the line to check distance.
+ ##
+ ## Returns distance from the line.
+ ##
+ ## Returns 9999 on 0 denominator conditions.
+ x1 &lt;- x-10
+ x2 &lt;- x+10
+ y1 &lt;- x1*slope+intercept
+ y2 &lt;- x2*slope+intercept
+ distancePointSegment(x,y, x1,y1, x2,y2)
+}
+
+distancePointSegment &lt;- function(px, py, x1, y1, x2, y2) {
+ ## px,py is the point to test.
+ ## x1,y1,x2,y2 is the line to check distance.
+ ##
+ ## Returns distance from the line, or if the intersecting point on the line nearest
+ ## the point tested is outside the endpoints of the line, the distance to the
+ ## nearest endpoint.
+ ##
+ ## Returns 9999 on 0 denominator conditions.
+ lineMagnitude &lt;- function(x1, y1, x2, y2) sqrt((x2-x1)^2+(y2-y1)^2)
+ ans &lt;- NULL
+ ix &lt;- iy &lt;- 0   # intersecting point
+ lineMag &lt;- lineMagnitude(x1, y1, x2, y2)
+ if( lineMag &lt; 0.00000001) {
+   warning(&quot;short segment&quot;)
+   return(9999)
+ }
+ u &lt;- (((px - x1) * (x2 - x1)) + ((py - y1) * (y2 - y1)))
+ u &lt;- u / (lineMag * lineMag)
+ if((u &lt; 0.00001) || (u &gt; 1)) {
+   ## closest point does not fall within the line segment, take the shorter distance
+   ## to an endpoint
+   ix &lt;- lineMagnitude(px, py, x1, y1)
+   iy &lt;- lineMagnitude(px, py, x2, y2)
+   if(ix &gt; iy)  ans &lt;- iy
+   else ans &lt;- ix
+ } else {
+   ## Intersecting point is on the line, use the formula
+   ix &lt;- x1 + u * (x2 - x1)
+   iy &lt;- y1 + u * (y2 - y1)
+   ans &lt;- lineMagnitude(px, py, ix, iy)
+ }
+ ans
+}
+
+
+distancePointLineTest &lt;- function() {
+ if(abs(distancePointSegment(  5,   5,  10, 10, 20, 20) - 7.07106781186548)&gt;.0001)
+   stop(&quot;error 1&quot;)
+ if(abs(distancePointSegment( 15,  15,  10, 10, 20, 20) - 0)&gt;.0001)
+   stop(&quot;error 2&quot;)
+ if(abs(distancePointSegment( 15,  15,  20, 10, 20, 20) - 5)&gt;.0001)
+   stop(&quot;error 3&quot;)
+ if(abs(distancePointSegment(  0,  15,  20, 10, 20, 20) - 20)&gt;.0001)
+   stop(&quot;error 4&quot;)
+ if(abs(distancePointSegment(  0,  25,  20, 10, 20, 20) - 20.6155281280883)&gt;.0001)
+   stop(&quot;error 5&quot;)
+ if(abs(distancePointSegment(-13, -25, -50, 10, 20, 20) - 39.8808224589213)&gt;.0001)
+   stop(&quot;error 6&quot;)
+ if(abs(distancePointSegment(  0,   3,   0, -4,  5,  0) - 5.466082)&gt;.0001)
+   stop(&quot;error 7&quot;)
+ if(abs(distancePointSegment(  0,   9,   0, -4,  0, 15) - 0)&gt;.0001)
+   stop(&quot;error 8&quot;)
+ if(abs(distancePointSegment(  0,   0,   0, -2,  2,  0)^2 - 2)&gt;.0001)
+   stop(&quot;error 9&quot;)
+ return(TRUE)
+}</code></pre>
+</div>
+<div id="reference" class="section level2">
+<h2>Reference</h2>
+<ul>
+<li>(Point, Line, Plane)[<a href="http://paulbourke.net/geometry/pointlineplane/" class="uri">http://paulbourke.net/geometry/pointlineplane/</a>]</li>
+</ul>
+</div>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="../../../../tags/math">math</a></li>
+      <li><a href="../../../../tags/generative-art">generative art</a></li>
+      <li><a href="../../../../tags/geometry">Geometry</a></li>
+    </ul>
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2021 <a href="../../../../">CBayes</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo️️</a>️</span>
+    <span>&middot;</span>
+    <span>Theme️ <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top">
+    <button class="top-link" id="top-link" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" /></svg>
+    </button>
+</a>
+<script src="../../../../js/highlight.min.min.e7afc2928c0925d65c4732dfebe147014d91299a98e819e4b42f25c4fa68e91c.js" integrity="sha256-56/CkowJJdZcRzLf6&#43;FHAU2RKZqY6BnktC8lxPpo6Rw="></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry on CBayes</title>
+    <link>/categories/geometry/</link>
+    <description>Recent content in Geometry on CBayes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/geometry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimum Distance between a Point and a Lin</title>
+      <link>/2021/02/20/minimum-distance-between-a-point-and-a-lin/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/02/20/minimum-distance-between-a-point-and-a-lin/</guid>
+      <description>This has been transcribed from an earlier post of the internet. I felt as though it might be good to rewrite and also include some of the information that is part of the
+This note describes the technique and gives the solution to finding the shortest distance from a point to a line or line segment. The equation of a line defined through two points \(P_1\) \((x1,y1)\) and \(P_2\) \((x2,y2)\) is</description>
+    </item>
+    
+  </channel>
+</rss>
